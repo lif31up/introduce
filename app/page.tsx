@@ -32,7 +32,6 @@ export default function Home() {
           {h1:"의사소통",p:"사람들과 협업하는 것을 즐깁니다. 새로운 사람을 만나고 대화 나누는 걸 즐깁니다.",src:"/assets/images/commu.png"},
           {h1:"문제해결",p:"문제를 해결하고 풀어나갈 때, 과업을 온전히 책임을 지고 있다고 느낍니다.",src:"/assets/images/project.png"},
         ]}</StackTable>
-
         <div className={"_trans_content flex justify-center custom-mobile-disable"}>
           <div className={"w-40 h-40 relative mt-20"}>
             <Image src={"/assets/images/meow.gif"} alt={""} layout={"fill"} objectPosition={"center"} objectFit={"cover"}/>
