@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1+Thin:wght@400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,8 +18,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
+  background: #1d1f21;
   color: rgb(var(--foreground-rgb));
-  background: black;
 }
