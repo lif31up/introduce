@@ -32,12 +32,12 @@ function Stack({h1,p,src,id}:StackProps){
 	},[false]);
 	return(
 	<div className={"_content flex custom-anime-ltr-slide"} id={id}>
-		<div className={"h-16 w-16 m-4 relative inline-block rounded-2xl overflow-hidden"}>
+		<div className={"_img-block"}>
 			<Image src={src} alt={"img"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
 		</div>
-		<div className={"pt-4 w-4/5"}>
-			<h1 className={"custom-text-12"}>{h1}</h1>
-			<p className={"custom-text-08 custom-font-gothic-a1-thin"}>{p}</p>
+		<div className={"_desc-block"}>
+			<h1>{h1}</h1>
+			<p>{p}</p>
 		</div>
 	</div>
 	);
