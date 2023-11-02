@@ -8,8 +8,9 @@ import Image from "next/image";
 export default function Home() {
   return (
   <main>
+    <title>명환의 포트폴리오</title>
     <TopBar/>
-    <div className={"h-screen flex justify-center items-center"}>
+    <div className={"h-96 flex"}>
       <h1 className={"text-4xl w-fit text-white pb-20"}>{"대문은 아직도 제작 중이에요... 스크롤하시면 완성된 부분을 확인하실 수 있습니다."}</h1>
     </div>
     <div className={"_grid-2xl"} id={"s-a-p"}>
