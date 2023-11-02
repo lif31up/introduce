@@ -9,8 +9,8 @@ export default function Home() {
   return (
   <main>
     <TopBar/>
-    <div className={"h-screen"}>
-
+    <div className={"h-screen flex justify-center items-center"}>
+      <h1 className={"text-4xl w-fit text-white pb-20"}>{"대문은 아직도 제작 중이에요... 스크롤하시면 완성된 부분을 확인하실 수 있습니다."}</h1>
     </div>
     <div className={"_grid-2xl"} id={"s-a-p"}>
       <div className={"_grid-2xl-article"}>
