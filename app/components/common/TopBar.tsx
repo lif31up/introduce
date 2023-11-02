@@ -12,7 +12,7 @@ export default function TopBar({}){
 				<p className={"px-2 pt-1 custom-font-gothic-a1-thin"}>{"NULRANLCNS9991@GMAIL.COM"}</p>
 			</div>
 			<div className={"flex items-center gap-12 font-bold"}>
-				<Link className={"h-fit custom-mobile-disable"} href={"contact"}>연락하기</Link>
+				<Link className={"h-fit custom-mobile-disable"} href={"mailto:nulranlcns9991@gmail.com"}>연락하기</Link>
 				<Link className={"h-fit custom-mobile-disable"} href={"#s-a-p"}>살펴보기</Link>
 				<Link className={"custom-rounded shadow-black shadow-2xl bg-purple-700"} href={"https://github.com/lif31up"} target={"_blank"}>GITHUB</Link>
 			</div>

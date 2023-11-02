@@ -1,5 +1,5 @@
 import React from "react";
-
+import "@/styles/Common.css";
 export default function TagTable({children,color}:{children:Array<string>,color:string}){
 	const tags:Array<React.ReactNode> = [];
 	children.forEach((child,index)=>{

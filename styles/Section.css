@@ -40,14 +40,14 @@
 ._content, ._gray_content, ._trans_content {
   width: calc(100% - 2rem);
   height: fit-content;
-  min-height: 5rem;
-  background: #101010;
+  background: rgba(16, 16, 16, 0.85);
   color: white;
   margin: 1rem;
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
   font-family: "Gothic A1", sans-serif;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 500px) {
   ._content, ._gray_content, ._trans_content {
@@ -59,6 +59,7 @@
 ._trans_content {
   margin: 1rem;
   background: none;
+  box-shadow: none;
 }
 
 ._gray_content {
@@ -70,6 +71,8 @@
   width: 4rem;
   height: 4rem;
   margin: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 ._desc-block {

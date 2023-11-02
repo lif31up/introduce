@@ -22,13 +22,14 @@
   }
 }
 ._content{
-  width: calc(100% - 2rem); height: fit-content; min-height: 5rem;
-  background: #101010; color: white;
+  width: calc(100% - 2rem); height: fit-content;
+  background: rgba(16, 16, 16, 0.85); color: white;
   margin: 1rem;
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
   font-family: "Gothic A1",sans-serif;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
   @include mobile{
     width: calc(100% - 1rem);
     margin: 1rem 0.5rem 1rem 0.5rem;
@@ -38,6 +39,7 @@
   @extend ._content;
   margin: 1rem;
   background: none;
+  box-shadow: none;
 }
 ._gray_content{
   @extend ._content;
@@ -47,6 +49,7 @@
   position: relative;
   width: 4rem; height: 4rem;
   margin: 1rem;
+  border-radius: 0.5rem; overflow: hidden;
 }
 ._desc-block{
   width: calc(100% - 6rem); height: fit-content;

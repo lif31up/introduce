@@ -26,6 +26,9 @@
     display: none;
   }
 }
+.custom-box-shadow{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
 
 .custom-anime-ltr-slide{
   animation: ltr-slide 1s ease-in-out paused;
