@@ -24,14 +24,13 @@
   font-family: "Gothic A1 Thin",sans-serif;
 }
 .custom-mobile-disable{
-  @include mobile{
-    display: none;
-  }
+  @include mobile{display: none;}
+  @include tablet{display: none;}
+  @include large{display: none;}
 }
 .custom-desktop-disable{
-  @include desktop{
-    display: none;
-  }
+  @include desktop{display: none;}
+  @include large{display: none;}
 }
 .custom-w-full{
   width: calc(100% - 1rem);

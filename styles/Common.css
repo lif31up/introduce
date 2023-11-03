@@ -46,8 +46,23 @@
     display: none;
   }
 }
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .custom-mobile-disable {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .custom-mobile-disable {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
+  .custom-desktop-disable {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .custom-desktop-disable {
     display: none;
   }

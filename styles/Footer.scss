@@ -12,5 +12,15 @@
     display: block;
     padding: 1rem 2rem 0 2rem;
   }
+  @include tablet{
+    height: 40rem;
+    display: block;
+    padding: 1rem 2rem 0 2rem;
+  }
+  @include large{
+    height: 40rem;
+    display: block;
+    padding: 1rem 2rem 0 2rem;
+  }
 }
 .custom-footer-col{background: #111212;}

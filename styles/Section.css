@@ -7,6 +7,16 @@
 ._default, ._grid-2xl {
   padding: 0 11rem 0 11rem;
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  ._default, ._grid-2xl {
+    padding: 0 2rem 0 2rem;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  ._default, ._grid-2xl {
+    padding: 0 1rem 0 1rem;
+  }
+}
 @media only screen and (max-width: 500px) {
   ._default, ._grid-2xl {
     padding: 0;
@@ -26,12 +36,22 @@
     display: block;
   }
 }
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  ._grid-2xl {
+    display: block;
+  }
+}
 
 ._grid-2xl-article {
   width: 50%;
   height: fit-content;
 }
 @media only screen and (max-width: 500px) {
+  ._grid-2xl-article {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   ._grid-2xl-article {
     width: 100%;
   }

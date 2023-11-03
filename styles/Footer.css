@@ -27,6 +27,20 @@
     padding: 1rem 2rem 0 2rem;
   }
 }
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .footer {
+    height: 40rem;
+    display: block;
+    padding: 1rem 2rem 0 2rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    height: 40rem;
+    display: block;
+    padding: 1rem 2rem 0 2rem;
+  }
+}
 
 .custom-footer-col {
   background: #111212;
