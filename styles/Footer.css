@@ -1,0 +1,30 @@
+/*BOX*/
+/*FLEX TOOLKIT*/
+/*FONT*/
+/*BACKGROUND*/
+/*PSEUDO*/
+/*FADE*/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  margin-top: 5rem;
+  padding: 5rem 40% 0 10rem;
+  background: #111212;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  font-family: "Gothic A1", sans-serif;
+}
+.footer a {
+  font-family: "Gothic A1 Thin", sans-serif;
+  margin-top: 0.25rem;
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    display: block;
+    padding: 1rem 2rem 0 2rem;
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

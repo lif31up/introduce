@@ -15,7 +15,7 @@ export default function Project({h1,p,src,id,className}:ProjectProps){
 			});
 		}
 		const options = {
-			root:null, rootMargin: "0px", threshold: 0.75
+			root:null, rootMargin: "0px", threshold: 0.25
 		}
 		observerRef.current = new IntersectionObserver(intersectionHandler,options);
 		observerRef.current.observe(target);
