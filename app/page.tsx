@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </div>
         <TagTable color={"bg-blue-900"}>{["Illustrator","Photoshop","XD","Ableton Live","VVVV","Simple Video Editing","Three.js","Blender"]}</TagTable>
-        <div className={"_trans_content pt-3"}>
+        <div className={"_trans_content"}>
           <h1 className={"text-3xl"}>{"협업"}</h1>
         </div>
         <StackTable id={"st--2"}>{[
