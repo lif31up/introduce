@@ -50,7 +50,7 @@ export default function Home() {
           {h1:"문제해결",p:"문제를 해결하고 풀어나갈 때, 과업을 온전히 책임을 지고 있다고 느낍니다.",src:"/assets/images/coworking_problemsolver.webp"},
         ]}</StackTable>
         <TagTable color={"bg-neutral-600"}>{["WebStorm","EMACS","Visual Studio","Notion","Slack","Figma","GitHub","Git"]}</TagTable>
-        <div className={"_trans_content pt-3"}>
+        <div className={"_trans_content"}>
           <h1 className={"text-3xl"}>{"배우는 중"}</h1>
         </div>
         <WorkingOn subject={"리액트 후크 폼"} desc={"2023/11/03"}/>
