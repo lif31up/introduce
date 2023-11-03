@@ -8,6 +8,7 @@ import Image from "next/image";
 import Footer from "./components/common/Footer";
 import WorkingOn from "@/app/components/feature/WorkingOn";
 import Quote from "@/app/components/feature/Quote";
+import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
 export default function Home() {
   return (
   <main>
@@ -51,10 +52,14 @@ export default function Home() {
         ]}</StackTable>
         <TagTable color={"bg-neutral-600"}>{["WebStorm","EMACS","Visual Studio","Notion","Slack","Figma","GitHub","Git"]}</TagTable>
         <div className={"_trans_content"}>
-          <h1 className={"text-3xl"}>{"배우는 중"}</h1>
+          <h1 className={"text-3xl"}>{"진행 중"}</h1>
         </div>
-        <WorkingOn subject={"리액트 후크 폼"} desc={"2023/11/03"}/>
-        <WorkingOn subject={"THREE.JS API"} desc={"2023/11/03"}/>
+        <AnimationContainerTable id={"working-on--0"} animation={"custom-anime-vanish-in"}>
+          <WorkingOn subject={"리액트 후크 폼"} desc={"2023/11/03"}/>
+          <WorkingOn subject={"THREE.JS API"} desc={"2023/11/03"}/>
+          <WorkingOn subject={"웹 포트폴리오"} desc={"2023/11/01"}/>
+          <WorkingOn subject={"무한 스크롤링"} desc={"2023/10/28"}/>
+        </AnimationContainerTable>
       </div>
       <div className={"_grid-2xl-article"}>
         <Profile/>
@@ -80,11 +85,14 @@ export default function Home() {
         <div className={"_trans_content pt-3"}>
           <h1 className={"text-3xl"}>{"실험실"}</h1>
         </div>
-        <Quote src={"/assets/images/neal_stephenson.jpg"} h1={"Snow Crash"}
-               p={"See, the world is full of things more powerful than us. But if you know how to catch a ride, you can go places,"}/>
-        <Quote src={"/assets/images/william_gibson.webp"} h1={"Neuromancer"}
-               p={"When the past is always with you, it may as well be present; and if it is present, it will be future as well."}/>
-
+        <AnimationContainerTable id={"quotes--0"} animation={"custom-anime-swash-in"}>
+          <Quote src={"/assets/images/neal_stephenson.jpg"} h1={"Snow Crash"}
+                 p={"See, the world is full of things more powerful than us. But if you know how to catch a ride, you can go places,"}/>
+          <Quote src={"/assets/images/william_gibson.webp"} h1={"Neuromancer"}
+                 p={"When the past is always with you, it may as well be present; and if it is present, it will be future as well."}/>
+          <Quote src={"/assets/images/j_g_ballard.jpg"} h1={"The Drowned World"}
+                 p={"The brief span of an individual life is misleading. Each one of us is as old as the entire biological kingdom, and our bloodstreams are tributaries of the great sea of its total memory. The uterine odyssey of the growing foetus recapitulates the entire evolutionary past, and its central nervous system is a coded time scale, each nexus of neurones and each spinal level marking a symbolic station, a unit of neuronic time."}/>
+        </AnimationContainerTable>
       </div>
     </div>
     <Footer/>

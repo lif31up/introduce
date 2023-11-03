@@ -1,7 +1,7 @@
 @import "Library";
 .footer{
   position: relative;
-  width: 100%; height: 30rem;
+  width: 100%; height: 25rem;
   margin-top: 5rem; padding: 5rem 40% 0 10rem;
   background: #111212;
   display: grid; grid-template-columns: repeat(4,1fr);
@@ -13,3 +13,4 @@
     padding: 1rem 2rem 0 2rem;
   }
 }
+.custom-footer-col{background: #111212;}
