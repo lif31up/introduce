@@ -31,13 +31,16 @@ function Stack({h1,p,src,id}:StackProps){
 		observerRef.current.observe(target);
 	},[false]);
 	return(
-	<div className={"_content flex custom-anime-ltr-slide"} id={id}>
-		<div className={"_img-block"}>
-			<Image src={src} alt={"img"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
+	<div className={"_content flex p-4 custom-anime-ltr-slide"} id={id}>
+		<div className={"h-16"}/>
+		<div className={"absolute"}>
+			<div className={"w-16 h-16 relative overflow-hidden rounded"}>
+				<Image src={src} alt={"img"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
+			</div>
 		</div>
-		<div className={"_desc-block"}>
-			<h1>{h1}</h1>
-			<p>{p}</p>
+		<div className={"ml-20"}>
+			<h1 className={"custom-font-gothic-a1"}>{h1}</h1>
+			<p className={"custom-font-gothic-a1-thin custom-text-08"}>{p}</p>
 		</div>
 	</div>
 	);

@@ -9,6 +9,7 @@
 }
 .custom-text-08{
   font-size: 0.8rem;
+  @include mobile{font-size: 0.7rem;}
 }
 .custom-sphere{
   border-radius: 50%; overflow: hidden;
@@ -31,6 +32,9 @@
   @include desktop{
     display: none;
   }
+}
+.custom-w-full{
+  width: calc(100% - 1rem);
 }
 .custom-box-shadow{
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);

@@ -17,6 +17,11 @@
 .custom-text-08 {
   font-size: 0.8rem;
 }
+@media only screen and (max-width: 500px) {
+  .custom-text-08 {
+    font-size: 0.7rem;
+  }
+}
 
 .custom-sphere {
   border-radius: 50%;
@@ -46,6 +51,10 @@
   .custom-desktop-disable {
     display: none;
   }
+}
+
+.custom-w-full {
+  width: calc(100% - 1rem);
 }
 
 .custom-box-shadow {
