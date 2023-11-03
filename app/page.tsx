@@ -56,16 +56,20 @@ export default function Home() {
         </div>
         <Project h1={"무한 스크롤링"}
                  p={"무한 스크롤을 구현하기 위해, FakeStoreAPI를 빌려 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 React Query와 리액트에서의 Intersection API 사용을 숙달했습니다."}
-                 src={"/assets/images/shoppingmall.webp"} id={"pj-0"} className={"custom-anime-rtl-slide"}/>
+                 src={"/assets/images/shoppingmall.webp"} id={"pj-0"} className={"custom-anime-rtl-slide"}
+                 href={"https://shopping-mall-rust.vercel.app/"}/>
         <Project h1={"포트폴리오"}
                  p={"현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다."}
-                 src={"/assets/images/protfolio.png"} id={"pj-1"} className={"custom-anime-rtl-slide"}/>
+                 src={"/assets/images/protfolio.png"} id={"pj-1"} className={"custom-anime-rtl-slide"}
+                 href={"https://github.com/lif31up/introduce"}/>
         <Project h1={"뉴럴링크"}
                  p={"현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다."}
-                 src={"/assets/images/nuel.png"} id={"pj-2"} className={"custom-anime-rtl-slide"}/>
+                 src={"/assets/images/nuel.png"} id={"pj-2"} className={"custom-anime-rtl-slide"}
+                 href={"https://neuralink-redesign.vercel.app/"}/>
         <Project h1={"자료구조"}
                  p={"C 언어를 이용해서 AVL, B-Tree, Linked List, Queue, Stack, Graph, Set 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다."}
-                 src={"/assets/images/dt.png"} id={"pj-3"} className={"custom-anime-rtl-slide"}/>
+                 src={"/assets/images/dt.png"} id={"pj-3"} className={"custom-anime-rtl-slide"}
+                 href={"https://github.com/lif31up/Data-Structures-and-Algorithms"}/>
       </div>
     </div>
     <Footer/>

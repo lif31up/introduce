@@ -14,7 +14,7 @@ export default function TopBar({}){
 			<div className={"flex items-center gap-12 font-bold"}>
 				<Link className={"h-fit custom-mobile-disable"} href={"mailto:nulranlcns9991@gmail.com"}>연락하기</Link>
 				<Link className={"h-fit custom-mobile-disable"} href={"#s-a-p"}>살펴보기</Link>
-				<Link className={"custom-rounded shadow-black shadow-2xl bg-purple-700"} href={"https://github.com/lif31up"} target={"_blank"}>GITHUB</Link>
+				<Link className={"custom-rounded shadow-black shadow-2xl bg-purple-700 hover:bg-purple-800"} href={"https://github.com/lif31up"} target={"_blank"}>GITHUB</Link>
 			</div>
 		</div>
 		<div className={"h-16"}/>

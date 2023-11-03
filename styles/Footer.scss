@@ -8,6 +8,7 @@
   color: white; font-family: "Gothic A1",sans-serif;
   a{font-family: "Gothic A1 Thin",sans-serif; margin-top: 0.25rem;}
   @include mobile{
+    height: 40rem;
     display: block;
     padding: 1rem 2rem 0 2rem;
   }

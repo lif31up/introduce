@@ -56,6 +56,10 @@
   }
 }
 
+a ._content:hover, a ._gray_content:hover, a ._trans_content:hover {
+  background: black;
+}
+
 ._trans_content {
   margin: 1rem;
   background: none;

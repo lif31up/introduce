@@ -1,8 +1,8 @@
 'use client';
 import Image from "next/image";
 import {useEffect, useRef} from "react";
-interface ProjectProps{h1:string,p:string,src:string,id:string,className:string}
-export default function Project({h1,p,src,id,className}:ProjectProps){
+interface ProjectProps{h1:string,p:string,src:string,id:string,className:string,href:string}
+export default function Project({h1,p,src,id,className,href}:ProjectProps){
 	const observerRef:any|null = useRef(null);
 	useEffect(():void=>{
 		let target:HTMLElement|null = document.getElementById(id);
@@ -21,14 +21,16 @@ export default function Project({h1,p,src,id,className}:ProjectProps){
 		observerRef.current.observe(target);
 	},[false]);
 	return(
-	<div className={["_content",className].join(" ").trim()} id={id}>
-		<div className={"p-4 text-white custom-font-gothic-a1"}>
-			<h1 className={"text-3xl mb-2 py-2"}>{h1}</h1>
-			<div className={"w-full h-80 relative overflow-hidden rounded-2xl gray"}>
-				<Image src={src} alt={"img"} layout={"fill"} objectFit={"contain"} objectPosition={"center"}/>
+	<a href={href}>
+		<div className={["_content",className].join(" ").trim()} id={id}>
+			<div className={"p-4 text-white custom-font-gothic-a1"}>
+				<h1 className={"text-3xl mb-2 py-2"}>{h1}</h1>
+				<div className={"w-full h-80 relative overflow-hidden rounded-2xl gray"}>
+					<Image src={src} alt={"img"} layout={"fill"} objectFit={"contain"} objectPosition={"center"}/>
+				</div>
+				<p className={"custom-font-gothic-a1-thin mt-4"}>{p}</p>
 			</div>
-			<p className={"custom-font-gothic-a1-thin mt-4"}>{p}</p>
 		</div>
-	</div>
+	</a>
 	);
 }
