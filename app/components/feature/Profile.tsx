@@ -6,7 +6,7 @@ export default function Profile({}){
 	<div className={"_gray_content custom-mobile-disable"}>
 		<div className={"flex p-4 items-center"}>
 			<div className={"w-36 h-36 relative custom-sphere overflow-hidden"}>
-				<Image src={"/assets/images/profile.jpg"} alt={""} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
+				<Image src={"/assets/images/profile.webp"} alt={""} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
 			</div>
 			<div className={"pl-4"}>
 				<div className={"flex items-end"}>
