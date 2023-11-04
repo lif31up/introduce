@@ -33,7 +33,7 @@ function AnimationContainer({children,className,id}:AnimationContainerProps){
 		let options = {
 			root:null,
 			rootMargin:"0px",
-			threshold:0.1
+			threshold:0.5
 		}
 		observerRef.current = new IntersectionObserver(intersectionHandler,options);
 		observerRef.current.observe(target);
