@@ -19,7 +19,9 @@ function Stack({h1,p,src,id}:StackProps){
 			// @ts-ignore
 			entries.forEach((entry,observer)=>{
 				if(entry.isIntersecting){ // @ts-ignore
-					target.style.animationPlayState = "running";}
+					target.style.animationPlayState = "running";
+					return ()=>{observerRef.current.disconnect();};
+				}
 			});
 		}
 		let options = {

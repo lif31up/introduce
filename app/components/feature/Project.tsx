@@ -11,6 +11,7 @@ export default function Project({h1,p,src,id,className,href}:ProjectProps){
 			entries.forEach((entry)=>{
 				if(entry.isIntersecting){// @ts-ignore
 					target.style.animationPlayState = "running";
+					return ()=>{observerRef.current.disconnect();};
 				}
 			});
 		}
