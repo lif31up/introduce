@@ -1,0 +1,8 @@
+._scene {
+  width: 100%;
+  height: calc(70vh - 4rem);
+  overflow: hidden;
+  padding: 0 15% 0 15%;
+}
+
+/*# sourceMappingURL=Scene.css.map */

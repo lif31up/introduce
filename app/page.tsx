@@ -9,14 +9,14 @@ import Footer from "./components/common/Footer";
 import WorkingOn from "@/app/components/feature/WorkingOn";
 import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
+// @ts-ignore
+import Scene from "@/app/components/feature/Scene";
 export default function Home() {
   return (
   <main>
     <title>명환의 포트폴리오</title>
     <TopBar/>
-    <div className={"h-96 flex justify-center items-center"}>
-      <h1 className={"text-white"}>{"대문은 아직 제작 중입니다."}</h1>
-    </div>
+    <Scene/>
     <div className={"_grid-2xl"} id={"s-a-p"}>
       <div className={"_grid-2xl-article"}>
         <div className={"_trans_content pt-3"}>
