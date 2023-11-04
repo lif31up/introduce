@@ -1,5 +1,6 @@
 import "@/styles/WorkingOn.css";
 interface WorkingOnProps{subject:string,desc:string}
+
 export default function WorkingOn({subject,desc}:WorkingOnProps){
 	return(
 	<div className={"_content pt-4"}>
