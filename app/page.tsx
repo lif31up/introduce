@@ -11,12 +11,28 @@ import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
 // @ts-ignore
 import Scene from "@/app/components/feature/Scene";
+import Link from "next/link";
 export default function Home() {
   return (
   <main>
     <title>명환의 포트폴리오</title>
     <TopBar/>
-    <Scene/>
+    <div className={"fixed top-8 left-20 -z-10"}>
+      <Scene/>
+    </div>
+    <div className={"_scene"}/>
+    <div className={"w-full h-96 top-16 absolute px-48 custom-mobile-disable"}>
+      <div className={"flex w-full h-full justify-center items-center flex-col"}>
+        <h1 className={"text-7xl text-white font-bold py-4"}>{"환영합니다!"}</h1>
+        <h2 className={"text-white custom-font-gothic-a1"}>{"무슨 사정인지는 몰라도 제 포트폴리오와 마주치셨군요."}</h2>
+        <h2 className={"text-white custom-font-gothic-a1"}>{"일단, 정말 반갑습니다. 과연 우리가 새로운 인연으로 이어질 수 있을까요?"}</h2>
+        <h2 className={"text-white custom-font-gothic-a1"}>{"저는 언제나 환영입니다. 스크롤을 통해 저에 대해 알아보세요."}</h2>
+        <div className={"flex gap-4 py-4"}>
+          <Link href={"#s-a-p"} className={"font-bold text-2xl px-4 py-3 bg-white"}>{"살펴보기"}</Link>
+          <Link href={"mailto:nulranlcns9991@gmail.com"} className={"font-bold text-2xl py-3 px-4 bg-white"}>{"연락하기"}</Link>
+        </div>
+      </div>
+    </div>
     <div className={"_grid-2xl"} id={"s-a-p"}>
       <div className={"_grid-2xl-article"}>
         <div className={"_trans_content pt-3"}>
