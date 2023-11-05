@@ -27,9 +27,9 @@ export default function Home() {
         <h2 className={"text-white custom-font-gothic-a1"}>{"무슨 사정인지는 몰라도 제 포트폴리오와 마주치셨군요."}</h2>
         <h2 className={"text-white custom-font-gothic-a1"}>{"일단, 정말 반갑습니다. 과연 우리가 새로운 인연으로 이어질 수 있을까요?"}</h2>
         <h2 className={"text-white custom-font-gothic-a1"}>{"저는 언제나 환영입니다. 스크롤을 통해 저에 대해 알아보세요."}</h2>
-        <div className={"flex gap-4 py-4"}>
-          <Link href={"#s-a-p"} className={"font-bold text-2xl px-4 py-3 bg-white"}>{"살펴보기"}</Link>
-          <Link href={"mailto:nulranlcns9991@gmail.com"} className={"font-bold text-2xl py-3 px-4 bg-white"}>{"연락하기"}</Link>
+        <div className={"flex gap-4 mt-8"}>
+          <Link href={"#s-a-p"} className={"font-bold text-2xl px-8 py-3 bg-white"}>{"살펴보기"}</Link>
+          <Link href={"mailto:nulranlcns9991@gmail.com"} className={"font-bold text-2xl py-3 px-8 bg-white"}>{"연락하기"}</Link>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ export default function Home() {
           {h1:"타입스크립트",p:"엄격한 문법도 막힘없이 읽어 확장, 작성할 수 있습니다.",src:"/assets/images/typescript_icon.webp"},
           {h1:"SASS",p:"SASS를 통해 반응형 스타일시트를 만드는데 도가 텄습니다.",src:"/assets/images/sass_icon.webp"},
         ]}</StackTable>
-        <TagTable color={"bg-teal-600"}>{["Tailwind CSS","REACT QUERY","RECOIL","HOOK FROM","DOM","HTML with HTML5","CSS Master"]}</TagTable>
+        <TagTable color={"bg-teal-600"}>{["Tailwind CSS","CSS Master","REACT QUERY","RECOIL","DOM","HTML with HTML5","HOOK Master"]}</TagTable>
         <StackTable id={"st--1"}>{[
           {h1:"넥스트",p:"CSR 및 SSR 패턴화, 라우팅, 이미지 최적화 등을 사용할 줄 압니다.",src:"/assets/images/next_icon.webp"},
           {h1:"리액트",p:"후크, 상태를 모두 이해하고 있습니다. 리액트 쿼리, 리코일에도 이미 익숙합니다.",src:"/assets/images/react_icon.webp"},
@@ -72,9 +72,8 @@ export default function Home() {
         </div>
         <AnimationContainerTable id={"working-on--0"} animation={"custom-anime-vanish-in"}>
           <WorkingOn subject={"리액트 후크 폼"} desc={"2023/11/03"}/>
-          <WorkingOn subject={"THREE.JS API"} desc={"2023/11/03"}/>
-          <WorkingOn subject={"웹 포트폴리오"} desc={"2023/11/01"}/>
-          <WorkingOn subject={"무한 스크롤링"} desc={"2023/10/28"}/>
+          <WorkingOn subject={"웹 포트폴리오(모바일 대문)"} desc={"2023/11/01"}/>
+          <WorkingOn subject={"대학생 협업 프로젝트"} desc={"2023/11/04"}/>
         </AnimationContainerTable>
       </div>
       <div className={"_grid-2xl-article"}>
