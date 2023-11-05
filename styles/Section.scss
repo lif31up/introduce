@@ -17,7 +17,7 @@
   @extend ._default;
   display: flex;
   width: 100%; height: fit-content;
-  padding-top: 4rem;
+  padding-top: 4rem; padding-bottom: 2rem;
   @include mobile{display: block;}
   @include tablet{display: block;}
 }
