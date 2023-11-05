@@ -12,7 +12,7 @@
   }
 }
 ._grid-2xl{
-  background: #1d1f21;
+  background: linear-gradient(rgba(0, 0, 0, 0),#1d1f21 5%);
   overflow-x: hidden;
   @extend ._default;
   display: flex;
