@@ -12,6 +12,7 @@ import AnimationContainerTable from "@/app/components/common/AnimationContainerT
 // @ts-ignore
 import Scene from "@/app/components/feature/Scene";
 import Link from "next/link";
+import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
 export default function Home() {
   return (
   <main>
@@ -21,15 +22,18 @@ export default function Home() {
       <Scene/>
     </div>
     <div className={"_scene"}/>
-    <div className={"w-full h-96 top-16 absolute px-48 custom-mobile-disable"}>
-      <div className={"flex w-full h-full justify-center items-center flex-col"}>
-        <h1 className={"text-7xl text-white font-bold py-4"}>{"환영합니다!"}</h1>
-        <h2 className={"text-white custom-font-gothic-a1"}>{"무슨 사정인지는 몰라도 제 포트폴리오와 마주치셨군요."}</h2>
-        <h2 className={"text-white custom-font-gothic-a1"}>{"일단, 정말 반갑습니다. 과연 우리가 새로운 인연으로 이어질 수 있을까요?"}</h2>
-        <h2 className={"text-white custom-font-gothic-a1"}>{"저는 언제나 환영입니다. 스크롤을 통해 저에 대해 알아보세요."}</h2>
-        <div className={"flex gap-4 mt-8"}>
-          <Link href={"#s-a-p"} className={"font-bold text-2xl px-8 py-3 bg-white"}>{"살펴보기"}</Link>
-          <Link href={"mailto:nulranlcns9991@gmail.com"} className={"font-bold text-2xl py-3 px-8 bg-white"}>{"연락하기"}</Link>
+    <div className={"w-full h-96 top-16 absolute px-48 pt-12 custom-mobile-disable"}>
+      <div className={"text-7xl grid custom-font-gothic-a1 font-bold"}>
+        <h1 className={"text-white font-bold"}>{"NEXT LEVEL OF"}</h1>
+        <h1 className={"text-white font-bold"}>{"PROGRAMMER, DESIGN"}</h1>
+        <h1 className={"text-white font-bold"}>{"BETTER WORKER"}</h1>
+      </div>
+      <div className={"flex"}>
+        <Link href={"#s-a-p"} className={"border-white border-4 custom-sphere w-8 h-8 grid justify-items-center items-center"}>
+          <div className={"text-white text-2xl"}>{""}</div>
+        </Link>
+        <div className={"ml-2 custom-font-gothic-a1-thin"}>
+          <p className={"text-white"}>{"무엇을 원하십니까"}<br/>{"I Will Always Love You."}<br/>{"Into a Web of Deception."}</p>
         </div>
       </div>
     </div>
@@ -70,11 +74,7 @@ export default function Home() {
         <div className={"_trans_content"}>
           <h1 className={"text-3xl"}>{"진행 중"}</h1>
         </div>
-        <AnimationContainerTable id={"working-on--0"} animation={"custom-anime-vanish-in"}>
-          <WorkingOn subject={"리액트 후크 폼"} desc={"2023/11/03"}/>
-          <WorkingOn subject={"웹 포트폴리오(모바일 대문)"} desc={"2023/11/01"}/>
-          <WorkingOn subject={"대학생 협업 프로젝트"} desc={"2023/11/04"}/>
-        </AnimationContainerTable>
+        <WorkingOnTable/>
       </div>
       <div className={"_grid-2xl-article"}>
         <Profile/>
