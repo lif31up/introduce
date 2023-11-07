@@ -48,7 +48,7 @@ export default function Home() {
           {h1:"리액트",p:"후크, 상태를 모두 이해하고 있습니다. 리액트 쿼리, 리코일에도 이미 익숙합니다.",src:"/assets/images/react_icon.webp"},
           {h1:"버셀",p:"이 페이지도 버셀을 통해 배포되는 중입니다. 이를 통해 프로토타입을 테스트할 수 있습니다.",src:"/assets/images/vercel_icon.webp"},
         ]}</StackTable>
-        <div className={"_trans_content pt-3"}>
+        <div className={"_trans_content pt-2"}>
           <h1 className={"text-3xl"}>{"디자인"}</h1>
         </div>
         <div className={"_trans_content"}>
@@ -57,7 +57,12 @@ export default function Home() {
           </div>
         </div>
         <TagTable color={"bg-blue-900"}>{["Illustrator","Photoshop","XD","Ableton Live","VVVV","Simple Video Editing","Three.js","Blender"]}</TagTable>
-        <div className={"_trans_content"}>
+        <StackTable id={"st--3"}>{[
+          {h1:"포토샵",p:"포토샵을 통해서 목업과 이미지에 대한 필터 효과를 적용할 수 있습니다.",src:"/assets/images/photoshop.webp"},
+          {h1:"일러스트레이터",p:"가장 자신있게 다루는 디자인 도구입니다. 로고, 아이콘, 일러스트를 만들 수 있습니다.",src:"/assets/images/illustrator.webp"},
+          {h1:"XD",p:"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다.",src:"/assets/images/xd.webp"}
+        ]}</StackTable>
+        <div className={"_trans_content pt-2"}>
           <h1 className={"text-3xl"}>{"협업"}</h1>
         </div>
         <StackTable id={"st--2"}>{[
