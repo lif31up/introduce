@@ -25,7 +25,7 @@ export default function Home() {
       <div className={"text-5xl gap-4 justify-items-center grid custom-font-gothic-a1 font-bold"}>
         <h1 className={"font-bold"}>{"다음 단계로 넘어서는"}</h1>
         <h1 className={"font-bold"}>{"프로그래머 겸 디자이너"}</h1>
-        <p className={"text-2xl text-neutral-200 flex custom-font-gothic-a1 font-normal"}>{"제 포트폴리오와 마주치셨군요."}<br/>{"무엇을 원하십니까."}</p>
+        <p className={"text-2xl text-neutral-200 flex custom-font-gothic-a1 font-normal"}>{"제 포트폴리오와 마주치셨군요."}<br/>{"이 인연이 의미를 가질 수 있을까요?"}</p>
       </div>
       <div className={"w-full flex justify-center gap-8 mt-8 text-black"}>
         <Link className={"bg-yellow-50 text-3xl custom-font-gothic-a1 pt-4 pb-3 pl-8 pr-8"} href={"#s-a-p"}>{"알아보기"}</Link>
