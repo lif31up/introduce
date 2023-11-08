@@ -39,7 +39,7 @@ export default function Scene({}){
 	return(
 		<>
 			<div className={"_scene-space text-white grid align-middle"}>
-				<div className={"justify-items-center font-bold text-6xl"}>
+				<div className={"justify-items-center font-bold "}>
 					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--0"}>{"새로운 방식을 가져오는"}</MovingTypography>
 					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--1"}>{"더 나은 방식을 가져오는"}</MovingTypography>
 				</div>
@@ -47,9 +47,9 @@ export default function Scene({}){
 					<p>{"제 포트폴리오와 마주치셨군요!"}</p>
 					<p>{"이 인연이 의미있는 결과로 이어질 수 있었으면 좋겠습니다."}</p>
 				</div>
-				<div className={"flex gap-8 font-bold custom-mobile-disable"}>
-					<Link className={"custom-bg-black pl-12 pr-12 flex items-center"} href={"#s-a-p"}>{"알아보기"}</Link>
-					<Link className={"custom-bg-black pl-12 pr-12 flex items-center"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
+				<div className={"flex gap-8 font-bold"}>
+					<Link className={"custom-bg-black custom-link-button"} href={"#s-a-p"}>{"알아보기"}</Link>
+					<Link className={"custom-bg-black custom-link-button"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
 				</div>
 			</div>
 			<div className={"fixed top-16 -z-10"}>

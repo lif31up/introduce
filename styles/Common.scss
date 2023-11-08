@@ -47,5 +47,14 @@
   100%{transform: translateX(0); filter: none; opacity: 1;}
 }
 .custom-anime-rtl-slide{animation: swashIn 1s ease-in-out paused;}
-.letter{display: inline-block;}
+.letter{
+  display: inline-block; font-size: 3rem; height: 3rem;
+  @include mobile{
+    font-size: 1.8rem;
+  }
+}
 .space{width: 0.5rem;display: inline-block;}
+.custom-link-button{
+  font-size: 1.25rem;
+  padding: 1rem 2rem 0.8rem 2rem;
+}

@@ -1,8 +1,5 @@
 @import "Library";
-$height: calc(70vh - 10rem);
-@mixin scene-default {
-  width: 100%; height: $height;
-}
+$height: calc(70% - 10rem);
 ._scene{
   width: 100%; height: 100vh;
   position: relative;
@@ -10,12 +7,15 @@ $height: calc(70vh - 10rem);
   animation: color 4s ease-in-out infinite;
 }
 ._scene-space{
-  @include scene-default;
+  display: grid; grid-gap: 2rem;
+  width: 100%; height: fit-content;
   padding: 4rem 12rem 0 12rem;
   @include mobile{
-    grid-gap: 1rem;
+    justify-items: center;
+    grid-gap: 0.5rem;
     padding: 1rem 1rem 0 1rem;
-    p{font-size: 0.8rem; display: inline-block;}
+    p{font-size: 0.8rem; display: inline-block; width: fit-content; padding: 0 1rem 0 1rem;}
+    a{margin-top: 1rem;}
   }
 }
 @keyframes color {
