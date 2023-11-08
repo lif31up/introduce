@@ -108,8 +108,13 @@
   animation: swashIn 1s ease-in-out paused;
 }
 
+.letter {
+  display: inline-block;
+}
+
 .space {
   width: 0.5rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=Common.css.map */

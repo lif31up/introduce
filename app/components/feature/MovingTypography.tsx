@@ -32,7 +32,7 @@ export default function MovingTypography({className,children,animation,id}:Movin
 		else{typography.push(<div key={i} className={["letter",animation].join(" ").trim()}>{children[i]}</div>)}
 	}
 	return(
-	<div className={["typography flex", className].join(" ").trim()} id={id}>
+	<div className={["typography block w-full", className].join(" ").trim()} id={id}>
 		{typography}
 	</div>
 	);

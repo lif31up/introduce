@@ -47,4 +47,5 @@
   100%{transform: translateX(0); filter: none; opacity: 1;}
 }
 .custom-anime-rtl-slide{animation: swashIn 1s ease-in-out paused;}
-.space{width: 0.5rem;}
+.letter{display: inline-block;}
+.space{width: 0.5rem;display: inline-block;}
