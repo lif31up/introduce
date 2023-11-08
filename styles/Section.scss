@@ -68,3 +68,11 @@ a ._content:hover{
     p{font-size: 0.7rem;}
   }
 }
+._desc{
+  font-family: "Gothic A1 Thin",sans-serif;
+
+  @include mobile{
+    display: grid;
+    justify-items: center;
+  }
+}

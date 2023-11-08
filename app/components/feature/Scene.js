@@ -43,9 +43,9 @@ export default function Scene({}){
 					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--0"}>{"새로운 방식을 가져오는"}</MovingTypography>
 					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--1"}>{"더 나은 방식을 가져오는"}</MovingTypography>
 				</div>
-				<div className={"custom-font-gothic-a1-thin justify-center"}>
+				<div className={"_desc"}>
 					<p>{"제 포트폴리오와 마주치셨군요!"}</p>
-					<p>{"이 인연이 의미있는 결과로 이어질 수 있었으면 좋겠습니다."}</p>
+					<p>{"이 인연이 의미있는 결과로 이어질 수 있기를..."}</p>
 				</div>
 				<div className={"flex gap-8 font-bold"}>
 					<Link className={"custom-bg-black custom-link-button"} href={"#s-a-p"}>{"알아보기"}</Link>
