@@ -42,13 +42,13 @@ export default function Scene({}){
 					<h1 className={"mb-2"}>{"새로운 방식을 가져오는"}</h1>
 					<h1 className={""}>{"더 나은 방식을 가져오는"}</h1>
 				</div>
-				<div className={"flex justify-center gap-12 font-bold"}>
+				<div className={"flex justify-center gap-12 font-bold custom-mobile-disable"}>
 					<Link className={"custom-rounded custom-bg-black flex items-center"} href={"#s-a-p"}>{"알아보기"}</Link>
 					<Link className={"custom-rounded custom-bg-black flex items-center"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
 				</div>
 			</div>
 			<div className={"fixed top-16 -z-10"}>
-				<div className={"_scene custom-mobile-disable"} ref={refContainer} id={"scene"}/>
+				<div className={"_scene"} ref={refContainer} id={"scene"}/>
 			</div>
 		</>
 	);
