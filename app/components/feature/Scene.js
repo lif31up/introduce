@@ -3,6 +3,7 @@ import * as THREE from "three";
 import {useEffect, useRef} from "react";
 import "@/styles/Scene.css";
 import Link from "next/link";
+import MovingTypography from "@/app/components/feature/MovingTypography";
 
 export default function Scene({}){
 	const refContainer = useRef(null);
@@ -38,9 +39,9 @@ export default function Scene({}){
 	return(
 		<>
 			<div className={"_scene-space text-white grid align-middle"}>
-				<div className={"text-6xl justify-items-center font-bold"}>
-					<h1 className={"mb-2"}>{"새로운 방식을 가져오는"}</h1>
-					<h1 className={""}>{"더 나은 방식을 가져오는"}</h1>
+				<div className={"justify-items-center font-bold text-6xl"}>
+					<MovingTypography className={""} animation={"custom-anime-swash-in"} id={"tp--0"}>{"새로운 방식을 가져오는"}</MovingTypography>
+					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--1"}>{"더 나은 방식을 가져오는"}</MovingTypography>
 				</div>
 				<div className={"custom-font-gothic-a1-thin justify-center"}>
 					<p>{"제 포트폴리오와 마주치셨군요!"}</p>

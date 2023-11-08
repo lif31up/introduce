@@ -29,7 +29,8 @@
   overflow-x: hidden;
   display: flex;
   width: 100%;
-  height: fit-content;
+  height: max-content;
+  overflow-y: hidden;
   padding-top: 4rem;
   padding-bottom: 2rem;
 }

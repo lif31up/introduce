@@ -29,7 +29,6 @@ function _WorkingOnTable({}){
 	const workingOns:Array<React.ReactNode> = [];
 	// @ts-ignore
 	data.forEach((node,index)=>{
-		console.log(node);
 		if(typeof node === "object"){
 			workingOns.push(<WorkingOn subject={node.h1} desc={node.p} key={index}/>);
 		}//don't add none object instance

@@ -108,4 +108,8 @@
   animation: swashIn 1s ease-in-out paused;
 }
 
+.space {
+  width: 0.5rem;
+}
+
 /*# sourceMappingURL=Common.css.map */
