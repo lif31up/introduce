@@ -40,7 +40,7 @@ export default function Scene({}){
 		<>
 			<div className={"_scene-space text-white grid align-middle"}>
 				<div className={"justify-items-center font-bold text-6xl"}>
-					<MovingTypography className={""} animation={"custom-anime-swash-in"} id={"tp--0"}>{"새로운 방식을 가져오는"}</MovingTypography>
+					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--0"}>{"새로운 방식을 가져오는"}</MovingTypography>
 					<MovingTypography className={""} animation={"custom-anime-vanish-in"} id={"tp--1"}>{"더 나은 방식을 가져오는"}</MovingTypography>
 				</div>
 				<div className={"custom-font-gothic-a1-thin justify-center"}>
