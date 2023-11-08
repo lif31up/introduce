@@ -41,6 +41,7 @@
 .custom-anime-swash-in{animation: boingInUp 1s ease-in-out paused;}
 .custom-anime-vanish-in{animation: vanishIn 1s ease-in-out paused;}
 .custom-anime-ltr-slide{animation: ltr-slide 1s ease-in-out paused;}
+.custom-bg-black{background: rgba(29, 31, 33, 1);}
 @keyframes ltr-slide {
   0%{transform: translateX(-5rem); filter: blur(2px); opacity: 0;}
   100%{transform: translateX(0); filter: none; opacity: 1;}

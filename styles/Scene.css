@@ -5,23 +5,28 @@
 /*PSEUDO*/
 /*FADE*/
 ._scene {
+  width: 100%;
+  height: 100vh;
   position: relative;
+  overflow: hidden;
+  animation: color 4s ease-in-out infinite;
+}
+
+._scene-space {
   width: 100%;
   height: calc(70vh - 10rem);
-  overflow: hidden;
-  padding: 0 15% 0 15%;
-  animation: color 4s linear infinite;
+  padding: 4rem 15% 0 15%;
 }
 
 @keyframes color {
   0% {
-    filter: blur(30px);
+    filter: blur(100px);
   }
   50% {
-    filter: blur(40px) drop-shadow(16px 16px 20px red) invert(75%);
+    filter: blur(130px) drop-shadow(16px 16px 20px red) invert(75%);
   }
   100% {
-    filter: blur(30px);
+    filter: blur(100px);
   }
 }
 

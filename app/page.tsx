@@ -17,21 +17,7 @@ export default function Home() {
   <main>
     <title>명환의 포트폴리오</title>
     <TopBar/>
-    <div className={"fixed top-8 left-20 -z-10"}>
-      <Scene/>
-    </div>
-    <div className={"_scene"}/>
-    <div className={"w-full h-fit top-16 absolute px-48 pt-16 custom-mobile-disable text-white"}>
-      <div className={"text-5xl gap-4 justify-items-center grid custom-font-gothic-a1 font-bold"}>
-        <h1 className={"font-bold"}>{"다음 단계로 넘어서는"}</h1>
-        <h1 className={"font-bold"}>{"프로그래머 겸 디자이너"}</h1>
-        <p className={"text-2xl text-neutral-200 flex custom-font-gothic-a1 font-normal"}>{"제 포트폴리오와 마주치셨군요."}<br/>{"이 인연이 의미를 가질 수 있을까요?"}</p>
-      </div>
-      <div className={"w-full flex justify-center gap-8 mt-8 text-black"}>
-        <Link className={"bg-yellow-50 text-3xl custom-font-gothic-a1 pt-4 pb-3 pl-8 pr-8"} href={"#s-a-p"}>{"알아보기"}</Link>
-        <Link className={"bg-yellow-50 text-3xl custom-font-gothic-a1 pt-4 pb-3 pl-8 pr-8"} href={"mailto:nulranlcn9991@gmail.com"}>{"연락하기"}</Link>
-      </div>
-    </div>
+    <Scene/>
     <div className={"_grid-2xl"} id={"s-a-p"}>
       <div className={"_grid-2xl-article"}>
         <div className={"_trans_content pt-3"}>

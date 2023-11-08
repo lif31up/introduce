@@ -1,13 +1,20 @@
 @import "Library";
+$height: calc(70vh - 10rem);
+@mixin scene-default {
+  width: 100%; height: $height;
+}
 ._scene{
+  width: 100%; height: 100vh;
   position: relative;
-  width: 100%; height: calc(70vh - 10rem);
   overflow: hidden;
-  padding: 0 15% 0 15%;
-  animation: color 4s linear infinite;
+  animation: color 4s ease-in-out infinite;
+}
+._scene-space{
+  @include scene-default;
+  padding: 4rem 15% 0 15%;
 }
 @keyframes color {
-  0%{filter: blur(30px);}
-  50%{filter: blur(40px) drop-shadow(16px 16px 20px red) invert(75%);;}
-  100%{filter: blur(30px);}
+  0%{filter: blur(100px);}
+  50%{filter: blur(130px) drop-shadow(16px 16px 20px red) invert(75%);;}
+  100%{filter: blur(100px);}
 }

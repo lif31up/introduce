@@ -88,6 +88,10 @@
   animation: ltr-slide 1s ease-in-out paused;
 }
 
+.custom-bg-black {
+  background: rgb(29, 31, 33);
+}
+
 @keyframes ltr-slide {
   0% {
     transform: translateX(-5rem);
