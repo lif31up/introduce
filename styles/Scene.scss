@@ -15,6 +15,7 @@ $height: calc(70vh - 10rem);
   @include mobile{
     grid-gap: 1rem;
     padding: 1rem 1rem 0 1rem;
+    p{font-size: 0.8rem; display: inline-block;}
   }
 }
 @keyframes color {
