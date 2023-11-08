@@ -15,7 +15,7 @@
 ._scene-space {
   width: 100%;
   height: calc(70vh - 10rem);
-  padding: 4rem 15% 0 15%;
+  padding: 4rem 12rem 0 12rem;
 }
 @media only screen and (max-width: 500px) {
   ._scene-space {

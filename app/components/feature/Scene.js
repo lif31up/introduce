@@ -37,14 +37,18 @@ export default function Scene({}){
 	},[false]);
 	return(
 		<>
-			<div className={"_scene-space text-white grid justify-center align-middle"}>
+			<div className={"_scene-space text-white grid align-middle"}>
 				<div className={"text-6xl justify-items-center font-bold"}>
 					<h1 className={"mb-2"}>{"새로운 방식을 가져오는"}</h1>
 					<h1 className={""}>{"더 나은 방식을 가져오는"}</h1>
 				</div>
-				<div className={"flex justify-center gap-12 font-bold custom-mobile-disable"}>
-					<Link className={"custom-rounded custom-bg-black flex items-center"} href={"#s-a-p"}>{"알아보기"}</Link>
-					<Link className={"custom-rounded custom-bg-black flex items-center"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
+				<div className={"custom-font-gothic-a1-thin justify-center"}>
+					<p>{"제 포트폴리오와 마주치셨군요!"}</p>
+					<p>{"이 인연이 의미있는 결과로 이어질 수 있었으면 좋겠습니다."}</p>
+				</div>
+				<div className={"flex gap-8 font-bold custom-mobile-disable"}>
+					<Link className={"custom-bg-black pl-12 pr-12 flex items-center"} href={"#s-a-p"}>{"알아보기"}</Link>
+					<Link className={"custom-bg-black pl-12 pr-12 flex items-center"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
 				</div>
 			</div>
 			<div className={"fixed top-16 -z-10"}>
