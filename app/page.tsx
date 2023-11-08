@@ -8,9 +8,7 @@ import Image from "next/image";
 import Footer from "./components/common/Footer";
 import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
-// @ts-ignore
 import Scene from "@/app/components/feature/Scene";
-import Link from "next/link";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
 export default function Home() {
   return (

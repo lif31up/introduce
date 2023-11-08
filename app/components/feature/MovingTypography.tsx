@@ -11,7 +11,7 @@ export default function MovingTypography({className,children,animation,id}:Movin
 			// @ts-ignore
 			entries.forEach((entry,observer)=>{
 				if(entry.isIntersecting){
-					const letters = typography.querySelectorAll(".letter"); console.log(letters);
+					const letters = typography.querySelectorAll(".letter");
 					letters.forEach((element,index)=>{
 						setTimeout(()=>{
 							// @ts-ignore
