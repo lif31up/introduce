@@ -47,7 +47,7 @@ export default function Home() {
           {h1:"XD",p:"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다.",src:"/assets/images/xd.webp"}
         ]}</StackTable>
         <div className={"_trans_content pt-2"}>
-          <h1 className={"text-3xl"}>{"협업"}</h1>
+          <h1 className={"text-3xl"}>{"소프트 스킬"}</h1>
         </div>
         <StackTable id={"st--2"}>{[
           {h1:"학습",p:"새로운 지식을 습득할 때, 재미를 느낍니다. 최신 정보를 찾아보는데 주저함이 없습니다.",src:"/assets/images/coworking_informative.webp"},
