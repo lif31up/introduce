@@ -61,7 +61,7 @@ export default function Home() {
         <WorkingOnTable/>
       </div>
       <div className={"_grid-2xl-article"}>
-        <Profile/>
+        <Profile desktop={true}/>
         <div className={"_trans_content pt-3 custom-desktop-disable"}>
           <h1 className={"text-3xl"}>{"프로젝트"}</h1>
         </div>

@@ -1,21 +1,24 @@
 import "@/styles/Common.css";
 import Image from "next/image";
 import Link from "next/link";
-export default function Profile({}){
+export default function Profile({desktop}:{desktop:boolean}){
+
 	return(
-	<div className={"_gray_content custom-mobile-disable"}>
-		<div className={"flex p-4 items-center"}>
-			<div className={"w-36 h-36 relative custom-sphere overflow-hidden"}>
-				<Image src={"/assets/images/profile.webp"} alt={""} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
+	<div className={["_gray_content p-4 flex",desktop ? "custom-mobile-disable":"custom-desktop-disable"].join(" ").trim()}>
+		<div className={"absolute"}>
+			<div className={"relative h-32 w-32 custom-sphere overflow-hidden"}>
+				<Image src={"/assets/images/profile.webp"} alt={"profile_img"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
 			</div>
-			<div className={"pl-4"}>
-				<div className={"flex items-end"}>
-					<h1 className={"text-4xl"}>한명환</h1>
-					<p className={"custom-text-08 custom-font-gothic-a1-thin pb-1 pl-1"}>현재 성남 거주 중</p>
-				</div>
-				<p className={"custom-text-08 custom-font-gothic-a1-thin"}>개방적, 탐구적, 객관적, 친화적</p>
-				<p className={"custom-font-gothic-a1-thin pb-2"}>연세대학교 미래캠퍼스, 정보통신학과</p>
-				<Link className={"custom-rounded shadow-black shadow-2xl bg-purple-700 text-center inline-block hover:bg-purple-800"} href={"https://github.com/lif31up"} target={"_blank"}>GITHUB</Link>
+		</div>
+		<div className={"h-32 w-32"}/>
+		<div className={"pl-4 pt-1"}>
+			<h1 className={"text-2xl custom-font-gothic-a1"}>{"한명환"}</h1>
+			<p className={"custom-font-gothic-a1-regular text-neutral-300"}>{"연세대학교"}<abbr className={"text-white"}>{" 정보통신학과 "}</abbr></p>
+			<p className={"custom-font-gothic-a1-regular text-neutral-300"}><abbr className={"text-white"}>{"성남"}</abbr>{"에서 거주 중"}</p>
+			<div className={"flex gap-2 mt-2"}>
+				<Link className={"block"} href={"https://www.wanted.co.kr/community/profile/37S8yhNPdWGwoLsqCu8uu7"} target={"_blank"}>{"원티드"}</Link>
+				<Link className={"block"} href={"https://www.rocketpunch.com/@nulranlcns9991"} target={"_blank"}>{"로켓펀치"}</Link>
+				<Link className={"block"} href={"https://join.slack.com/t/personalspace-hng4971/shared_invite/zt-25whyi2gn-4QPq8CLXi_GKD3qjNZSV0w"} target={"_blank"}>{"슬랙"}</Link>
 			</div>
 		</div>
 	</div>
