@@ -66,7 +66,7 @@ export default function Home() {
           <h1 className={"text-3xl"}>{"프로젝트"}</h1>
         </div>
         <Project h1={"무한 스크롤링"}
-                 p={"무한 스크롤을 구현하기 위해, Fake Store API를 빌려 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 React Query와 Intersection API 사용을 숙달했습니다."}
+                 p={"무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다."}
                  src={"/assets/images/shoppingmall.webp"} id={"pj-0"} className={"custom-anime-rtl-slide"}
                  href={"https://shopping-mall-rust.vercel.app/"}/>
         <Project h1={"포트폴리오"}
@@ -78,7 +78,7 @@ export default function Home() {
                  src={"/assets/images/neuralink.webp"} id={"pj-2"} className={"custom-anime-rtl-slide"}
                  href={"https://neuralink-redesign.vercel.app/"}/>
         <Project h1={"자료구조"}
-                 p={"C 언어를 이용해서 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL 트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다."}
+                 p={"C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다."}
                  src={"/assets/images/data_structure.webp"} id={"pj-3"} className={"custom-anime-rtl-slide"}
                  href={"https://github.com/lif31up/Data-Structures-and-Algorithms"}/>
         <Project h1={"웹 디자인 블로그"}
