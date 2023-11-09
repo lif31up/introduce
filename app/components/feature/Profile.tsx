@@ -15,7 +15,7 @@ export default function Profile({}){
 				</div>
 				<p className={"custom-text-08 custom-font-gothic-a1-thin"}>개방적, 탐구적, 객관적, 친화적</p>
 				<p className={"custom-font-gothic-a1-thin pb-2"}>연세대학교 미래캠퍼스, 정보통신학과</p>
-				<Link className={"custom-rounded shadow-black shadow-2xl bg-purple-700 text-center inline-block"} href={"https://github.com/lif31up"} target={"_blank"}>GITHUB</Link>
+				<Link className={"custom-rounded shadow-black shadow-2xl bg-purple-700 text-center inline-block hover:bg-purple-800"} href={"https://github.com/lif31up"} target={"_blank"}>GITHUB</Link>
 			</div>
 		</div>
 	</div>
