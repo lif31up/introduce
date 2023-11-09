@@ -74,7 +74,7 @@ export default function Home() {
                  src={"/assets/images/portfolio.webp"} id={"pj-1"} className={"custom-anime-rtl-slide"}
                  href={"https://github.com/lif31up/introduce"}/>
         <Project h1={"뉴럴링크"}
-                 p={"현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다."}
+                 p={"제가 좋아하는 엔터프라이즈 중 하나인 뉴럴링크의 페이지를 직접 다시 디자인해보았습니다. 이 과정에서 과감한 디자인 표현에 대해 배우고 이를 사용하려면 세삼한 주의가 필요하다는 몇 가지 교훈을 얻었습니다."}
                  src={"/assets/images/neuralink.webp"} id={"pj-2"} className={"custom-anime-rtl-slide"}
                  href={"https://neuralink-redesign.vercel.app/"}/>
         <Project h1={"자료구조"}
