@@ -29,7 +29,7 @@ export default function Project({h1,p,src,id,className,href}:ProjectProps){
 				<div className={"w-full h-80 relative overflow-hidden rounded-2xl gray"}>
 					<Image src={src} alt={"img"} layout={"fill"} objectFit={"contain"} objectPosition={"center"}/>
 				</div>
-				<p className={"custom-font-gothic-a1-thin mt-4"}>{p}</p>
+				<p className={"custom-font-gothic-a1-regular mt-4 leading-7 tracking-wide"}>{p}</p>
 			</div>
 		</div>
 	</a>

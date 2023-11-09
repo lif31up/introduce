@@ -81,6 +81,10 @@ export default function Home() {
                  p={"C 언어를 이용해서 AVL, B-Tree, Linked List, Queue, Stack, Graph, Set 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다."}
                  src={"/assets/images/data_structure.webp"} id={"pj-3"} className={"custom-anime-rtl-slide"}
                  href={"https://github.com/lif31up/Data-Structures-and-Algorithms"}/>
+        <Project h1={"웹 디자인 블로그"}
+                 p={"웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다."}
+                 src={"/assets/images/web_design_blog.webp"} id={"pj-4"} className={"custom-anime-rtl-slide"}
+                 href={"https://app.gitbook.com/o/KI4IDh5x0v5t4NUnHwuM/s/TNBCWJ75nNrxsc7Cvojb/"}/>
         <div className={"_trans_content pt-3"}>
           <h1 className={"text-3xl"}>{"실험실"}</h1>
         </div>

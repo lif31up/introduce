@@ -16,7 +16,7 @@ export default function MovingTypography({className,children,animation,id}:Movin
 						setTimeout(()=>{
 							// @ts-ignore
 							element.style.animationPlayState = "running";
-						},index * 500);
+						},index * 100);
 					});
 					return()=>{observerRef.current.disconnect();};
 				}//if
