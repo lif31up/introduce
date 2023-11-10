@@ -17,6 +17,12 @@ $height: calc(70% - 10rem);
     p{font-size: 0.8rem; width: fit-content; padding: 0 1rem 0 1rem;}
     a{margin-top: 1rem;}
   }
+  @include tablet{
+    padding: 4rem 2rem 0 2rem;
+  }
+  @include large{
+    padding: 4rem 3rem 0 3rem;
+  }
 }
 @keyframes color {
   0%{filter: blur(100px);}
