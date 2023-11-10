@@ -85,6 +85,10 @@ export default function Home() {
                  p={"웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다."}
                  src={"/assets/images/web_design_blog.webp"} id={"pj-4"} className={"custom-anime-rtl-slide"}
                  href={"https://renoki1s-blog.gitbook.io/undefined/"}/>
+        <Project h1={"로고 디자인"}
+                 p={"제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다."}
+                 src={"/assets/images/logo_design.webp"} id={"pj-5"} className={"custom-anime-rtl-slide"}
+                 href={"https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile"}/>
         <div className={"_trans_content pt-3"}>
           <h1 className={"text-3xl"}>{"실험실"}</h1>
         </div>
