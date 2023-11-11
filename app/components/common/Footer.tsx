@@ -22,7 +22,7 @@ export default function Footer({}){
 				<Link className={"block"} href={"mailto:nulranlcns9991@gmail.com"}>이메일</Link>
 				<Link className={"block"} href={"https://join.slack.com/t/personalspace-hng4971/shared_invite/zt-25whyi2gn-4QPq8CLXi_GKD3qjNZSV0w"}>슬랙</Link>
 			</div>
-			<Link className={"inline-block bg-white text-black custom-desktop-disable p-2"} href={"#top"}>올라가기⤴</Link>
+			<Link className={"block w-fit h-fit custom-link-button custom-desktop-disable bg-white text-black font-bold mt-16"} href={"#top"}>올라가기</Link>
 		</div>
 		<div className={"custom-footer-col py-4 px-4"}>
 			<p className={"custom-font-gothic-a1-thin custom-text-08 text-neutral-400"}>{"This page is not yet fully published after 2023/11/03. 해당 사이트는 2023/11/03에 공개되었으며 아직 완전히 배포된 것은 아닙니다."}</p>
