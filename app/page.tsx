@@ -11,6 +11,7 @@ import AnimationContainerTable from "@/app/components/common/AnimationContainerT
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
 
+// GOOGLE ANALYTICS
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
