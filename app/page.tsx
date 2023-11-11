@@ -10,34 +10,12 @@ import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
-
-// GOOGLE ANALYTICS
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBO81lI2Q1Jm0p-mO28UP9rq-c36gY8o6g",
-  authDomain: "webp-1628f.firebaseapp.com",
-  projectId: "webp-1628f",
-  storageBucket: "webp-1628f.appspot.com",
-  messagingSenderId: "238819752790",
-  appId: "1:238819752790:web:198cf02c7431151b72b4f7",
-  measurementId: "G-K73MJ55VCH"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
+import Firebase from "@/app/components/common/Firebase";
 export default function Home() {
   return (
   <main>
     <title>명환의 포트폴리오</title>
+    <Firebase/>
     <TopBar/>
     <Scene/>
     <div className={"_grid-2xl"} id={"s-a-p"}>
