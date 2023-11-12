@@ -6,9 +6,9 @@ export default function Profile({desktop}:{desktop:boolean}){
 	return(
 	<div className={["_gray_content p-4 flex",desktop ? "custom-mobile-disable":"custom-desktop-disable"].join(" ").trim()}>
 		<div className={"absolute"}>
-			<div className={"relative h-32 w-32 custom-sphere overflow-hidden"}>
-				<Image src={"/assets/images/profile.webp"} alt={"profile_img"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
-			</div>
+			<Image src={"/assets/images/profile.webp"} alt={"profile.webp"}
+						 width={"0"} height={"0"} sizes={"100vw"}
+						 className={"w-32 h-32 custom-sphere overflow-hidden object-cover"}/>
 		</div>
 		<div className={"h-32 w-32"}/>
 		<div className={"pl-4 pt-1"}>

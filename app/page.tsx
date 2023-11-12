@@ -10,12 +10,11 @@ import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
-import Firebase from "@/app/components/common/Firebase";
+
 export default function Home() {
   return (
   <main>
     <title>명환의 포트폴리오</title>
-    <Firebase/>
     <TopBar/>
     <Scene/>
     <div className={"_grid-2xl"} id={"s-a-p"}>
@@ -38,9 +37,9 @@ export default function Home() {
           <h1 className={"text-3xl"}>{"디자인"}</h1>
         </div>
         <div className={"_trans_content"}>
-          <div className={"w-full h-96"}>
-            <Image src={"/assets/images/break_1.gif"} alt={""} layout={"fill"} objectPosition={"center"} objectFit={"cover"}/>
-          </div>
+          <Image src={"/assets/images/break_1.gif"} alt={"break_1.gif"}
+                 width={"0"} height={"0"} sizes={"100vw"}
+                 className={"w-full h-96 object-cover"}/>
         </div>
         <TagTable color={"bg-blue-900"}>{["Illustrator","Photoshop","XD","Ableton Live","VVVV","Simple Video Editing","Three.js","Blender"]}</TagTable>
         <StackTable id={"st--3"}>{[

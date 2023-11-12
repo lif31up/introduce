@@ -36,9 +36,9 @@ function Stack({h1,p,src,id}:StackProps){
 	<div className={"_content flex p-4 custom-anime-ltr-slide"} id={id}>
 		<div className={"h-16"}/>
 		<div className={"absolute"}>
-			<div className={"w-16 h-16 relative overflow-hidden rounded"}>
-				<Image src={src} alt={"img"} layout={"fill"} objectFit={"cover"} objectPosition={"center"}/>
-			</div>
+			<Image src={src} alt={"img"}
+						 width={"0"} height={"0"} sizes={"100vw"}
+						 className={"w-16 h-16 rounded overflow-hidden object-cover"}/>
 		</div>
 		<div className={"ml-20"}>
 			<h1 className={"custom-font-gothic-a1"}>{h1}</h1>
