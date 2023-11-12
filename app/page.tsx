@@ -16,8 +16,8 @@ const Projects = lazy(() => import("@/app/components/feature/Projects"));
 export default function Home() {
   return (
   <main>
-    <Firebase/>
     <title>명환의 포트폴리오</title>
+    <Firebase/>
     <TopBar/>
     <Scene/>
     <div className={"_grid-2xl"} id={"s-a-p"}>
