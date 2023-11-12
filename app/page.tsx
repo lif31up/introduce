@@ -10,10 +10,12 @@ import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
+import Firebase from "@/app/components/feature/Firebase";
 
 export default function Home() {
   return (
   <main>
+    <Firebase/>
     <title>명환의 포트폴리오</title>
     <TopBar/>
     <Scene/>

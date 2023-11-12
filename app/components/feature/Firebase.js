@@ -16,7 +16,7 @@ export default function Firebase({}){
 		};
 		const app = initializeApp(firebaseConfig);
 		const analytics = getAnalytics(app);
-		logEvent(analytics, "pag_vew");
+		logEvent(analytics, "page_view");
 	},[false]);
 	return(<div></div>);
 }
