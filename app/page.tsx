@@ -57,7 +57,7 @@ export default function Home() {
           {h1:"의사소통",p:"사람들과 협업하는 것을 즐깁니다. 새로운 사람을 만나고 대화 나누는 걸 즐깁니다.",src:"/assets/images/coworking_communicative.webp"},
           {h1:"문제해결",p:"문제를 해결하고 풀어나갈 때, 과업을 온전히 책임을 지고 있다고 느낍니다.",src:"/assets/images/coworking_problemsolver.webp"},
         ]}</StackTable>
-        <TagTable color={"bg-neutral-600"}>{["WebStorm","EMACS","Visual Studio","Notion","Slack","Figma","GitHub","Git"]}</TagTable>
+        <TagTable color={"bg-neutral-600"}>{["WebStorm","EMACS","Visual Studio","Notion","Slack","Figma","GitHub","Git","ZeroHeight"]}</TagTable>
         <div className={"_trans_content"}>
           <h1 className={"text-3xl"}>{"진행 중"}</h1>
         </div>
