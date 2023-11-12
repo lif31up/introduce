@@ -1,10 +1,13 @@
 'use client';
 import {useEffect} from "react";
-import {logEvent} from "firebase/analytics";
-import analytics from "@/app/firebase";
+import {initializeApp} from "firebase/app";
+import {logEvent, getAnalytics} from "firebase/analytics";
+import firebaseConfig from "@/app/firebase";
 
 export default function Firebase({}){
 	useEffect(()=>{
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
 		logEvent(analytics,"page_view",{
 			page_path:window.location.pathname,
 			page_title:document.title,
