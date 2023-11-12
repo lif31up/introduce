@@ -29,7 +29,7 @@ export default function Home() {
           {h1:"타입스크립트",p:"엄격한 문법도 막힘없이 읽어 확장, 작성할 수 있습니다.",src:"/assets/images/typescript_icon.webp"},
           {h1:"SASS",p:"SASS를 통해 반응형 스타일시트를 만드는데 도가 텄습니다.",src:"/assets/images/sass_icon.webp"},
         ]}</StackTable>
-        <TagTable color={"bg-teal-600"}>{["Tailwind CSS","CSS Master","REACT QUERY","RECOIL","DOM","HTML with HTML5","HOOK Master"]}</TagTable>
+        <TagTable color={"bg-teal-600"}>{["Tailwind CSS","CSS Master","REACT QUERY","RECOIL","DOM","HTML with HTML5","HOOK Master","Firebase"]}</TagTable>
         <StackTable id={"st--1"}>{[
           {h1:"넥스트",p:"CSR 및 SSR 패턴화, 라우팅, 이미지 최적화 등을 사용할 줄 압니다.",src:"/assets/images/next_icon.webp"},
           {h1:"리액트",p:"후크, 상태를 모두 이해하고 있습니다. 리액트 쿼리, 리코일에도 이미 익숙합니다.",src:"/assets/images/react_icon.webp"},
