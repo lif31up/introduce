@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className={"_trans_content"}>
           <Image src={"/assets/images/break_1.gif"} alt={"break_1.gif"}
-                 width={"0"} height={"0"} sizes={"100vw"}
+                 width={"0"} height={"0"} sizes={"100vw"} loading={"lazy"}
                  className={"w-full h-96 object-cover"}/>
         </div>
         <TagTable color={"bg-blue-900"}>{["Illustrator","Photoshop","XD","Ableton Live","VVVV","Simple Video Editing","Three.js","Blender"]}</TagTable>
