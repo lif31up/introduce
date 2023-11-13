@@ -22,7 +22,7 @@ async function fetcher(){
 function _WorkingOnTable({}){
 	const [loading,setLoading] = useState(true);
 	const {isLoading,error,data} = useQuery("workingOn.json",fetcher,{
-		staleTime:500000000,
+		staleTime:0,
 		onSuccess:()=>{setLoading(false);}
 	});
 	if(loading){return(<>Loading...</>);}
