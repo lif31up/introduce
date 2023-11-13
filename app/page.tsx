@@ -3,12 +3,12 @@ import TopBar from "@/app/components/common/TopBar";
 import Profile from "@/app/components/feature/Profile";
 import StackTable from "@/app/components/feature/StackTable";
 import TagTable from "@/app/components/common/TagTable";
-import Image from "next/image";
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
 import Firebase from "@/app/components/feature/Firebase";
 import {lazy, Suspense} from "react";
 import Projects from "@/app/components/feature/Projects";
+import VideoPlayer from "@/app/components/feature/VideoPlayer";
 // @ts-ignore
 const Footer = lazy(() => import("@/app/components/common/Footer"));
 const Lab = lazy(() => import("@/app/components/feature/Lab"));
@@ -39,9 +39,7 @@ export default function Home() {
           <h1 className={"text-3xl"}>{"디자인"}</h1>
         </div>
         <div className={"_trans_content"}>
-          <Image src={"/assets/images/break_1.gif"} alt={"break_1.gif"}
-                 width={"0"} height={"0"} sizes={"100vw"} loading={"lazy"}
-                 className={"w-full h-96 object-cover"}/>
+          <VideoPlayer/>
         </div>
         <TagTable color={"bg-blue-900"}>{["Illustrator","Photoshop","XD","Ableton Live","VVVV","Simple Video Editing","Three.js","Blender"]}</TagTable>
         <StackTable id={"st--2"}>{[
