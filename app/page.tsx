@@ -22,7 +22,7 @@ export default function Home() {
     <div className={"_grid-2xl"} id={"s-a-p"}>
       <div className={"_grid-2xl-article"}>
         <div className={"_trans_content pt-3"}>
-          <h1 className={"text-3xl"}>{"프론트엔드"}</h1>
+          <h1 className={"text-3xl custom-font-gothic-a1"}>{"프론트엔드"}</h1>
         </div>
         <StackTable id={"st--0"}>{[
           {h1:"자바스크립트",p:"DOM 조작과 자체 API, 약속체, 상속과 메소드에 대해 정확한 지식을 가지고 있습니다.",src:"/assets/images/javascript_icon.webp"},
@@ -36,7 +36,7 @@ export default function Home() {
           {h1:"버셀",p:"이 페이지도 버셀을 통해 배포되는 중입니다. 이를 통해 프로토타입을 테스트할 수 있습니다.",src:"/assets/images/vercel_icon.webp"},
         ]}</StackTable>
         <div className={"_trans_content pt-2"}>
-          <h1 className={"text-3xl"}>{"디자인"}</h1>
+          <h1 className={"text-3xl custom-font-gothic-a1"}>{"디자인"}</h1>
         </div>
         <div className={"_trans_content"}>
           <VideoPlayer/>
@@ -48,7 +48,7 @@ export default function Home() {
           {h1:"XD",p:"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다.",src:"/assets/images/xd.webp"}
         ]}</StackTable>
         <div className={"_trans_content pt-2"}>
-          <h1 className={"text-3xl"}>{"소프트 스킬"}</h1>
+          <h1 className={"text-3xl custom-font-gothic-a1"}>{"소프트 스킬"}</h1>
         </div>
         <StackTable id={"st--3"}>{[
           {h1:"학습",p:"새로운 지식을 습득할 때, 재미를 느낍니다. 최신 정보를 찾아보는데 주저함이 없습니다.",src:"/assets/images/coworking_informative.webp"},
@@ -57,18 +57,18 @@ export default function Home() {
         ]}</StackTable>
         <TagTable color={"bg-neutral-600"}>{["WebStorm","EMACS","Visual Studio","Notion","Slack","Figma","GitHub","Git","ZeroHeight"]}</TagTable>
         <div className={"_trans_content"}>
-          <h1 className={"text-3xl"}>{"진행 중"}</h1>
+          <h1 className={"text-3xl custom-font-gothic-a1"}>{"진행 중"}</h1>
         </div>
         <WorkingOnTable/>
       </div>
       <div className={"_grid-2xl-article"}>
         <Profile desktop={true}/>
         <div className={"_trans_content pt-3 custom-desktop-disable"}>
-          <h1 className={"text-3xl"}>{"프로젝트"}</h1>
+          <h1 className={"text-3xl custom-font-gothic-a1"}>{"프로젝트"}</h1>
         </div>
         <Projects/>
         <div className={"_trans_content pt-3"}>
-          <h1 className={"text-3xl"}>{"실험실"}</h1>
+          <h1 className={"text-3xl custom-font-gothic-a1"}>{"실험실"}</h1>
         </div>
         <Suspense fallback={<div>Loading</div>}>
           <Lab/>
