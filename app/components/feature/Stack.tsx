@@ -31,7 +31,7 @@ export default function Stack({h1,p,src,id}:StackProps){
 		<div className={"h-16"}/>
 		<div className={"absolute"}>
 			<Image src={src} alt={"img"}
-						 width={"60"} height={"60"} sizes={"60px"}
+						 width={"54"} height={"54"} sizes={"54px"}
 						 className={"w-16 h-16 rounded overflow-hidden object-cover"}/>
 		</div>
 		<div className={"ml-20"}>

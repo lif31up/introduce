@@ -7,7 +7,7 @@ export default function Profile({desktop}:{desktop:boolean}){
 	<div className={["_gray_content p-4 flex",desktop ? "custom-mobile-disable":"custom-desktop-disable"].join(" ").trim()}>
 		<div className={"absolute"}>
 			<Image src={"/assets/images/profile.webp"} alt={"profile.webp"}
-						 width={"30"} height={"30"} sizes={"10vw"}
+						 width={"118"} height={"118"} sizes={"118px"}
 						 className={"w-32 h-32 custom-sphere overflow-hidden object-cover"}/>
 		</div>
 		<div className={"h-32 w-32"}/>
