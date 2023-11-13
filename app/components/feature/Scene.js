@@ -48,8 +48,8 @@ export default function Scene({}){
 					<p>{"이 인연이 의미있는 결과로 이어질 수 있기를..."}</p>
 				</div>
 				<div className={"flex gap-8 font-bold"}>
-					<Link className={"custom-bg-black custom-link-button"} href={"#s-a-p"}>{"알아보기"}</Link>
-					<Link className={"bg-purple-700 custom-link-button hover:bg-purple-800"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
+					<Link className={"custom-bg-black custom-link-button custom-box-shadow"} href={"#s-a-p"}>{"알아보기"}</Link>
+					<Link className={"bg-purple-700 custom-link-button hover:bg-purple-800 custom-box-shadow"} href={"mailto:nulranlcns9991@gmail.com"}>{"연락하기"}</Link>
 				</div>
 			</div>
 			<div className={"fixed top-16 -z-10"}>
