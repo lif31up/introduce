@@ -9,6 +9,7 @@ import Firebase from "@/app/components/feature/Firebase";
 import {lazy, Suspense} from "react";
 import Projects from "@/app/components/feature/Projects";
 import VideoPlayer from "@/app/components/feature/VideoPlayer";
+import Caption from "@/app/components/feature/Caption";
 // @ts-ignore
 const Footer = lazy(() => import("@/app/components/common/Footer"));
 const Lab = lazy(() => import("@/app/components/feature/Lab"));
@@ -63,6 +64,7 @@ export default function Home() {
       </div>
       <div className={"_grid-2xl-article"}>
         <Profile desktop={true}/>
+        <Caption/>
         <div className={"_trans_content pt-3 custom-desktop-disable"}>
           <h1 className={"text-3xl custom-font-gothic-a1"}>{"프로젝트"}</h1>
         </div>
