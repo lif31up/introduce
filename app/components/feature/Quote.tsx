@@ -8,7 +8,7 @@ export default function Quote({src,h1,p}:QuoteProps){
 		<div className={"h-16"}/>
 		<div className={"absolute"}>
 			<Image src={src} alt={"quote_img.webp"}
-						 width={"0"} height={"0"} sizes={"100vw"}
+						 width={"16"} height={"16"} sizes={"16px"}
 						 className={"w-16 h-16 custom-sphere overflow-hidden object-cover"}/>
 		</div>
 		<div className={"ml-20 w-"}>

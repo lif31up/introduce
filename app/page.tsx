@@ -4,15 +4,15 @@ import Profile from "@/app/components/feature/Profile";
 import StackTable from "@/app/components/feature/StackTable";
 import TagTable from "@/app/components/common/TagTable";
 import Image from "next/image";
-import Footer from "./components/common/Footer";
 import Quote from "@/app/components/feature/Quote";
 import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
 import Firebase from "@/app/components/feature/Firebase";
 import {lazy, Suspense} from "react";
+import Projects from "@/app/components/feature/Projects";
 // @ts-ignore
-const Projects = lazy(() => import("@/app/components/feature/Projects"));
+const Footer = lazy(() => import("@/app/components/common/Footer"));
 export default function Home() {
   return (
   <main>
@@ -69,9 +69,7 @@ export default function Home() {
         <div className={"_trans_content pt-3 custom-desktop-disable"}>
           <h1 className={"text-3xl"}>{"프로젝트"}</h1>
         </div>
-        <Suspense fallback={<div>Loading</div>}>
-          <Projects/>
-        </Suspense>
+        <Projects/>
         <div className={"_trans_content pt-3"}>
           <h1 className={"text-3xl"}>{"실험실"}</h1>
         </div>
@@ -85,7 +83,9 @@ export default function Home() {
         </AnimationContainerTable>
       </div>
     </div>
-    <Footer/>
+    <Suspense fallback={<div>Loading</div>}>
+      <Footer/>
+    </Suspense>
   </main>
   )
 }
