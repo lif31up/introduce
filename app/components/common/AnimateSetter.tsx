@@ -44,7 +44,7 @@ function AnimationContainer({
       return
     }
     const intersectionHandler = (entries: Array<any>): void => {
-      entries.forEach((entry, observer) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // @ts-ignore
           target.style.animationPlayState = 'running'

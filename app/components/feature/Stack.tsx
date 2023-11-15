@@ -10,14 +10,12 @@ export default function Stack({ h1, p, src, id }: StackProps) {
   const observerRef: any | null = useRef(null)
   useEffect(() => {
     let target: HTMLElement | null = document.getElementById(id)
-    if (target === null) {
-      return
-    }
-    const intersectionHandler = (entries: object): void => {
-      // @ts-ignore
-      entries.forEach((entry, observer) => {
+    const intersectionHandler = (entries: Array<any>): void => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // @ts-ignore
+          if(target === null){
+            return;
+          }
           target.style.animationPlayState = 'running'
           return () => {
             observerRef.current.disconnect()

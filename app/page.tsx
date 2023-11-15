@@ -10,7 +10,6 @@ import { lazy, Suspense } from 'react'
 import Projects from '@/app/components/feature/Projects'
 import VideoPlayer from '@/app/components/feature/VideoPlayer'
 import Caption from '@/app/components/common/Caption'
-// @ts-ignore
 const Footer = lazy(() => import('@/app/components/common/Footer'))
 const Lab = lazy(() => import('@/app/components/feature/Lab'))
 export default function Home() {
