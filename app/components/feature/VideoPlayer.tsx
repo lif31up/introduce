@@ -7,6 +7,6 @@ export default function VideoPlayer({}){
 	useEffect(():void => {
 		setLoading(true);
 	},[false]);
-	if(!loading){return(<div className={"h-full"}>{"Loading"}</div>);}
+	if(!loading){return(<></>);}
 	return(<ReactPlayer url={"/assets/images/break_1.mp4"} width={"101%"} height={"auto"} playing loop muted/>);
 }
