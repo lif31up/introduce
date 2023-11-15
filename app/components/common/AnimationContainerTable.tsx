@@ -9,11 +9,7 @@ export default function AnimationContainerTable({children,id,animation}:Animatio
 			childrenInContainer.push(<AnimationContainer key={index} className={animation} id={[id,index].join("--").trim()}>{child}</AnimationContainer>);
 		}
 	});
-	return(
-	<div id={id}>
-		{childrenInContainer}
-	</div>
-	);
+	return(<div id={id}>{childrenInContainer}</div>);
 }
 interface AnimationContainerProps{children:React.ReactNode,className:string,id:string}
 function AnimationContainer({children,className,id}:AnimationContainerProps){
@@ -21,8 +17,7 @@ function AnimationContainer({children,className,id}:AnimationContainerProps){
 	useEffect(()=>{
 		let target:HTMLElement|null = document.getElementById(id);
 		if(target === null) {return;}
-		const intersectionHandler = (entries:object):void=>{
-			// @ts-ignore
+		const intersectionHandler = (entries:Array<any>):void=>{
 			entries.forEach((entry,observer)=>{
 				if(entry.isIntersecting){ // @ts-ignore
 					target.style.animationPlayState = "running";
