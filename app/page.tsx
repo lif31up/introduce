@@ -64,7 +64,7 @@ export default function Home() {
       </div>
       <div className={"_grid-2xl-article"}>
         <Profile desktop={true}/>
-        <Caption/>
+        <Caption>현재, 팀 프로젝트 과정에 있습니다.</Caption>
         <div className={"_trans_content pt-3 custom-desktop-disable"}>
           <h1 className={"text-3xl custom-font-gothic-a1"}>{"프로젝트"}</h1>
         </div>
