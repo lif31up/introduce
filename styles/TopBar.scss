@@ -1,11 +1,18 @@
-@import "Library";
-.top-bar{
-  position: fixed; z-index: 10;
-  width: 100%; height: 4rem;
+@import 'Library';
+.top-bar {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 4rem;
   padding: 0 2rem 0 1rem;
-  display: flex; align-items: center; justify-content: space-between;
-  color: white; background: #1d1f21;
-  font-family: "Gothic A1", sans-serif;
-  @include mobile{font-size: 0.8rem;}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: #1d1f21;
+  font-family: 'Gothic A1', sans-serif;
+  @include mobile {
+    font-size: 0.8rem;
+  }
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }

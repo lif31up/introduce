@@ -4,7 +4,7 @@
 /*BACKGROUND*/
 /*PSEUDO*/
 /*FADE*/
-@import "node_modules/magic.css/dist/magic.css";
+@import 'node_modules/magic.css/dist/magic.css';
 .custom-rounded {
   border-radius: 1rem;
   padding: 0.3rem 1rem 0.15rem 1rem;

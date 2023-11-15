@@ -1,31 +1,46 @@
-@import "Library";
+@import 'Library';
 $height: calc(70% - 10rem);
-._scene{
-  width: 100%; height: 100vh;
+._scene {
+  width: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   animation: color 4s ease-in-out infinite;
 }
-._scene-space{
-  display: grid; grid-gap: 2rem;
-  width: 100%; height: fit-content;
+._scene-space {
+  display: grid;
+  grid-gap: 2rem;
+  width: 100%;
+  height: fit-content;
   padding: 4rem 12rem 0 12rem;
-  @include mobile{
+  @include mobile {
     justify-items: center;
     grid-gap: 0.5rem;
     padding: 1rem 1rem 0 1rem;
-    p{font-size: 0.8rem; width: fit-content; padding: 0 1rem 0 1rem;}
-    a{margin-top: 1rem;}
+    p {
+      font-size: 0.8rem;
+      width: fit-content;
+      padding: 0 1rem 0 1rem;
+    }
+    a {
+      margin-top: 1rem;
+    }
   }
-  @include tablet{
+  @include tablet {
     padding: 4rem 2rem 0 2rem;
   }
-  @include large{
+  @include large {
     padding: 4rem 3rem 0 3rem;
   }
 }
 @keyframes color {
-  0%{filter: blur(100px);}
-  50%{filter: blur(130px) drop-shadow(16px 16px 20px red) invert(75%);;}
-  100%{filter: blur(100px);}
+  0% {
+    filter: blur(100px);
+  }
+  50% {
+    filter: blur(130px) drop-shadow(16px 16px 20px red) invert(75%);
+  }
+  100% {
+    filter: blur(100px);
+  }
 }

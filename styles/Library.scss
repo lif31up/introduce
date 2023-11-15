@@ -65,7 +65,7 @@ $desktop: 1280;
 }
 
 /*FONT*/
-@mixin font-size($font-size,$line-height:normal,$letter-spacing:normal) {
+@mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
   font-size: $font-size * 1px;
   @if ($line-height==normal) {
     line-height: normal;
@@ -87,7 +87,13 @@ $desktop: 1280;
 }
 
 /*PSEUDO*/
-@mixin pseudo($width: 100%, $height: 100%,$display: inline-block, $pos: absolute, $content: "") {
+@mixin pseudo(
+  $width: 100%,
+  $height: 100%,
+  $display: inline-block,
+  $pos: absolute,
+  $content: ''
+) {
   content: $content;
   display: $display;
   position: $pos;
@@ -96,11 +102,11 @@ $desktop: 1280;
 
 /*FADE*/
 @mixin fade($type) {
-  @if $type== "hide" {
+  @if $type== 'hide' {
     visibility: hidden;
     opacity: 0;
     transition: visibility 1s, opacity 1s;
-  } @else if $type== "show" {
+  } @else if $type== 'show' {
     visibility: visible;
     opacity: 1;
     transition: visibility 1s, opacity 1s;
@@ -113,11 +119,13 @@ $desktop: 1280;
 }
 
 @mixin center-padding($value: 10) {
-  padding-left: $value * 1rem; padding-right: $value * 1rem;
+  padding-left: $value * 1rem;
+  padding-right: $value * 1rem;
 }
 
 @mixin center-margin($value: 10) {
-  margin-left: $value * 1rem; margin-right: $value * 1rem;
+  margin-left: $value * 1rem;
+  margin-right: $value * 1rem;
 }
 
 @mixin pointer-element() {

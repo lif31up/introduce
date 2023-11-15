@@ -1,74 +1,104 @@
-@import "Library";
-._default{
+@import 'Library';
+._default {
   padding: 0 11rem 0 11rem;
-  @include large{
-    padding:0 2rem 0 2rem;
+  @include large {
+    padding: 0 2rem 0 2rem;
   }
-  @include tablet{
+  @include tablet {
     padding: 0 1rem 0 1rem;
   }
-  @include mobile{
-    padding: 0; margin-top: 1rem;
+  @include mobile {
+    padding: 0;
+    margin-top: 1rem;
   }
 }
-._grid-2xl{
-  background: linear-gradient(rgba(0, 0, 0, 0),#1d1f21 20%);
+._grid-2xl {
+  background: linear-gradient(rgba(0, 0, 0, 0), #1d1f21 20%);
   overflow-x: hidden;
   @extend ._default;
   display: flex;
-  width: 100%; height: max-content; overflow-y: hidden;
-  padding-top: 4rem; padding-bottom: 2rem;
-  @include mobile{display: block;}
-  @include tablet{display: block;}
+  width: 100%;
+  height: max-content;
+  overflow-y: hidden;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  @include mobile {
+    display: block;
+  }
+  @include tablet {
+    display: block;
+  }
 }
-._grid-2xl-article{
-  width: 50%; height: fit-content;
-  @include mobile{width: 100%;}
-  @include tablet{width: 100%;}
+._grid-2xl-article {
+  width: 50%;
+  height: fit-content;
+  @include mobile {
+    width: 100%;
+  }
+  @include tablet {
+    width: 100%;
+  }
 }
-._content{
-  width: calc(100% - 2rem); height: fit-content;
-  background: rgba(16, 16, 16, 0.85); color: white;
+._content {
+  width: calc(100% - 2rem);
+  height: fit-content;
+  background: rgba(16, 16, 16, 0.85);
+  color: white;
   margin: 1rem;
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
-  font-family: "Gothic A1",sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  @include mobile{
+  @include mobile {
     width: calc(100% - 1rem);
     margin: 1rem 0.5rem 1rem 0.5rem;
   }
 }
-a ._content:hover{
+a ._content:hover {
   background: black;
 }
-._trans_content{
+._trans_content {
   @extend ._content;
   background: none;
   box-shadow: none;
 }
-._gray_content{
+._gray_content {
   @extend ._content;
   background: #262626;
 }
-._img-block{
+._img-block {
   position: relative;
-  width: 4rem; height: 4rem;
+  width: 4rem;
+  height: 4rem;
   margin: 1rem;
-  border-radius: 0.5rem; overflow: hidden;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
-._desc-block{
-  width: calc(100% - 6rem); height: fit-content;
+._desc-block {
+  width: calc(100% - 6rem);
+  height: fit-content;
   padding: 1rem 1rem 1rem 0;
-  h1{font-size: 1rem;}
-  p{font-size: 0.8rem; font-family: "Gothic A1 Thin", sans-serif;}
-  @include mobile{
-    h1{font-size: 1rem;}
-    p{font-size: 0.7rem;}
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+    font-family: 'Gothic A1 Thin', sans-serif;
+  }
+  @include mobile {
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
   }
 }
-._desc{
-  font-family: "Gothic A1 Regular", sans-serif;
-  @include mobile{display: grid; justify-items: center;}
+._desc {
+  font-family: 'Gothic A1 Regular', sans-serif;
+  @include mobile {
+    display: grid;
+    justify-items: center;
+  }
 }

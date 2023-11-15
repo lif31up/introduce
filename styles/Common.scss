@@ -1,57 +1,104 @@
-@import "Library";
-@import "node_modules/magic.css/dist/magic.css";
+@import 'Library';
+@import 'node_modules/magic.css/dist/magic.css';
 // custom atomic class
-.custom-rounded{
-  border-radius: 1rem; padding: 0.3rem 1rem 0.15rem 1rem;
+.custom-rounded {
+  border-radius: 1rem;
+  padding: 0.3rem 1rem 0.15rem 1rem;
 }
-.custom-text-12{
+.custom-text-12 {
   font-size: 1.2rem;
 }
-.custom-text-08{
+.custom-text-08 {
   font-size: 0.8rem;
-  @include mobile{font-size: 0.7rem;}
+  @include mobile {
+    font-size: 0.7rem;
+  }
 }
-.custom-sphere{
-  border-radius: 50%; overflow: hidden;
+.custom-sphere {
+  border-radius: 50%;
+  overflow: hidden;
 }
-.custom-grid-2x2{
-  display: grid; grid-template-columns: repeat(2,1fr);
+.custom-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.custom-font-gothic-a1{font-family: "Gothic A1",sans-serif; font-weight: 500;}
-.custom-font-gothic-a1-thin{font-family: "Gothic A1", sans-serif; font-weight: 300;}
-.custom-font-gothic-a1-regular{font-family: "Gothic A1", sans-serif; font-weight: 400;}
-.custom-mobile-disable{
-  @include mobile{display: none;}
-  @include tablet{display: none;}
-  @include large{display: none;}
+.custom-font-gothic-a1 {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
 }
-.custom-desktop-disable{
-  @include desktop{display: none;}
-  @include large{display: none;}
+.custom-font-gothic-a1-thin {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 300;
 }
-.custom-w-full{
+.custom-font-gothic-a1-regular {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 400;
+}
+.custom-mobile-disable {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include large {
+    display: none;
+  }
+}
+.custom-desktop-disable {
+  @include desktop {
+    display: none;
+  }
+  @include large {
+    display: none;
+  }
+}
+.custom-w-full {
   width: calc(100% - 1rem);
 }
-.custom-box-shadow{
+.custom-box-shadow {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
-.custom-anime-swash-in{animation: boingInUp 1s ease-in-out paused;}
-.custom-anime-vanish-in{animation: vanishIn 1s ease-in-out paused;}
-.custom-anime-ltr-slide{animation: ltr-slide 1s ease-in-out paused;}
-.custom-bg-black{background: rgba(29, 31, 33, 1);}
-@keyframes ltr-slide {
-  0%{transform: translateX(-5rem); filter: blur(2px); opacity: 0;}
-  100%{transform: translateX(0); filter: none; opacity: 1;}
+.custom-anime-swash-in {
+  animation: boingInUp 1s ease-in-out paused;
 }
-.custom-anime-rtl-slide{animation: swashIn 1s ease-in-out paused;}
-.letter{
-  display: inline-block; font-size: 3rem; height: 3rem;
-  @include mobile{
+.custom-anime-vanish-in {
+  animation: vanishIn 1s ease-in-out paused;
+}
+.custom-anime-ltr-slide {
+  animation: ltr-slide 1s ease-in-out paused;
+}
+.custom-bg-black {
+  background: rgba(29, 31, 33, 1);
+}
+@keyframes ltr-slide {
+  0% {
+    transform: translateX(-5rem);
+    filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    filter: none;
+    opacity: 1;
+  }
+}
+.custom-anime-rtl-slide {
+  animation: swashIn 1s ease-in-out paused;
+}
+.letter {
+  display: inline-block;
+  font-size: 3rem;
+  height: 3rem;
+  @include mobile {
     font-size: 1.8rem;
   }
 }
-.space{width: 0.5rem;display: inline-block;}
-.custom-link-button{
+.space {
+  width: 0.5rem;
+  display: inline-block;
+}
+.custom-link-button {
   font-size: 1.25rem;
   padding: 1rem 2rem 0.8rem 2rem;
 }

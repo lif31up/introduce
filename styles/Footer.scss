@@ -1,26 +1,34 @@
-@import "Library";
-.footer{
+@import 'Library';
+.footer {
   position: relative;
-  width: 100%; height: 25rem;
+  width: 100%;
+  height: 25rem;
   padding: 2rem 40% 0 10rem;
   background: #111212;
-  display: grid; grid-template-columns: repeat(4,1fr);
-  color: white; font-family: "Gothic A1",sans-serif;
-  a{font-family: "Gothic A1 Thin",sans-serif; margin-top: 0.25rem;}
-  @include mobile{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  font-family: 'Gothic A1', sans-serif;
+  a {
+    font-family: 'Gothic A1 Thin', sans-serif;
+    margin-top: 0.25rem;
+  }
+  @include mobile {
     height: 40rem;
     display: block;
     padding: 1rem 2rem 0 2rem;
   }
-  @include tablet{
+  @include tablet {
     height: 40rem;
     display: block;
     padding: 1rem 2rem 0 2rem;
   }
-  @include large{
+  @include large {
     height: 40rem;
     display: block;
     padding: 1rem 2rem 0 2rem;
   }
 }
-.custom-footer-col{background: #111212;}
+.custom-footer-col {
+  background: #111212;
+}
