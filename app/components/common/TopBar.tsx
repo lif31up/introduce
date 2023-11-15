@@ -3,7 +3,7 @@ import Link from "next/link";
 import "@/styles/TopBar.css";
 import "@/styles/Common.css";
 import React from "react";
-import {logHandler} from "@/app/components/feature/Firebase";
+import {logHandler} from "@/app/components/common/Firebase";
 
 export default function TopBar({}){
 	const clickHandler = ()=>{

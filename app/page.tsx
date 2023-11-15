@@ -5,7 +5,7 @@ import StackTable from "@/app/components/feature/StackTable";
 import TagTable from "@/app/components/common/TagTable";
 import Scene from "@/app/components/feature/Scene";
 import WorkingOnTable from "@/app/components/feature/WorkingOnTable";
-import Firebase from "@/app/components/feature/Firebase";
+import Firebase from "@/app/components/common/Firebase";
 import {lazy, Suspense} from "react";
 import Projects from "@/app/components/feature/Projects";
 import VideoPlayer from "@/app/components/feature/VideoPlayer";

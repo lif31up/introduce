@@ -3,7 +3,7 @@ import * as THREE from "three";
 import {useEffect, useRef} from "react";
 import "@/styles/Scene.css";
 import Link from "next/link";
-import MovingTypography from "@/app/components/feature/MovingTypography";
+import MovingTypography from "@/app/components/common/MovingTypography";
 
 export default function Scene({}){
 	const refContainer = useRef(null);

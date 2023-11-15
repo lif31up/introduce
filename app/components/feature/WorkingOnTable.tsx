@@ -1,7 +1,7 @@
 'use client';
 
 import {QueryClient, QueryClientProvider, useQuery} from "react-query";
-import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
+import AnimateSetter from "@/app/components/common/AnimateSetter";
 import WorkingOn from "@/app/components/feature/WorkingOn";
 import React, {useRef, useState} from "react";
 
@@ -34,8 +34,8 @@ function _WorkingOnTable({}){
 		}//don't add none object instance
 	});
 	return(
-	<AnimationContainerTable id={"working-on--0"} animation={"custom-anime-vanish-in"}>
+	<AnimateSetter id={"working-on--0"} animation={"custom-anime-vanish-in"}>
 		{workingOns}
-	</AnimationContainerTable>
+	</AnimateSetter>
 	);
 }

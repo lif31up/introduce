@@ -1,8 +1,8 @@
-import AnimationContainerTable from "@/app/components/common/AnimationContainerTable";
+import AnimateSetter from "@/app/components/common/AnimateSetter";
 import Project from "@/app/components/feature/Project";
 export default function Projects({}){
 	return(
-	<AnimationContainerTable id={"project--0"} animation={"custom-anime-rtl-slide"}>
+	<AnimateSetter id={"project--0"} animation={"custom-anime-rtl-slide"}>
 		<Project h1={"무한 스크롤링"}
 						 p={"무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다."}
 						 src={"/assets/images/shoppingmall.webp"}
@@ -27,6 +27,6 @@ export default function Projects({}){
 						 p={"제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다."}
 						 src={"/assets/images/logo_design.webp"}
 						 href={"https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile"}/>
-	</AnimationContainerTable>
+	</AnimateSetter>
 	);
 }

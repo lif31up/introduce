@@ -2,7 +2,7 @@
 import React, {useEffect, useRef} from "react";
 
 interface AnimationContainerTableProps{children:React.ReactNode,id:string,animation:string}
-export default function AnimationContainerTable({children,id,animation}:AnimationContainerTableProps){
+export default function AnimateSetter({children,id,animation}:AnimationContainerTableProps){
 	const childrenInContainer:Array<React.ReactNode> = [];
 	React.Children.forEach(children,(child,index)=>{
 		if(React.isValidElement(child)){

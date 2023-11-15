@@ -6,15 +6,12 @@ export default function MovingTypography({className,children,animation,id}:Movin
 	useEffect(()=>{
 		const typography:HTMLElement|null = document.getElementById(id);
 		if(typography === null){return;}
-		// @ts-ignore
-		const intersectionHandler = (entries)=>{
-			// @ts-ignore
+		const intersectionHandler = (entries:Array<any>):void=>{
 			entries.forEach((entry,observer)=>{
 				if(entry.isIntersecting){
-					const letters = typography.querySelectorAll(".letter");
-					letters.forEach((element,index)=>{
+					const letters:NodeListOf<HTMLElement> = typography.querySelectorAll(".letter");
+					letters.forEach((element:HTMLElement,index:number)=>{
 						setTimeout(()=>{
-							// @ts-ignore
 							element.style.animationPlayState = "running";
 						},index * 100);
 					});
