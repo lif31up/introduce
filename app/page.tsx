@@ -16,7 +16,7 @@ const Lab = lazy(() => import("@/app/components/feature/Lab"));
 export default function Home() {
   return (
   <main>
-    <title>명환의 포트폴리오</title>
+    <title>{"명환의 포트폴리오"}</title>
     <Firebase/>
     <TopBar/>
     <Scene/>
