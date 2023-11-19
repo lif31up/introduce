@@ -4,9 +4,10 @@
 ._rounded {
   border-radius: 1rem; overflow: hidden;
 }
-.custom-sphere {
+._sphere {
   border-radius: 50%; overflow: hidden;
 }
+
 .custom-grid-2x2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -45,8 +46,6 @@
 
 .letter {
   display: inline-block;
-  font-size: 3rem;
-  height: 3rem;
   @include mobile {
     font-size: 1.8rem;
   }

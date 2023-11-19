@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.custom-sphere {
+._sphere {
   border-radius: 50%;
   overflow: hidden;
 }
@@ -61,8 +61,6 @@
 
 .letter {
   display: inline-block;
-  font-size: 3rem;
-  height: 3rem;
 }
 @media only screen and (max-width: 500px) {
   .letter {

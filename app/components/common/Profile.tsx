@@ -18,7 +18,7 @@ export default function Profile({ desktop }: { desktop: boolean }) {
           width={'118'}
           height={'118'}
           sizes={'118px'}
-          className={'w-32 h-32 custom-sphere overflow-hidden object-cover'}
+          className={'w-32 h-32 _sphere overflow-hidden object-cover'}
         />
       </div>
       <div className={'h-32 w-32'} />

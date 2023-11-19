@@ -52,28 +52,20 @@ export default function Scene({}) {
   }, [false])
   return (
     <>
-      <div className={'_scene-space text-white grid align-middle'}>
-        <div className={'justify-items-center font-bold '}>
+      <div className={'text-white pl-48 pt-14'}>
+        <div className={'justify-items-center _heading_huge'}>
           <MovingTypography
             className={''}
-            animation={'custom-anime-vanish-in'}
+            animation={'_vanish-in'}
             id={'tp--0'}
           >
-            {'새로운 학습에 준비된'}
-          </MovingTypography>
-          <MovingTypography
-            className={''}
-            animation={'custom-anime-vanish-in'}
-            id={'tp--1'}
-          >
-            {'더 나은 방식에 적응하는'}
+            {'반갑습니다. 프론트엔드 개발자 한명환입니다.'}
           </MovingTypography>
         </div>
-        <div className={'_desc'}>
-          <p>{'제 포트폴리오와 마주치셨군요!'}</p>
-          <p>{'이 인연이 의미있는 결과로 이어질 수 있기를...'}</p>
+        <div className={'_text_regular text-neutral-300'}>
+          <p>{'제 포트폴리오와 마주치셨군요! 이 인연이 의미있는 결과로 이어졌으면 좋겠습니다.'}</p>
         </div>
-        <div className={'flex gap-8 font-bold'}>
+        <div className={'flex gap-8 font-bold mt-14'}>
           <Link
             className={'custom-bg-black custom-link-button custom-box-shadow'}
             href={'#s-a-p'}

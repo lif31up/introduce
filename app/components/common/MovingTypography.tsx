@@ -44,7 +44,7 @@ export default function MovingTypography({
       typography.push(<div key={i} className={'space'} />)
     } else {
       typography.push(
-        <div key={i} className={['letter', animation].join(' ').trim()}>
+        <div key={i} className={['letter _heading_huge', animation].join(' ').trim()}>
           {children[i]}
         </div>
       )
@@ -52,7 +52,7 @@ export default function MovingTypography({
   }
   return (
     <div
-      className={['typography block w-full', className].join(' ').trim()}
+      className={['block h-fit w-full', className].join(' ').trim()}
       id={id}
     >
       {typography}
