@@ -1,0 +1,25 @@
+._slide-rtl{
+  animation: ltr-slide 1s ease-in-out paused;
+}
+._boing-up {
+  animation: boingInUp 1s ease-in-out paused;
+}
+._vanish-in {
+  animation: vanishIn 1s ease-in-out paused;
+}
+._swash-in{
+  animation: swashIn 1s ease-in-out paused;
+}
+
+@keyframes ltr-slide {
+  0% {
+    transform: translateX(-5rem);
+    filter: blur(2px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    filter: none;
+    opacity: 1;
+  }
+}

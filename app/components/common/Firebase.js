@@ -4,9 +4,9 @@ import { initializeApp } from 'firebase/app'
 import { logEvent, getAnalytics } from 'firebase/analytics'
 import firebaseConfig from 'app/firebase'
 
-export function logHandler(logname) {
+export function logHandler(log) {
   const analytics = getAnalytics(app)
-  logEvent(analytics, logname)
+  logEvent(analytics, log)
 }
 
 export let app, analytics
@@ -19,5 +19,5 @@ export default function Firebase({}) {
       page_title: document.title,
     })
   }, [false])
-  return <div></div>
+  return <></>
 }

@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
+import "@/styles/Animation.css";
 
 interface AnimationContainerTableProps {
   children: React.ReactNode
@@ -40,13 +41,10 @@ function AnimationContainer({
   const observerRef: any | null = useRef(null)
   useEffect(() => {
     let target: HTMLElement | null = document.getElementById(id)
-    if (target === null) {
-      return
-    }
     const intersectionHandler = (entries: Array<any>): void => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // @ts-ignore
+          if (target === null) {return}
           target.style.animationPlayState = 'running'
           return () => {
             observerRef.current.disconnect()

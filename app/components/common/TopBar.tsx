@@ -15,18 +15,18 @@ export default function TopBar({}) {
         <div className={'flex items-center h-full'}>
           <h1
             className={
-              'pt-1 px-1 custom-font-gothic-a1-thin custom-mobile-disable'
+              'pt-1 px-1 _text_large custom-mobile-disable'
             }
           >
             {'FRONTEND & UI/UX DESIGNER'}
           </h1>
-          <p className={'px-2 pt-1 custom-font-gothic-a1'}>
+          <p className={'px-2 pt-1 _text_regular'}>
             {'NULRANLCNS9991@GMAIL.COM'}
           </p>
         </div>
         <div
           className={
-            'flex items-center gap-12 font-bold custom-font-gothic-a1-thin'
+            'flex items-center gap-12 font-bold _heading_regular'
           }
         >
           <Link
@@ -40,7 +40,7 @@ export default function TopBar({}) {
           </Link>
           <Link
             className={
-              'custom-rounded shadow-black shadow-2xl bg-purple-700 hover:bg-purple-800 custom-font-gothic-a1'
+              'py-2 px-6 bg-purple-700 rounded-3xl'
             }
             href={'https://github.com/lif31up'}
             target={'_blank'}

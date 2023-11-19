@@ -5,22 +5,9 @@
 /*PSEUDO*/
 /*FADE*/
 @import 'node_modules/magic.css/dist/magic.css';
-.custom-rounded {
+._rounded {
   border-radius: 1rem;
-  padding: 0.3rem 1rem 0.15rem 1rem;
-}
-
-.custom-text-12 {
-  font-size: 1.2rem;
-}
-
-.custom-text-08 {
-  font-size: 0.8rem;
-}
-@media only screen and (max-width: 500px) {
-  .custom-text-08 {
-    font-size: 0.7rem;
-  }
+  overflow: hidden;
 }
 
 .custom-sphere {
@@ -31,21 +18,6 @@
 .custom-grid-2x2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.custom-font-gothic-a1 {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 500;
-}
-
-.custom-font-gothic-a1-thin {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 300;
-}
-
-.custom-font-gothic-a1-regular {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 400;
 }
 
 @media only screen and (max-width: 500px) {
@@ -83,36 +55,8 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
-.custom-anime-swash-in {
-  animation: boingInUp 1s ease-in-out paused;
-}
-
-.custom-anime-vanish-in {
-  animation: vanishIn 1s ease-in-out paused;
-}
-
-.custom-anime-ltr-slide {
-  animation: ltr-slide 1s ease-in-out paused;
-}
-
 .custom-bg-black {
   background: rgb(29, 31, 33);
-}
-
-@keyframes ltr-slide {
-  0% {
-    transform: translateX(-5rem);
-    filter: blur(2px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    filter: none;
-    opacity: 1;
-  }
-}
-.custom-anime-rtl-slide {
-  animation: swashIn 1s ease-in-out paused;
 }
 
 .letter {

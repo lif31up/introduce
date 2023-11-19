@@ -5,46 +5,46 @@ export default function Footer({}) {
     <>
       <div className={'footer'}>
         <div className={'my-6'}>
-          <h1 className={'text-2xl custom-font-gothic-a1-regular'}>
+          <h1 className={'_heading_larger'}>
             리포지토리
           </h1>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={'https://github.com/lif31up/introduce'}
           >
             웹 포트폴리오
           </Link>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={'https://github.com/lif31up/shopping-mall'}
           >
             쇼핑몰
           </Link>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={'https://github.com/lif31up/neuralink-redesign'}
           >
             뉴럴링크
           </Link>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={'https://github.com/lif31up/Data-Structures-and-Algorithms'}
           >
             자료구조
           </Link>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={'https://github.com/lif31up/Discord-Chat-bot'}
           >
             디스코드 챗 봇
           </Link>
         </div>
         <div className={'my-6'}>
-          <h1 className={'text-2xl custom-font-gothic-a1-regular'}>
+          <h1 className={'_heading_larger'}>
             다른 주소들
           </h1>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={
               'https://open.spotify.com/user/pcsyqo1bjc3yqbgd0rvwwske2?si=3716732a415e4779'
             }
@@ -52,22 +52,22 @@ export default function Footer({}) {
             스포티파이
           </Link>
           <Link
-            className={'block custom-font-gothic-a1-thin line-through'}
+            className={'block _text_regular text-neutral-400'}
             href={''}
           >
             비헨스
           </Link>
         </div>
         <div className={'my-6'}>
-          <h1 className={'text-2xl'}>연락하기</h1>
+          <h1 className={'_heading_larger'}>연락하기</h1>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={'mailto:nulranlcns9991@gmail.com'}
           >
             이메일
           </Link>
           <Link
-            className={'block custom-font-gothic-a1-thin'}
+            className={'block _text_regular text-neutral-400'}
             href={
               'https://join.slack.com/t/personalspace-hng4971/shared_invite/zt-25whyi2gn-4QPq8CLXi_GKD3qjNZSV0w'
             }
@@ -87,7 +87,7 @@ export default function Footer({}) {
       <div className={'custom-footer-col py-4 px-4'}>
         <p
           className={
-            'custom-font-gothic-a1-thin custom-text-08 text-neutral-400'
+            '_text_small custom-text-08 text-neutral-400'
           }
         >
           {
@@ -96,7 +96,7 @@ export default function Footer({}) {
         </p>
         <p
           className={
-            'custom-font-gothic-a1-thin custom-text-08 text-neutral-400'
+            '_text_small custom-text-08 text-neutral-400'
           }
         >
           {
