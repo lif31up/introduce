@@ -45,7 +45,7 @@ export default function Home() {
             ]}
           </TagTable>
           <AnimateSetter id={"stack-table--2"} animation={"_slide-rtl"}>
-            <Stack src={"/assets/images/javascript_icon.webp"}
+            <Stack src={"/assets/images/next_icon.webp"}
                    title={"넥스트"} desc={"CSR 및 SSR 패턴화, 라우팅, 이미지 최적화 등을 사용할 줄 압니다."}/>
             <Stack src={"/assets/images/react_icon.webp"}
                    title={"리액트"} desc={"후크, 상태를 이해하고 적용할 줄 압니다. 리액트 쿼리, 리코일에도 익숙합니다."}/>
@@ -71,7 +71,7 @@ export default function Home() {
             ]}
           </TagTable>
           <AnimateSetter id={"stack-table--3"} animation={"_slide-rtl"}>
-            <Stack src={"/assets/images/javascript_icon.webp"}
+            <Stack src={"/assets/images/photoshop.webp"}
                    title={"포토샵"} desc={"포토샵을 통해서 목업과 이미지에 대한 필터 효과를 적용할 수 있습니다."}/>
             <Stack src={"/assets/images/illustrator.webp"}
                    title={"일러스트레이터"} desc={"가장 자신있게 다루는 디자인 도구입니다. 로고, 아이콘, 일러스트를 만들 수 있습니다."}/>

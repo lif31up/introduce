@@ -24,20 +24,18 @@ export default function Profile({ desktop }: { desktop: boolean }) {
       <div className={'h-32 w-32'} />
       <div className={'pl-4 pt-1'}>
         <div className={'flex items-end'}>
-          <h1 className={'text-2xl custom-font-gothic-a1'}>{'한명환'}</h1>
-          <p className={'custom-font-gothic-a1-thin text-neutral-300 ml-2'}>
-            {'연세대학교'}
-            <abbr className={'text-white'}>{' 정보통신학과 '}</abbr>
-          </p>
+          <h1 className={'_heading_large'}>{'한명환'}</h1>
         </div>
-        <p className={'custom-font-gothic-a1-thin text-neutral-300'}>
+        <p className={'_text_regular text-neutral-400'}>
           {'성남에서 거주 중, 판교와 강남'}
           <br />
           {'nulranlcns9991@gmail.com'}
+          <br />
+          {'연세대학교 미래캠퍼스 컴퓨터공학과'}
         </p>
         <div
           className={
-            'flex gap-2 mt-1 text-purple-400 custom-font-gothic-a1-thin underline'
+            'flex gap-2 text-purple-400 _text_regular underline'
           }
         >
           <Link

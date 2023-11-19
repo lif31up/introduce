@@ -2,16 +2,24 @@
 import Link from 'next/link'
 import '@/styles/TopBar.css'
 import '@/styles/Common.css'
-import React from 'react'
+import React, { useEffect } from "react";
 import { logHandler } from '@/app/components/common/Firebase'
 
 export default function TopBar({}) {
+  useEffect(():void=>{
+    const topBar:HTMLElement|null = document.getElementById("top-bar");
+    if(topBar === null) return;
+    window.addEventListener("scroll",()=>{
+      if(window.scrollY > 1){topBar.style.height = "3rem";}
+      else{topBar.style.height = "3.5rem";}
+    });
+  });
   const clickHandler = () => {
     logHandler('github_link')
   }
   return (
     <>
-      <div className={'top-bar'}>
+      <div className={'top-bar'} id={"top-bar"}>
         <div className={'flex items-center h-full'}>
           <h1
             className={

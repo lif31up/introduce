@@ -16,6 +16,7 @@
   color: white;
   background: #1d1f21;
   font-family: "Gothic A1", sans-serif;
+  transition: height 0.5s ease-in-out;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 500px) {
