@@ -13,7 +13,7 @@ export default function TagTable({
     tags.push(
       <h1
         key={index}
-        className={['_rounded inline-block mr-4 my-2 py-1 px-4 w-fit _heading_regular', color,].join(' ').trim()}>
+        className={['_rounded inline-block mr-4 my-1 py-1 px-4 w-fit _text_small', color,].join(' ').trim()}>
         {child}
       </h1>
     )

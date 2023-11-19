@@ -113,7 +113,7 @@ export default function Home() {
           <Profile desktop={true} />
           <Caption>현재, 팀 프로젝트 과정에 있습니다.</Caption>
           <div className={'_trans_content pt-3 custom-desktop-disable'}>
-            <h1 className={'text-3xl custom-font-gothic-a1'}>{'프로젝트'}</h1>
+            <h1 className={'_heading_huge'}>{'프로젝트'}</h1>
           </div>
           <AnimateSetter id={'project--0'} animation={'_swash-in'}>
             <Project
