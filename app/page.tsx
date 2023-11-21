@@ -21,6 +21,7 @@ export default function Home() {
       <Scene />
       <div className={'_grid-2xl'} id={'s-a-p'}>
         <div className={'_grid-2xl-article'}>
+          <Profile desktop={false}/>
           <div className={'_trans_content pt-3'}>
             <h1 className={'text-3xl _heading_huge'}>{'프론트엔드'}</h1>
           </div>
@@ -30,7 +31,7 @@ export default function Home() {
             <Stack src={"/assets/images/typescript_icon.webp"}
                    title={"타입스크립트"} desc={"엄격한 문법도 막힘없이 읽어 확장, 작성할 수 있습니다."}/>
             <Stack src={"/assets/images/sass_icon.webp"}
-                   title={"SASS"} desc={"SASS를 통해 반응형 스타일시트를 만드는데 도가 텄습니다."}/>
+                   title={"SASS"} desc={"SASS 문법을 통해 반응형 스타일시트를 만들 수 있습니다."}/>
           </AnimateSetter>
           <TagTable color={'bg-teal-600'}>
             {[
@@ -50,7 +51,7 @@ export default function Home() {
             <Stack src={"/assets/images/react_icon.webp"}
                    title={"리액트"} desc={"후크, 상태를 이해하고 적용할 줄 압니다. 리액트 쿼리, 리코일에도 익숙합니다."}/>
             <Stack src={"/assets/images/vercel_icon.webp"}
-                   title={"버셀"} desc={"이 페이지도 버셀을 통해 배포되는 중입니다. 이를 통해 프로토타입을 테스트할 수 있습니다."}/>
+                   title={"버셀"} desc={"이 페이지도 버셀을 통해 배포되는 중입니다."}/>
           </AnimateSetter>
           <div className={'_trans_content pt-2'}>
             <h1 className={'_heading_huge'}>{'디자인'}</h1>
@@ -75,8 +76,8 @@ export default function Home() {
                    title={"포토샵"} desc={"포토샵을 통해서 목업과 이미지에 대한 필터 효과를 적용할 수 있습니다."}/>
             <Stack src={"/assets/images/illustrator.webp"}
                    title={"일러스트레이터"} desc={"가장 자신있게 다루는 디자인 도구입니다. 로고, 아이콘, 일러스트를 만들 수 있습니다."}/>
-            <Stack src={"/assets/images/xd.webp"}
-                   title={"XD"} desc={"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다."}/>
+            <Stack src={"/assets/images/figma_icon.webp"}
+                   title={"Figma"} desc={"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다. 보드를 사용해서 디자인 시스템을 설계해본 경험이 있습니다."}/>
           </AnimateSetter>
           <div className={'_trans_content pt-2'}>
             <h1 className={'_heading_huge'}>

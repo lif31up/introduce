@@ -18,10 +18,10 @@ export default function Profile({ desktop }: { desktop: boolean }) {
           width={'118'}
           height={'118'}
           sizes={'118px'}
-          className={'w-32 h-32 _sphere overflow-hidden object-cover'}
+          className={'w-16 h-16 _sphere overflow-hidden object-cover'}
         />
       </div>
-      <div className={'h-32 w-32'} />
+      <div className={'h-16 w-16'} />
       <div className={'pl-4 pt-1'}>
         <div className={'flex items-end'}>
           <h1 className={'_heading_large'}>{'한명환'}</h1>

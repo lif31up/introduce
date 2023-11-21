@@ -2,6 +2,7 @@
 import * as THREE from 'three'
 import { useEffect, useRef } from 'react'
 import '@/styles/Scene.css'
+import '@/styles/Text.css'
 import Link from 'next/link'
 import MovingTypography from '@/app/components/common/MovingTypography'
 
@@ -52,20 +53,21 @@ export default function Scene({}) {
   }, [false])
   return (
     <>
-      <div className={'text-white pl-48 pt-14'}>
-        <div className={'justify-items-center _heading_huge'}>
+      <div className={'text-white pl-48 pt-14 custom-mobile-disable'}>
+        <div className={'justify-items-center _important_large'}>
           <MovingTypography
             className={''}
             animation={'_vanish-in'}
             id={'tp--0'}
           >
-            {'반갑습니다. 프론트엔드 개발자 한명환입니다.'}
+            {'프론트엔드 개발자 한명환입니다.'}
           </MovingTypography>
         </div>
         <div className={'_text_regular text-neutral-300'}>
-          <p>{'제 포트폴리오와 마주치셨군요! 이 인연이 의미있는 결과로 이어졌으면 좋겠습니다.'}</p>
+          <p>{'제 포트폴리오와 마주치셨군요!'}</p>
+          <p>{'이 인연이 의미있는 결과로 이어졌으면 좋겠습니다.'}</p>
         </div>
-        <div className={'flex gap-8 font-bold mt-14'}>
+        <div className={'flex gap-8 font-bold mt-7'}>
           <Link
             className={'custom-bg-black custom-link-button custom-box-shadow'}
             href={'#s-a-p'}
