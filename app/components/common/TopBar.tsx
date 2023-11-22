@@ -32,7 +32,7 @@ export default function TopBar({height}:TopBarProps){
           <h1 className={"text-neutral-300 _text_small"}>NULRANLCNS9991@GMAIL.COM</h1>
         </div>
         <div>
-          <Link href={""} className={"_button bg-purple-700 text-white _rounded-4xl _heading_regular shadow-black"}>GITHUB ACCOUNT</Link>
+          <Link href={"https://github.com/lif31up"} className={"_button bg-purple-700 text-white _rounded-4xl _heading_regular shadow-black"}>GITHUB ACCOUNT</Link>
         </div>
       </div>
       <div style={TopBarStyle}/>
