@@ -1,9 +1,10 @@
 import '@/styles/Section.css'
+import "@/styles/Animation.css"
+import "@/styles/Common.css"
 import TopBar from '@/app/components/common/TopBar'
 import WorkingOnTable from '@/app/components/feature/WorkingOnTable'
 import Firebase from '@/app/components/common/Firebase'
 import { lazy, Suspense } from 'react'
-import "@/styles/Animation.css"
 import AnimateSetter from "@/app/components/common/AnimateSetter";
 import Stack from "@/app/components/common/Stack";
 import Project from "@/app/components/common/Project";

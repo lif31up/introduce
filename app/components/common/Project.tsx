@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import "@/styles/Common.css"
 import Tags from "@/app/components/common/Tags";
+import { logHandler } from "@/app/components/common/Firebase";
 interface ProjectProps {
   h1: string
   p: string
@@ -11,7 +12,7 @@ interface ProjectProps {
 }
 export default function Project({ h1, p, src, href, tags }: ProjectProps) {
   return (
-    <a href={href}>
+    <a href={href} onClick={():void=>{logHandler(href)}}>
       <div className={'_grid-content _bg-black-045 _rounded-1xl text-white hover:bg-black'}>
         <h1 className={'_heading_huge'}>{h1}</h1>
         <p className={'_text_regular text-neutral-400 mb-4'}>{p}</p>

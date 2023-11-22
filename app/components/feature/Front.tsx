@@ -2,6 +2,7 @@
 import MovingTypography from "@/app/components/common/MovingTypography";
 import Link from "next/link";
 import VideoPlayer from "@/app/components/feature/VideoPlayer";
+import { logHandler } from "@/app/components/common/Firebase";
 
 export default function Front({}){
   return(
@@ -18,7 +19,7 @@ export default function Front({}){
       <p className={"_text_regular text-neutral-400 mt-4"}>이 인연이 의미있는 결과로 이어질 수 있기를 희망합니다.</p>
       <p className={"_text_regular text-neutral-400"}>저는 무언가를 바라보고 있습니다.</p>
       <div className={"mt-16 mb-4 justify-end flex"}>
-        <Link href={"https://github.com/lif31up"} className={"_button bg-purple-700 text-white _heading_large _rounded-1xl"}>GITHUB ACCOUNT</Link>
+        <Link onClick={():void=>{logHandler("github_account")}} href={"https://github.com/lif31up"} className={"_button bg-purple-700 text-white _heading_large _rounded-4xl"}>GITHUB ACCOUNT</Link>
       </div>
     </div>
   );

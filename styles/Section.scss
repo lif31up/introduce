@@ -3,7 +3,6 @@
   display: grid; grid-template-columns: repeat(2,1fr);
   grid-gap: 2rem;
   margin-top: 1rem; padding-bottom: 8rem;
-  background: linear-gradient(rgb(0,0,0,0), #1f1f1f, #1f1f1f);
   @include center-padding(24);
   @include mobile{
     width: 100%;
