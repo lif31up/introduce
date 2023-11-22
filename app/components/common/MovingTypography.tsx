@@ -52,7 +52,7 @@ export default function MovingTypography({
     }
   }
   return (
-    <div className={['flex', className].join(' ').trim()} id={id}>
+    <div className={['block', className].join(' ').trim()} id={id}>
       {typography}
     </div>
   )

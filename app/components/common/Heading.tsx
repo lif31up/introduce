@@ -7,7 +7,7 @@ const headingStyle = {
 }
 export default function Heading({children}:{children:string}){
   return(
-    <h1 className={"_grid-content mt-4 _heading_regular text-white"} style={headingStyle}>
+    <h1 className={"mt-8 -mb-8 _heading_regular text-white"} style={headingStyle}>
       {children}
     </h1>
   );

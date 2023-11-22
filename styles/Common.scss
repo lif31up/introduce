@@ -1,3 +1,5 @@
+@import "Library";
+
 ._bg-black-045{
   background: rgba(0, 0, 0, 0.45);
 }
@@ -9,4 +11,14 @@
 }
 ._sphere{
   border-radius: 50%;
+}
+._mobile_disable{
+  @include mobile{
+    display: none;
+  }
+}
+._desktop_disable{
+  @include desktop{
+    display: none;
+  }
 }

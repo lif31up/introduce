@@ -4,9 +4,9 @@ import Link from "next/link";
 const profileStyle ={
   height: "16rem",
 }
-export default function Profile({}){
+export default function Profile({isMobile}:{isMobile:boolean}){
   return(
-    <div className={"_grid-content _bg-black-045 _rounded-1xl flex text-white"} style={profileStyle}>
+    <div className={["_grid-content _bg-black-045 _rounded-1xl flex text-white",isMobile ? "_mobile_disable":"_desktop_disable"].join(" ").trim()} style={profileStyle}>
       <Image src={"/assets/images/profile.webp"} alt={"profile"} width={0} height={0} sizes={"60px"} className={"w-24 h-24 _sphere"}/>
       <div className={"pl-8"}>
         <h1 className={"_heading_large"}>한명환</h1>

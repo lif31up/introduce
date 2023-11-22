@@ -1,3 +1,9 @@
+/*BOX*/
+/*FLEX TOOLKIT*/
+/*FONT*/
+/*BACKGROUND*/
+/*PSEUDO*/
+/*FADE*/
 ._bg-black-045 {
   background: rgba(0, 0, 0, 0.45);
 }
@@ -12,6 +18,18 @@
 
 ._sphere {
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  ._mobile_disable {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  ._desktop_disable {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Common.css.map */

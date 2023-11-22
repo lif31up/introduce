@@ -4,6 +4,11 @@
   grid-gap: 2rem;
   margin-top: 2rem; margin-bottom: 8rem;
   @include center-margin(24);
+  @include mobile{
+    width: 100%;
+    display: block; overflow: hidden;
+    margin: 0; padding: 1rem 1rem 2rem 1rem;
+  }
 }
 ._grid-n{
   display: grid; grid-gap: $grid-gap;

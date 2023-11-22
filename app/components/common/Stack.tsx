@@ -16,7 +16,7 @@ export default function Stack({src,title,desc}:StackProps){
       <Image src={src} alt={title}
              width={40} height={40} sizes={"40px"} className={"_rounded-1xl h-16"} />
       <div className={"pl-8"}>
-        <h1 className={"_heading_large text-white"}>{title}</h1>
+        <h1 className={"_heading_regular text-white"}>{title}</h1>
         <desc className={"_text_small text-neutral-400"}>{desc}</desc>
       </div>
     </div>
