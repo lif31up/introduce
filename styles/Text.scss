@@ -4,39 +4,46 @@ html{
 }
 ._text_large{
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 ._text_regular{
   font-weight: 400;
-  font-size: 1rem;
-  @include mobile{font-size: 0.8rem;}
+  font-size: 1.4rem;
+  @include mobile{font-size: 1.2rem;}
 }
 ._text_small{
   font-weight: 300;
-  font-size: 0.8rem;
-  @include mobile{font-size: 0.7rem;}
+  font-size: 1.2rem;
+  @include mobile{font-size: 1rem;}
 }
 ._heading_huge{
-  font-weight: 500;
-  font-size: 1.85rem;
+  font-weight: bold;
+  font-size: 2.4rem;
 }
 ._heading_larger{
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 ._heading_large{
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 ._heading_regular{
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  @include mobile{
+    font-size: 1.2rem;
+  }
 }
 ._heading_small{
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+}
+._heading_huger{
+  font-weight: 700;
+  font-size: 4rem;
 }
 ._important_large{
-  font-weight: bold;
+  font-weight: 700;
   font-size: 2rem;
 }

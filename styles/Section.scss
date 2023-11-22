@@ -1,105 +1,16 @@
-@import 'Library';
-._default {
-  padding: 0 11rem 0 11rem;
-  @include large {
-    padding: 0 2rem 0 2rem;
-  }
-  @include tablet {
-    padding: 0 1rem 0 1rem;
-  }
-  @include mobile {
-    padding: 0;
-    margin-top: 0rem;
-  }
+@import "Library";
+._grid-2xn{
+  display: grid; grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem; margin-bottom: 8rem;
+  @include center-margin(24);
 }
-._grid-2xl {
-  background: linear-gradient(rgba(0, 0, 0, 0), #1d1f21 20%);
-  overflow-x: hidden;
-  @extend ._default;
-  display: flex;
-  width: 100%;
-  height: max-content;
-  overflow-y: hidden;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  @include mobile {
-    display: block;
-    padding-top: 0;
-  }
-  @include tablet {
-    display: block;
-  }
+._grid-n{
+  display: grid; grid-gap: $grid-gap;
+  width: 100%; height: fit-content;
 }
-._grid-2xl-article {
-  width: 50%;
-  height: fit-content;
-  @include mobile {
-    width: 100%;
-  }
-  @include tablet {
-    width: 100%;
-  }
-}
-._content {
-  width: calc(100% - 2rem);
-  height: fit-content;
-  background: rgba(16, 16, 16, 0.85);
-  color: white;
-  margin: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
+._grid-content{
   position: relative;
-  font-family: 'Gothic A1', sans-serif;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-  @include mobile {
-    width: calc(100% - 1rem);
-    margin: 1rem 0.5rem 1rem 0.5rem;
-  }
-}
-a ._content:hover {
-  background: black;
-}
-._trans_content {
-  @extend ._content;
-  background: none;
-  box-shadow: none;
-}
-._gray_content {
-  @extend ._content;
-  background: #262626;
-}
-._img-block {
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-  margin: 1rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-._desc-block {
-  width: calc(100% - 6rem);
-  height: fit-content;
-  padding: 1rem 1rem 1rem 0;
-  h1 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.8rem;
-    font-family: 'Gothic A1 Thin', sans-serif;
-  }
-  @include mobile {
-    h1 {
-      font-size: 1rem;
-    }
-    p {
-      font-size: 0.7rem;
-    }
-  }
-}
-._desc {
-  font-family: 'Gothic A1 Regular', sans-serif;
-  @include mobile {
-    display: grid;
-    justify-items: center;
-  }
+  width: 100%; height: fit-content;
+  padding: 2rem;
 }

@@ -1,4 +1,5 @@
 'use client'
+import "@/styles/Animation.css";
 import React, { useEffect, useRef } from 'react'
 interface MovingTypographyProps {
   className: string
@@ -19,10 +20,10 @@ export default function MovingTypography({
       return
     }
     const intersectionHandler = (entries: Array<any>): void => {
-      entries.forEach((entry, observer) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const letters: NodeListOf<HTMLElement> =
-            typography.querySelectorAll('.letter')
+            typography.querySelectorAll('._letter')
           letters.forEach((element: HTMLElement, index: number) => {
             setTimeout(() => {
               element.style.animationPlayState = 'running'
@@ -31,9 +32,9 @@ export default function MovingTypography({
           return () => {
             observerRef.current.disconnect()
           }
-        } //if
-      }) //forEach
-    } //intersectionHandler
+        }
+      })
+    }
     const options = { root: null, rootMargin: '0px', threshold: 0.1 }
     observerRef.current = new IntersectionObserver(intersectionHandler, options)
     observerRef.current.observe(typography)
@@ -41,20 +42,17 @@ export default function MovingTypography({
   const typography: Array<React.ReactNode> = []
   for (let i = 0; children[i]; i++) {
     if (children[i] === ' ') {
-      typography.push(<div key={i} className={'space'} />)
+      typography.push(<div key={i} className={'_space'} />)
     } else {
       typography.push(
-        <div key={i} className={['letter', animation].join(' ').trim()}>
+        <div key={i} className={['_letter', animation].join(' ').trim()}>
           {children[i]}
         </div>
       )
     }
   }
   return (
-    <div
-      className={['block h-fit w-full', className].join(' ').trim()}
-      id={id}
-    >
+    <div className={['flex', className].join(' ').trim()} id={id}>
       {typography}
     </div>
   )

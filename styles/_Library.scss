@@ -2,6 +2,7 @@ $mobile: 500;
 $tablet: 768;
 $large: 1024;
 $desktop: 1280;
+$grid-gap: 2rem;
 @mixin mobile {
   @media only screen and (max-width: $mobile * 1px) {
     @content;

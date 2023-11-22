@@ -1,70 +1,24 @@
-import '@/styles/Common.css'
-import Image from 'next/image'
-import Link from 'next/link'
-export default function Profile({ desktop }: { desktop: boolean }) {
-  return (
-    <div
-      className={[
-        '_gray_content p-4 flex',
-        desktop ? 'custom-mobile-disable' : 'custom-desktop-disable',
-      ]
-        .join(' ')
-        .trim()}
-    >
-      <div className={'absolute'}>
-        <Image
-          src={'/assets/images/profile.webp'}
-          alt={'profile.webp'}
-          width={'118'}
-          height={'118'}
-          sizes={'118px'}
-          className={'w-16 h-16 _sphere overflow-hidden object-cover'}
-        />
-      </div>
-      <div className={'h-16 w-16'} />
-      <div className={'pl-4 pt-1'}>
-        <div className={'flex items-end'}>
-          <h1 className={'_heading_large'}>{'한명환'}</h1>
-        </div>
-        <p className={'_text_regular text-neutral-400'}>
-          {'성남에서 거주 중, 판교와 강남'}
-          <br />
-          {'nulranlcns9991@gmail.com'}
-          <br />
-          {'연세대학교 미래캠퍼스 컴퓨터공학과'}
-        </p>
-        <div
-          className={
-            'flex gap-2 text-purple-400 _text_regular underline'
-          }
-        >
-          <Link
-            className={'block'}
-            href={
-              'https://www.wanted.co.kr/community/profile/37S8yhNPdWGwoLsqCu8uu7'
-            }
-            target={'_blank'}
-          >
-            {'원티드'}
-          </Link>
-          <Link
-            className={'block'}
-            href={'https://www.rocketpunch.com/@nulranlcns9991'}
-            target={'_blank'}
-          >
-            {'로켓펀치'}
-          </Link>
-          <Link
-            className={'block'}
-            href={
-              'https://join.slack.com/t/personalspace-hng4971/shared_invite/zt-25whyi2gn-4QPq8CLXi_GKD3qjNZSV0w'
-            }
-            target={'_blank'}
-          >
-            {'슬랙'}
-          </Link>
-        </div>
+import Image from "next/image";
+import Link from "next/link";
+
+const profileStyle ={
+  height: "16rem",
+}
+export default function Profile({}){
+  return(
+    <div className={"_grid-content _bg-black-045 _rounded-1xl flex text-white"} style={profileStyle}>
+      <Image src={"/assets/images/profile.webp"} alt={"profile"} width={0} height={0} sizes={"60px"} className={"w-24 h-24 _sphere"}/>
+      <div className={"pl-8"}>
+        <h1 className={"_heading_large"}>한명환</h1>
+        <p className={"_text_regular text-neutral-400"}>연세대학교 미래캠퍼스 컴퓨터공학과 (중퇴)</p>
+        <p className={"_text_regular text-neutral-400"}>NULRANLCNS9991@GMAIL.COM</p>
+        <p className={"_text_regular text-neutral-400"}>현재 성남에서 거주 중입니다</p>
+        <ul className={"pt-4 _text_regular text-teal-400 underline flex gap-4"}>
+          <Link href={""}>로켓펀치</Link>
+          <Link href={""}>원티드</Link>
+          <Link href={""}>잡플래닛</Link>
+        </ul>
       </div>
     </div>
-  )
+  );
 }

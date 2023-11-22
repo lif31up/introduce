@@ -1,35 +1,23 @@
 'use client'
 import Image from 'next/image'
-import { MutableRefObject, useEffect, useRef, useState } from 'react'
+import "@/styles/Common.css"
+import Tags from "@/app/components/common/Tags";
 interface ProjectProps {
   h1: string
   p: string
   src: string
   href: string
+  tags: Array<string>
 }
-export default function Project({ h1, p, src, href }: ProjectProps) {
+export default function Project({ h1, p, src, href, tags }: ProjectProps) {
   return (
     <a href={href}>
-      <div className={'_content p-4'}>
-        <h1 className={'_heading_large'}>{h1}</h1>
-        <Image
-          src={src}
-          alt={'project_img'}
-          width={'1'}
-          height={'1'}
-          sizes={'230px'}
-          loading={'lazy'}
-          className={
-            'w-full h-60 rounded-2xl overflow-hidden object-contain object-center'
-          }
-        />
-        <p
-          className={
-            '_text_regular text-neutral-400'
-          }
-        >
-          {p}
-        </p>
+      <div className={'_grid-content _bg-black-045 _rounded-1xl text-white hover:bg-black'}>
+        <h1 className={'_heading_huge'}>{h1}</h1>
+        <p className={'_text_regular text-neutral-400 mb-4'}>{p}</p>
+        <Tags width={"100%"} height={2.6} maxColum={1} theme={"_heading_small rounded-3xl"} colorScheme={"bg-white text-black"}>
+          {tags}
+        </Tags>
       </div>
     </a>
   )

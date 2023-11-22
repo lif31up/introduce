@@ -1,61 +1,12 @@
-@import 'Library';
-@import 'node_modules/magic.css/dist/magic.css';
-// custom atomic class
-._rounded {
-  border-radius: 1rem; overflow: hidden;
+._bg-black-045{
+  background: rgba(0, 0, 0, 0.45);
 }
-._sphere {
-  border-radius: 50%; overflow: hidden;
+._rounded-1xl{
+  border-radius: 1rem;
 }
-
-.custom-grid-2x2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+._button{
+  padding: 1rem 2rem 1rem 2rem;
 }
-
-.custom-mobile-disable {
-  @include mobile {
-    display: none;
-  }
-  @include tablet {
-    display: none;
-  }
-  @include large {
-    display: none;
-  }
-}
-.custom-desktop-disable {
-  @include desktop {
-    display: none;
-  }
-  @include large {
-    display: none;
-  }
-}
-.custom-w-full {
-  width: calc(100% - 1rem);
-}
-.custom-box-shadow {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-.custom-bg-black {
-  background: rgba(29, 31, 33, 1);
-}
-
-
-.letter {
-  display: inline-block;
-  @include mobile {
-    font-size: 1.8rem;
-  }
-}
-.space {
-  width: 0.5rem;
-  display: inline-block;
-}
-.custom-link-button {
-  font-size: 1rem;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  border-radius: 2rem;
+._sphere{
+  border-radius: 50%;
 }

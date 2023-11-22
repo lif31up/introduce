@@ -53,37 +53,6 @@ export default function Scene({}) {
   }, [false])
   return (
     <>
-      <div className={'text-white pl-48 pt-14 custom-mobile-disable'}>
-        <div className={'justify-items-center _important_large'}>
-          <MovingTypography
-            className={''}
-            animation={'_vanish-in'}
-            id={'tp--0'}
-          >
-            {'프론트엔드 개발자 한명환입니다.'}
-          </MovingTypography>
-        </div>
-        <div className={'_text_regular text-neutral-300'}>
-          <p>{'제 포트폴리오와 마주치셨군요!'}</p>
-          <p>{'이 인연이 의미있는 결과로 이어졌으면 좋겠습니다.'}</p>
-        </div>
-        <div className={'flex gap-8 font-bold mt-7'}>
-          <Link
-            className={'custom-bg-black custom-link-button custom-box-shadow'}
-            href={'#s-a-p'}
-          >
-            {'알아보기'}
-          </Link>
-          <Link
-            className={
-              'bg-purple-700 custom-link-button hover:bg-purple-800 custom-box-shadow'
-            }
-            href={'mailto:nulranlcns9991@gmail.com'}
-          >
-            {'연락하기'}
-          </Link>
-        </div>
-      </div>
       <div className={'fixed top-16 -z-10'}>
         <div className={'_scene'} ref={refContainer} id={'scene'} />
       </div>

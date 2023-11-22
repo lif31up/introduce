@@ -26,7 +26,7 @@ export default function AnimateSetter({
       )
     }
   })
-  return <div id={id}>{childrenInContainer}</div>
+  return <div id={id} className={"grid gap-4"}>{childrenInContainer}</div>
 }
 interface AnimationContainerProps {
   children: React.ReactNode
