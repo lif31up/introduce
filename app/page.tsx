@@ -11,13 +11,15 @@ import Heading from './components/common/Heading'
 import Tags from "@/app/components/common/Tags";
 import Profile from './components/common/Profile'
 import Front from "@/app/components/feature/Front";
+import Scene from "@/app/components/feature/Scene";
 const Footer = lazy(() => import('@/app/components/common/Footer'))
 export default function Home() {
   return (
     <main>
       <title>{'명환의 포트폴리오'}</title>
+      <Scene/>
       <Firebase />
-      <TopBar height={"5rem"}/>
+      <TopBar height={"6rem"}/>
       <div className={'_grid-2xn'} id={'content--0'}>
         <div className={"_grid-n"}>
           <Front/>
@@ -63,8 +65,9 @@ export default function Home() {
             <Project h1={'자료구조'} p={'C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다.'} src={'/assets/images/data_structure.webp'} href={'https://github.com/lif31up/Data-Structures-and-Algorithms'} tags={["C LANGUAGE","BASIC","COMPUTER SCIENCE"]}/>
             <Project h1={'웹 디자인 블로그'} p={'웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다.'} src={'/assets/images/web_design_blog.webp'} href={'https://renoki1s-blog.gitbook.io/undefined/'} tags={["GITBOOT","UI/UX DESIGN","DESIGN THEORY"]}/>
             <Project h1={'로고 디자인'} p={'제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다.'} src={'/assets/images/logo_design.webp'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["ILLUSTRATOR","PHOTOSHOP"]}/>
-            <WorkingOnTable/>
           </AnimateSetter>
+          <Heading>진행중</Heading>
+          <WorkingOnTable/>
         </div>
       </div>
       <Suspense fallback={<></>}>

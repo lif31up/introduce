@@ -4,7 +4,7 @@
   width: 100%;
   height: 25rem;
   padding: 2rem 40% 0 10rem;
-  background: #111212;
+  background: black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   color: white;
@@ -28,7 +28,4 @@
     display: block;
     padding: 1rem 2rem 0 2rem;
   }
-}
-.custom-footer-col {
-  background: #111212;
 }

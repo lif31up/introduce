@@ -11,7 +11,7 @@ export default function TopBar({height}:TopBarProps){
     if (topBar === null) return
     window.addEventListener("scroll",():void=>{
       if (window.scrollY > 1) {
-        topBar.style.height = `calc(${height} - 0.25rem)`
+        topBar.style.height = `calc(${height} - 1rem)`
       }
       else {
         topBar.style.height = height
@@ -26,10 +26,13 @@ export default function TopBar({height}:TopBarProps){
   }
   return(
     <>
-      <div className={"bg-black fixed flex items-center px-10 justify-between"} style={TopBarStyle} id={"top-bar--0"}>
-        <h1 className={"text-white _heading_large"}>프론트엔드 & UI/UX 디자이너</h1>
+      <div className={"bg-neutral-900 fixed flex items-center px-10 justify-between shadow"} style={TopBarStyle} id={"top-bar--0"}>
+        <div className={"flex gap-4"}>
+          <h1 className={"text-white _heading_regular _mobile_disable"}>프론트엔드 개발자</h1>
+          <h1 className={"text-neutral-300 _text_small"}>NULRANLCNS9991@GMAIL.COM</h1>
+        </div>
         <div>
-          <Link href={""} className={"_button bg-purple-700 text-white rounded-3xl _heading_regular shadow-black"}>HELLO</Link>
+          <Link href={""} className={"_button bg-purple-700 text-white _rounded-4xl _heading_regular shadow-black"}>GITHUB ACCOUNT</Link>
         </div>
       </div>
       <div style={TopBarStyle}/>

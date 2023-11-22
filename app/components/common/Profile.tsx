@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const profileStyle ={
-  height: "16rem",
+  height: "fit-content",
 }
 export default function Profile({isMobile}:{isMobile:boolean}){
   return(

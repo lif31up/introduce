@@ -5,7 +5,7 @@ import VideoPlayer from "@/app/components/feature/VideoPlayer";
 
 export default function Front({}){
   return(
-    <div className={"_grid-content block h-fit _bg-black-045 _rounded-1xl"}>
+    <div className={"_grid-content block h-fit _bg-black-045 _rounded-1xl _mobile_disable"}>
       <div className={"_rounded-1xl overflow-hidden mb-4"}>
         <VideoPlayer/>
       </div>

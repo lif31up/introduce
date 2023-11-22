@@ -75,16 +75,8 @@ export default function Footer({}) {
             슬랙
           </Link>
         </div>
-        <Link
-          className={
-            'block w-fit h-fit custom-link-button custom-desktop-disable bg-white text-black font-bold mt-16'
-          }
-          href={'#top'}
-        >
-          올라가기
-        </Link>
       </div>
-      <div className={'custom-footer-col py-4 px-4'}>
+      <div className={'bg-black py-4 px-4'}>
         <p
           className={
             '_text_small custom-text-08 text-neutral-400'
