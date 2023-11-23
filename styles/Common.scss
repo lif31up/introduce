@@ -7,7 +7,8 @@
   background: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0));
 }
 ._bg-black-02{
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.25);
+  @include mobile{background: rgba(0, 0, 0, 0.45);}
 }
 ._rounded-1xl{
   border-radius: 1rem;

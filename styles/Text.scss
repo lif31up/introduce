@@ -14,7 +14,7 @@ html{
 ._text_small{
   font-weight: 300;
   font-size: 1.4rem;
-  @include mobile{font-size: 1rem;}
+  @include mobile{font-size: 1.2rem;}
 }
 ._heading_huge{
   font-weight: bold;
