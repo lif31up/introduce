@@ -12,15 +12,13 @@ import Heading from './components/common/Heading'
 import Tags from "@/app/components/common/Tags";
 import Profile from './components/common/Profile'
 import Front from "@/app/components/feature/Front";
-import Scene from "@/app/components/feature/Scene";
 const Footer = lazy(() => import('@/app/components/common/Footer'))
 export default function Home() {
   return (
     <main>
       <title>{'명환의 포트폴리오'}</title>
-      <Scene/>
       <Firebase />
-      <TopBar height={"6rem"}/>
+      <TopBar height={"7rem"}/>
       <div className={'_grid-2xn'} id={'content--0'}>
         <div className={"_grid-n"}>
           <Front/>
@@ -34,7 +32,7 @@ export default function Home() {
             <Stack src={"/assets/images/react_icon.webp"} title={"리액트"} desc={"후크, 상태를 이해하고 적용할 줄 압니다. 리액트 쿼리, 리코일에도 익숙합니다."}/>
             <Stack src={"/assets/images/vercel_icon.webp"} title={"버셀"} desc={"이 페이지도 버셀을 통해 배포되는 중입니다."}/>
           </AnimateSetter>
-          <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-neutral-600 text-white _heading_regular"}>
+          <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-neutral-600 text-white _heading_small"}>
             {['Tailwind CSS', 'CSS Master', 'REACT QUERY', 'RECOIL', 'DOM', 'HTML with HTML5', 'HOOK Master', 'Firebase',]}
           </Tags>
           <Heading>디자인</Heading>
@@ -43,7 +41,7 @@ export default function Home() {
             <Stack src={"/assets/images/illustrator.webp"} title={"일러스트레이터"} desc={"가장 자신있게 다루는 디자인 도구입니다."}/>
             <Stack src={"/assets/images/figma_icon.webp"} title={"Figma"} desc={"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다."}/>
           </AnimateSetter>
-          <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-teal-600 text-white _heading_regular"}>
+          <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-teal-600 text-white _heading_small"}>
             {['Illustrator', 'Photoshop', 'XD', 'Ableton Live', 'VVVV', 'Simple Video Editing', 'Three.js', 'Blender',]}
           </Tags>
           <Heading>소프트스킬</Heading>
@@ -52,7 +50,7 @@ export default function Home() {
             <Stack src={"/assets/images/coworking_communicative.webp"} title={"의사소통"} desc={"사람들과 협업하는 것을 즐깁니다."}/>
             <Stack src={"/assets/images/coworking_problemsolver.webp"} title={"문제해결"} desc={"문제를 해결하고 풀어나갈 때, 과업을 온전히 책임을 지고 있다고 느낍니다."}/>
           </AnimateSetter>
-          <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-purple-600 text-white _heading_regular"}>
+          <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-purple-600 text-white _heading_small"}>
             {['WebStorm', 'EMACS', 'Visual Studio', 'Notion', 'Slack', 'Figma', 'GitHub', 'Git', 'ZeroHeight',]}
           </Tags>
         </div>

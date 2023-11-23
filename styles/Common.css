@@ -8,6 +8,14 @@
   background: rgba(0, 0, 0, 0.45);
 }
 
+._bg-grad-045 {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+}
+
+._bg-black-02 {
+  background: rgba(0, 0, 0, 0.45);
+}
+
 ._rounded-1xl {
   border-radius: 1rem;
 }
@@ -17,7 +25,7 @@
 }
 
 ._button {
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1.4rem 2.2rem 1.4rem 2.2rem;
 }
 
 ._sphere {

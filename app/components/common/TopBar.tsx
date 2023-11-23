@@ -26,13 +26,13 @@ export default function TopBar({height}:TopBarProps){
   }
   return(
     <>
-      <div className={"_bg-black-045 flex items-center px-10 justify-between"} style={TopBarStyle} id={"top-bar--0"}>
+      <div className={"bg-black rounded-b-2xl flex items-center px-10 justify-between"} style={TopBarStyle} id={"top-bar--0"}>
         <div className={"flex gap-4"}>
-          <h1 className={"text-white _heading_regular _mobile_disable"}>프론트엔드 개발자</h1>
+          <h1 className={"text-white _heading_regular _mobile_disable"}>개발자 포트폴리오</h1>
           <h1 className={"text-neutral-300 _text_small"}>NULRANLCNS9991@GMAIL.COM</h1>
         </div>
         <div>
-          <Link onClick={():void=>{logHandler("github_account")}} href={"https://github.com/lif31up"} className={"_button bg-purple-700 text-white _rounded-4xl _heading_regular shadow-black"}>GITHUB ACCOUNT</Link>
+          <Link onClick={():void=>{logHandler("github_account")}} href={"https://github.com/lif31up"} className={"_button bg-purple-600 text-white _rounded-4xl _heading_regular shadow-black"}>GITHUB</Link>
         </div>
       </div>
     </>

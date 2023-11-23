@@ -21,6 +21,7 @@ export default function VideoPlayer({}) {
       playing
       loop
       muted
+      style={{objectFit:"cover"}}
     />
   )
 }

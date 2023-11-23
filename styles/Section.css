@@ -10,12 +10,25 @@
   grid-gap: 2rem;
   margin-top: 1rem;
   padding-bottom: 8rem;
-  padding-left: 24rem;
-  padding-right: 24rem;
+  margin-left: 24rem;
+  margin-right: 24rem;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  ._grid-2xn {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  ._grid-2xn {
+    display: block;
+    overflow: hidden;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   ._grid-2xn {
-    width: 100%;
     display: block;
     overflow: hidden;
     margin: 0;
@@ -38,7 +51,7 @@
 }
 @media only screen and (max-width: 500px) {
   ._grid-content {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 

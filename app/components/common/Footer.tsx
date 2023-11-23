@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer({}) {
   return (
     <>
-      <div className={'footer _bg-black-045'}>
+      <div className={'footer bg-black'}>
         <div className={'my-6'}>
           <h1 className={'_heading_larger'}>
             리포지토리
@@ -76,7 +76,7 @@ export default function Footer({}) {
           </Link>
         </div>
       </div>
-      <div className={'_bg-black-045 py-4 px-4'}>
+      <div className={'bg-black py-4 px-4'}>
         <p
           className={
             '_text_small custom-text-08 text-neutral-400'

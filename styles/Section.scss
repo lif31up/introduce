@@ -3,9 +3,16 @@
   display: grid; grid-template-columns: repeat(2,1fr);
   grid-gap: 2rem;
   margin-top: 1rem; padding-bottom: 8rem;
-  @include center-padding(24);
+
+  @include center-margin(24);
+  @include large{
+    @include center-margin(4);
+  }
+  @include tablet{
+    display: block; overflow: hidden;
+    @include center-margin(10);
+  }
   @include mobile{
-    width: 100%;
     display: block; overflow: hidden;
     margin: 0; padding: 1rem 1rem 2rem 1rem;
   }
@@ -19,6 +26,6 @@
   width: 100%; height: fit-content;
   padding: 2rem;
   @include mobile{
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }

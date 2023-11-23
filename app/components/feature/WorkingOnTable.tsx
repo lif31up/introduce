@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
 import AnimateSetter from '@/app/components/common/AnimateSetter'
 import WorkingOn from '@/app/components/feature/WorkingOn'
 import React, { useRef, useState } from 'react'
+import Skeleton from "@/app/components/common/Skeleton";
 
 const queryClient = new QueryClient()
 export default function WorkingOnTable({}) {
@@ -32,7 +33,7 @@ function _WorkingOnTable({}) {
     },
   })
   if (loading) {
-    return <>Loading...</>
+    return <Skeleton img={false}/>
   }
   const workingOns: Array<React.ReactNode> = []
   // @ts-ignore

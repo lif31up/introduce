@@ -13,7 +13,7 @@ html{
 }
 ._text_small{
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   @include mobile{font-size: 1rem;}
 }
 ._heading_huge{
@@ -24,11 +24,11 @@ html{
   }
 }
 ._heading_larger{
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 600;
+  font-size: 2.2rem;
 }
 ._heading_large{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.8rem;
   @include mobile{
     font-size: 1.8rem;
@@ -38,12 +38,12 @@ html{
   font-weight: 600;
   font-size: 1.4rem;
   @include mobile{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 ._heading_small{
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 ._heading_huger{
   font-weight: 700;

@@ -25,7 +25,7 @@ html {
 
 ._text_small {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 @media only screen and (max-width: 500px) {
   ._text_small {
@@ -44,12 +44,12 @@ html {
 }
 
 ._heading_larger {
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 600;
+  font-size: 2.2rem;
 }
 
 ._heading_large {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.8rem;
 }
 @media only screen and (max-width: 500px) {
@@ -64,13 +64,13 @@ html {
 }
 @media only screen and (max-width: 500px) {
   ._heading_regular {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
 ._heading_small {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 ._heading_huger {
