@@ -12,6 +12,9 @@
 }
 ._rounded-1xl{
   border-radius: 1rem;
+  @include mobile{
+    border-radius: 0;
+  }
 }
 ._rounded-4xl{
   border-radius: 5rem;
@@ -35,4 +38,10 @@
 
 ._bg-111111{
   background: #111111;
+}
+._dynamic-gap{
+  grid-gap: 2rem;
+  @include mobile{
+    grid-gap: 0.25rem;
+  }
 }

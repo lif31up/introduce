@@ -25,6 +25,11 @@
 ._rounded-1xl {
   border-radius: 1rem;
 }
+@media only screen and (max-width: 500px) {
+  ._rounded-1xl {
+    border-radius: 0;
+  }
+}
 
 ._rounded-4xl {
   border-radius: 5rem;
@@ -52,6 +57,15 @@
 
 ._bg-111111 {
   background: #111111;
+}
+
+._dynamic-gap {
+  grid-gap: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  ._dynamic-gap {
+    grid-gap: 0.25rem;
+  }
 }
 
 /*# sourceMappingURL=Common.css.map */

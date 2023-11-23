@@ -9,7 +9,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 1rem;
-  padding-bottom: 8rem;
+  margin-bottom: 8rem;
   margin-left: 24rem;
   margin-right: 24rem;
 }
@@ -30,8 +30,7 @@
   ._grid-2xn {
     display: grid;
     grid-template-columns: none;
-    margin: 0;
-    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem 0 4rem 0;
   }
 }
 

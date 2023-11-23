@@ -26,6 +26,9 @@ html{
 ._heading_larger{
   font-weight: 600;
   font-size: 2.2rem;
+  @include mobile{
+    font-size: 2rem;
+  }
 }
 ._heading_large{
   font-weight: 500;
@@ -44,6 +47,9 @@ html{
 ._heading_small{
   font-weight: 500;
   font-size: 1.4rem;
+  @include mobile{
+    font-size: 1.2rem;
+  }
 }
 ._heading_huger{
   font-weight: 700;

@@ -53,7 +53,6 @@ export default function Home() {
               </Tags>
             </div>
           </div>
-
           <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
             <Heading desc={"협업이 없다면 의미있는 결과를 만들기 힘듭니다. 저를 이해하기 쉬운 키워드를 잠깐 소개하겠습니다."}>소프트스킬</Heading>
             <AnimateSetter id={"stack-table--4"} animation={"_slide-rtl"} gap={"gap-1"}>
@@ -67,12 +66,11 @@ export default function Home() {
               </Tags>
             </div>
           </div>
-
         </div>
         <div className={"_grid-n"}>
           <Profile isMobile={true}/>
-          <Heading desc={""}>프로젝트</Heading>
-          <AnimateSetter id={'project--0'} animation={'_swash-in'} gap={"gap-8"}>
+          <Heading desc={"지금까지 제가 진행해온 개인 또는 팀 프로젝트입니다. 하나하나 의미있는 경험이었습니다."} noPadding={true}>프로젝트</Heading>
+          <AnimateSetter id={'project--0'} animation={'_swash-in'} gap={"_dynamic-gap"}>
             <Project h1={'무한 스크롤링'} p={'무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다.'} src={'/assets/images/shoppingmall.webp'} href={'https://shopping-mall-rust.vercel.app/'} tags={["REACT QUERY","OBSERVER API","FETCHING"]}/>
             <Project h1={'포트폴리오'} p={'현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'} src={'/assets/images/portfolio.webp'} href={'https://github.com/lif31up/introduce'} tags={["REACT","NEXT","VERCEL","FIREBASE API","SCSS","TAILWIND CSS"]}/>
             <Project h1={'뉴럴링크'} p={'제가 좋아하는 엔터프라이즈 중 하나인 뉴럴링크의 페이지를 직접 다시 디자인해보았습니다. 이 과정에서 과감한 디자인 표현에 대해 배우고 이를 사용하려면 세삼한 주의가 필요하다는 몇 가지 교훈을 얻었습니다.'} src={'/assets/images/neuralink.webp'} href={'https://neuralink-redesign.vercel.app/'} tags={["SCSS","TAILWIND CSS","NEXT","XD"]}/>

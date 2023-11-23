@@ -47,6 +47,11 @@ html {
   font-weight: 600;
   font-size: 2.2rem;
 }
+@media only screen and (max-width: 500px) {
+  ._heading_larger {
+    font-size: 2rem;
+  }
+}
 
 ._heading_large {
   font-weight: 500;
@@ -71,6 +76,11 @@ html {
 ._heading_small {
   font-weight: 500;
   font-size: 1.4rem;
+}
+@media only screen and (max-width: 500px) {
+  ._heading_small {
+    font-size: 1.2rem;
+  }
 }
 
 ._heading_huger {
