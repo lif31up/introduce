@@ -3,23 +3,25 @@
   display: grid; grid-template-columns: repeat(2,1fr);
   grid-gap: 2rem;
   margin-top: 1rem; padding-bottom: 8rem;
-
   @include center-margin(24);
   @include large{
     @include center-margin(4);
   }
   @include tablet{
-    display: block; overflow: hidden;
-    @include center-margin(10);
+    display: block;
+    @include center-margin(2);
   }
   @include mobile{
-    display: block; overflow: hidden;
+    display: grid; grid-template-columns: none;
     margin: 0; padding: 1rem 1rem 2rem 1rem;
   }
 }
 ._grid-n{
   display: grid; grid-gap: $grid-gap;
   width: 100%; height: fit-content;
+  @include mobile{
+    grid-gap: 2rem;
+  }
 }
 ._grid-content{
   position: relative;
@@ -28,4 +30,9 @@
   @include mobile{
     padding: 1.5rem;
   }
+}
+._grid-content-complex{
+  margin-top: 1rem;
+  width: 100%; height: fit-content;
+  padding-bottom: 2rem;
 }

@@ -11,7 +11,7 @@ export default function VideoPlayer({}) {
     setLoading(true)
   }, [false])
   if (!loading) {
-    return <></>
+    return <div className={"h-96 _loading-bar"}></div>
   }
   return (
     <ReactPlayer

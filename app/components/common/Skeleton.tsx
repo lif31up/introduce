@@ -9,7 +9,7 @@ export default function Skeleton({img}:SkeletonProps){
     imgSkeleton = <div className={"w-full h-40"}/>
   }
   return(
-    <div className={"_grid-content _bg-black-02 _rounded-1xl"}>
+    <div className={"_grid-content _bg-black-025 _rounded-1xl"}>
       <div title={"h1"} className={"_loading-bar h-16"}/>
       {imgSkeleton}
       <div title={"p"} className={"_loading-bar w-full h-8 my-2"}/>

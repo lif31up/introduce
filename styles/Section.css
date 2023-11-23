@@ -22,15 +22,14 @@
 @media only screen and (min-width: 501px) and (max-width: 768px) {
   ._grid-2xn {
     display: block;
-    overflow: hidden;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
   ._grid-2xn {
-    display: block;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: none;
     margin: 0;
     padding: 1rem 1rem 2rem 1rem;
   }
@@ -41,6 +40,11 @@
   grid-gap: 2rem;
   width: 100%;
   height: fit-content;
+}
+@media only screen and (max-width: 500px) {
+  ._grid-n {
+    grid-gap: 2rem;
+  }
 }
 
 ._grid-content {
@@ -53,6 +57,13 @@
   ._grid-content {
     padding: 1.5rem;
   }
+}
+
+._grid-content-complex {
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 2rem;
 }
 
 /*# sourceMappingURL=Section.css.map */

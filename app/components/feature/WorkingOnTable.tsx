@@ -43,7 +43,7 @@ function _WorkingOnTable({}) {
     } //don't add none object instance
   })
   return (
-    <AnimateSetter id={'working-on--0'} animation={'_boing-up'}>
+    <AnimateSetter id={'working-on--0'} animation={'_boing-up'} gap={"gap-8"}>
       {workingOns}
     </AnimateSetter>
   )

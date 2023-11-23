@@ -22,17 +22,15 @@ export default function TopBar({height}:TopBarProps){
   const TopBarStyle:object = {
     width: "100%",
     height: height,
-    transition: "0.5s ease-in-out",
+    transition: "transform 1s ease-in-out",
   }
   return(
     <>
-      <div className={"bg-black flex items-center px-10 justify-between"} style={TopBarStyle} id={"top-bar--0"}>
-        <div className={"flex gap-4"}>
-          <h1 className={"text-white _heading_regular _mobile_disable"}>개발자 포트폴리오</h1>
-          <h1 className={"text-neutral-300 _text_small"}>NULRANLCNS9991@GMAIL.COM</h1>
-        </div>
-        <div>
-          <Link onClick={():void=>{logHandler("github_account")}} href={"https://github.com/lif31up"} className={"_button bg-purple-600 text-white _rounded-4xl _heading_regular shadow-black"}>GITHUB</Link>
+      <div className={"_bg-black-045 flex items-center pl-4 pr-8 justify-between select-none"} style={TopBarStyle} id={"top-bar--0"}>
+        <div className={"flex gap-4 items-center"}>
+          <div className={"w-8 h-8 _sphere bg-neutral-500 _mobile_disable"}/>
+          <Link onClick={():void=>{logHandler("github_account")}} href={"https://github.com/lif31up"} className={"rounded-3xl px-6 _py-05 bg-purple-600 _heading_regular shadow-black _desktop_disable text-neutral-200"}>GITHUB ACCOUNT</Link>
+          <h1 className={"text-neutral-400 -mb-1 _heading_regular _mobile_disable"}>명환의 포트폴리오에 오신 걸 환영합니다.</h1>
         </div>
       </div>
     </>

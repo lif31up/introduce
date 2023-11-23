@@ -6,11 +6,13 @@ interface AnimationContainerTableProps {
   children: React.ReactNode
   id: string
   animation: string
+  gap: string
 }
 export default function AnimateSetter({
   children,
   id,
   animation,
+  gap
 }: AnimationContainerTableProps) {
   const childrenInContainer: Array<React.ReactNode> = []
   React.Children.forEach(children, (child, index) => {
@@ -26,7 +28,7 @@ export default function AnimateSetter({
       )
     }
   })
-  return <div id={id} className={"grid gap-4"}>{childrenInContainer}</div>
+  return <div id={id} className={["grid",gap].join(" ").trim()}>{childrenInContainer}</div>
 }
 interface AnimationContainerProps {
   children: React.ReactNode

@@ -1,14 +1,20 @@
 import "@/styles/Text.css"
 
 const headingStyle = {
-  fontSize: "3rem",
   height: "6rem",
   overflow: "hidden",
 }
-export default function Heading({children}:{children:string}){
+export default function Heading({children,desc}:{children:string,desc:string}){
+  let descNode:JSX.Element = <></>;
+  if(desc !== ""){
+    descNode = <p className={"_heading_small text-neutral-400"} style={{fontWeight: 400}}>{desc}</p>
+  }
   return(
-    <h1 className={"mt-8 -mb-8 _heading_regular text-white"} style={headingStyle}>
-      {children}
-    </h1>
+    <div className={["mx-8 mt-8",desc === "" ? "":"mb-12"].join(" ").trim()}>
+      <h1 className={"-mb-8 _heading_huge text-white"} style={headingStyle}>
+        {children}
+      </h1>
+      {descNode}
+    </div>
   );
 }

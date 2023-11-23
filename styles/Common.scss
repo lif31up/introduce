@@ -1,12 +1,12 @@
 @import "Library";
 
+._py-05{
+  padding-top: 0.5rem; padding-bottom: 0.5rem;
+}
 ._bg-black-045{
   background: rgba(0, 0, 0, 0.45);
 }
-._bg-grad-045{
-  background: linear-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0));
-}
-._bg-black-02{
+._bg-black-025{
   background: rgba(0, 0, 0, 0.25);
   @include mobile{background: rgba(0, 0, 0, 0.45);}
 }
