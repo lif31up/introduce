@@ -42,7 +42,7 @@
 }
 @media only screen and (max-width: 500px) {
   ._grid-n {
-    grid-gap: 2rem;
+    grid-gap: 0;
   }
 }
 

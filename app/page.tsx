@@ -13,7 +13,7 @@ import Tags from "@/app/components/common/Tags";
 import Profile from './components/common/Profile'
 import Front from "@/app/components/feature/Front";
 const Footer = lazy(() => import('@/app/components/common/Footer'))
-export default function Home() {
+export default function Home():JSX.Element {
   return (
     <main>
       <title>{'명환의 포트폴리오'}</title>
@@ -39,7 +39,6 @@ export default function Home() {
               </Tags>
             </div>
           </div>
-
           <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
             <Heading desc={"기술도 중요하지만 사용자 경험이 형편없으면 안 된다고 늘 생각합니다. 저는 다자인 능력도 겸비하고 있습니다."}>디자인</Heading>
             <AnimateSetter id={"stack-table--3"} animation={"_slide-rtl"} gap={"gap-1"}>
@@ -69,7 +68,6 @@ export default function Home() {
         </div>
         <div className={"_grid-n"}>
           <Profile isMobile={true}/>
-          <Heading desc={"지금까지 제가 진행해온 개인 또는 팀 프로젝트입니다. 하나하나 의미있는 경험이었습니다."} noPadding={true}>프로젝트</Heading>
           <AnimateSetter id={'project--0'} animation={'_swash-in'} gap={"_dynamic-gap"}>
             <Project h1={'무한 스크롤링'} p={'무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다.'} src={'/assets/images/shoppingmall.webp'} href={'https://shopping-mall-rust.vercel.app/'} tags={["REACT QUERY","OBSERVER API","FETCHING"]}/>
             <Project h1={'포트폴리오'} p={'현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'} src={'/assets/images/portfolio.webp'} href={'https://github.com/lif31up/introduce'} tags={["REACT","NEXT","VERCEL","FIREBASE API","SCSS","TAILWIND CSS"]}/>

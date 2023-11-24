@@ -20,7 +20,7 @@
   display: grid; grid-gap: $grid-gap;
   width: 100%; height: fit-content;
   @include mobile{
-    grid-gap: 2rem;
+    grid-gap: 0;
   }
 }
 ._grid-content{
