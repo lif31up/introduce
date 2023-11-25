@@ -34,8 +34,4 @@
 ._grid-content-complex{
   width: 100%; height: fit-content;
   padding-bottom: 2rem;
-  @include mobile{
-    padding-bottom: 0;
-    padding-top: 2rem;
-  }
 }
