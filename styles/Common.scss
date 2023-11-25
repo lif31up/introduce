@@ -40,8 +40,11 @@
   background: #111111;
 }
 ._dynamic-gap{
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   @include mobile{
     grid-gap: 0.25rem;
   }
+}
+._gap-05{
+  grid-gap: 0.5rem;
 }

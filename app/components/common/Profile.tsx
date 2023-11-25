@@ -14,7 +14,7 @@ export default function Profile({isMobile}:{isMobile:boolean}){
           <h1 className={"_heading_large"}>한명환</h1>
           <p className={"_text_regular text-neutral-400"}>연세대학교 미래캠퍼스 컴퓨터공학과</p>
           <p className={"_text_regular text-neutral-400"}>NULRANLCNS9991@GMAIL.COM</p>
-          <p className={"_text_regular text-neutral-400"}>현재 성남에서 거주 중입니다</p>
+          <p className={"_text_regular text-neutral-400 mt-1"}>현재 성남에서 거주 중입니다</p>
           <ul className={"pt-4 _text_regular text-emerald-300 flex gap-4"}>
             <Link href={""}>로켓펀치</Link>
             <Link href={""}>원티드</Link>

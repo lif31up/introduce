@@ -25,7 +25,7 @@ export default function Home():JSX.Element {
           <Profile isMobile={false}/>
           <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
             <Heading desc={"개발자로써의 본주제라고 생각합니다. 디자인도 중요하지만 프론트엔드 기술도 탁월합니다."}>프론트엔드</Heading>
-            <AnimateSetter id={"stack-table--1"} animation={"_slide-rtl"} gap={"_dynamic-gap"}>
+            <AnimateSetter id={"stack-table--1"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/javascript_icon.webp"} title={"자바스크립트"} desc={"DOM 조작과 자체 API, 약속체, 상속에 대해 정확한 지식을 가지고 있습니다. ES6 문법을 주로 사용했고 이에 익숙합니다."}/>
               <Stack src={"/assets/images/typescript_icon.webp"} title={"타입스크립트"} desc={"엄격한 문법도 막힘없이 읽어 확장, 작성할 수 있습니다. 리액트와 같이 사용한 경험이 많아 디버깅에 유리합니다."}/>
               <Stack src={"/assets/images/sass_icon.webp"} title={"SASS"} desc={"SASS를 통해 반응형 스타일시트를 만들 수 있습니다. 그 외에도 컴파일 방식이나 코드 캡슐화를 읽고 쓸 줄 압니다."}/>
@@ -41,7 +41,7 @@ export default function Home():JSX.Element {
           </div>
           <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
             <Heading desc={"기술도 중요하지만 사용자 경험이 형편없으면 안 된다고 늘 생각합니다. 저는 다자인 능력도 겸비하고 있습니다."}>디자인</Heading>
-            <AnimateSetter id={"stack-table--3"} animation={"_slide-rtl"} gap={"_dynamic-gap"}>
+            <AnimateSetter id={"stack-table--3"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/photoshop.webp"} title={"포토샵"} desc={"포토샵을 통해서 목업과 이미지에 대한 필터 효과를 적용할 수 있습니다. 전반적인 보정 작업에 대한 틀을 잡을 줄 앎니다."}/>
               <Stack src={"/assets/images/illustrator.webp"} title={"일러스트레이터"} desc={"가장 자신있게 다루는 디자인 도구입니다. 기대 이상으로 잘 다룹니다! 로고 프로젝트에서 이를 확인할 수 있습니다."}/>
               <Stack src={"/assets/images/figma_icon.webp"} title={"Figma"} desc={"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다. 디자인 체계를 기획하는데 자주 사용하는 프로그램입니다."}/>
@@ -54,7 +54,7 @@ export default function Home():JSX.Element {
           </div>
           <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
             <Heading desc={"협업이 없다면 의미있는 결과를 만들기 힘듭니다. 저를 이해하기 쉬운 키워드를 잠깐 소개하겠습니다."}>소프트스킬</Heading>
-            <AnimateSetter id={"stack-table--4"} animation={"_slide-rtl"} gap={"_dynamic-gap"}>
+            <AnimateSetter id={"stack-table--4"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/coworking_informative.webp"} title={"호기심"} desc={"새로운 지식 또는 이야기를 습득할 때, 재미와 열정을 느낍니다. 그만큼 저도 많은 걸 알고 있습니다."}/>
               <Stack src={"/assets/images/coworking_communicative.webp"} title={"의사소통"} desc={"사람들과 협업하는 것을 즐깁니다. 새로운 사람을 만나서 그들의 이야기를 듣는 걸 재밌어합니다 ^^"}/>
               <Stack src={"/assets/images/coworking_problemsolver.webp"} title={"문제해결"} desc={"문제를 해결하고 풀어나갈 때, 과업을 온전히 책임을 지고 있다고 느낍니다. 장애물이 생겼을 때, 열정이 더 생깁니다."}/>

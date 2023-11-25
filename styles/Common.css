@@ -60,12 +60,16 @@
 }
 
 ._dynamic-gap {
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 @media only screen and (max-width: 500px) {
   ._dynamic-gap {
     grid-gap: 0.25rem;
   }
+}
+
+._gap-05 {
+  grid-gap: 0.5rem;
 }
 
 /*# sourceMappingURL=Common.css.map */
