@@ -22,6 +22,6 @@ html {
   font-size: 10px; font-family: "Gothic A1", sans-serif;
 }
 body {
-  background: #282828;
+  background: rgba(15,15,15);
   color: rgb(var(--foreground-rgb));
 }

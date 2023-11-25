@@ -40,7 +40,7 @@ interface TagProps {
 const tagStyle: object = {
   display: 'inline-block',
   marginRight: '1rem',
-  padding: '0.4rem 1.5rem 0.4rem 1.5rem',
+  padding: '0.6rem 1.5rem 0.4rem 1.5rem',
   marginBottom: '1rem',
   height: 'fit-content',
 }

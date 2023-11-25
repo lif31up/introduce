@@ -12,11 +12,13 @@ import Heading from './components/common/Heading'
 import Tags from "@/app/components/common/Tags";
 import Profile from './components/common/Profile'
 import Front from "@/app/components/feature/Front";
+import Background from "@/app/components/common/Background";
 const Footer:ExoticComponent<any> = lazy(() => import('@/app/components/common/Footer'))
 export default function Home():JSX.Element {
   return (
     <main>
       <title>{'명환의 포트폴리오'}</title>
+      <Background/>
       <Firebase />
       <TopBar height={"5rem"}/>
       <div className={'_grid-2xn'} id={'content--0'}>

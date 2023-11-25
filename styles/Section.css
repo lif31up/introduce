@@ -63,5 +63,11 @@
   height: fit-content;
   padding-bottom: 2rem;
 }
+@media only screen and (max-width: 500px) {
+  ._grid-content-complex {
+    padding-bottom: 0;
+    padding-top: 2rem;
+  }
+}
 
 /*# sourceMappingURL=Section.css.map */
