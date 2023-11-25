@@ -28,7 +28,7 @@ export default function AnimateSetter({
       )
     }
   })
-  return <div id={id} className={["grid",gap].join(" ").trim()}>{childrenInContainer}</div>
+  return <div id={id} className={["_animation-setter",gap].join(" ").trim()}>{childrenInContainer}</div>
 }
 interface AnimationContainerProps {
   children: React.ReactNode
@@ -44,11 +44,11 @@ function AnimationContainer({
   useEffect(() => {
     let target: HTMLElement | null = document.getElementById(id)
     const intersectionHandler = (entries: Array<any>): void => {
-      entries.forEach((entry) => {
+      entries.forEach((entry):void|(()=>void)=> {
         if (entry.isIntersecting) {
           if (target === null) {return}
           target.style.animationPlayState = 'running'
-          return () => {
+          return ():void=> {
             observerRef.current.disconnect()
           }
         }

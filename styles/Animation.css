@@ -1,4 +1,9 @@
 @import "magic.css/dist/magic.css";
+._animation-setter {
+  display: grid;
+  grid-gap: 2rem;
+}
+
 ._slide-rtl {
   animation: ltr-slide 1s ease-in-out paused;
 }

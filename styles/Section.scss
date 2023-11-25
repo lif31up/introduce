@@ -1,7 +1,7 @@
 @import "Library";
 ._grid-2xn{
   display: grid; grid-template-columns: repeat(2,1fr);
-  grid-gap: 2rem;
+  grid-gap: 0.5rem 2rem;
   margin-top: 1rem; margin-bottom: 8rem;
   @include center-margin(24);
   @include large{
@@ -13,14 +13,14 @@
   }
   @include mobile{
     display: grid; grid-template-columns: none;
-    margin: 1rem 0 4rem 0;
+    margin: 0.5rem 0 4rem 0;
   }
 }
 ._grid-n{
   display: grid; grid-gap: $grid-gap;
   width: 100%; height: fit-content;
   @include mobile{
-    grid-gap: 0;
+    grid-gap: 0.5rem;
   }
 }
 ._grid-content{
@@ -32,7 +32,6 @@
   }
 }
 ._grid-content-complex{
-  margin-top: 1rem;
   width: 100%; height: fit-content;
   padding-bottom: 2rem;
 }
