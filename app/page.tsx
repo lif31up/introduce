@@ -68,7 +68,7 @@ export default function Home():JSX.Element {
             </div>
           </div>
         </div>
-        <div className={"_grid-n"}>
+        <div className={"_grid-n"} id={"grid-n-1"}>
           <Profile isMobile={true}/>
           <div className={"_grid-content _desktop_disable mt-4"}>
             <h1 className={"_heading_huge text-white"}>프로젝트</h1>
@@ -82,6 +82,10 @@ export default function Home():JSX.Element {
             <Project h1={'웹 디자인 블로그'} p={'웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다.'} src={'/assets/images/web_design_blog.webp'} href={'https://renoki1s-blog.gitbook.io/undefined/'} tags={["GITBOOT","UI/UX DESIGN","DESIGN THEORY"]}/>
             <Project h1={'로고 디자인'} p={'제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다.'} src={'/assets/images/logo_design.webp'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["ILLUSTRATOR","PHOTOSHOP"]}/>
           </AnimateSetter>
+          <div className={"_grid-content _desktop_disable mt-4"}>
+            <h1 className={"_heading_huge text-white"}>진행중</h1>
+            <p className={"_text_regular text-neutral-400"}>현재 진행 중인 프로젝트입니다. 제가 현재 어떤 방향성을 가지고 있는 지를 나타내기 위함입니다.</p>
+          </div>
           <WorkingOnTable/>
         </div>
       </div>
