@@ -36,7 +36,7 @@ export default function Home():JSX.Element {
               <Stack src={"/assets/images/vercel_icon.webp"} title={"버셀"} desc={"이 페이지도 버셀을 통해 배포되는 중입니다. 간단한 배포는 혼자서 많이 해본 경험이 있습니다."}/>
             </AnimateSetter>
             <div className={"mx-8 mt-10"}>
-              <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-neutral-600 text-white _heading_small"}>
+              <Tags maxColum={2} width={"100%"} height={3} theme={"_tag-text-0 rounded-3xl"} colorScheme={"bg-teal-600 text-white _heading_small"}>
                 {['Tailwind CSS', 'CSS Master', 'REACT QUERY', 'RECOIL', 'DOM', 'HTML with HTML5', 'HOOK Master', 'Firebase',]}
               </Tags>
             </div>
@@ -49,7 +49,7 @@ export default function Home():JSX.Element {
               <Stack src={"/assets/images/figma_icon.webp"} title={"Figma"} desc={"UI/UX를 디자인하기 위해 주로 사용하는 도구입니다. 디자인 체계를 기획하는데 자주 사용하는 프로그램입니다."}/>
             </AnimateSetter>
             <div className={"mx-8 mt-10"}>
-              <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-teal-600 text-white _heading_small"}>
+              <Tags maxColum={2} width={"100%"} height={3} theme={"_tag-text-0 rounded-3xl"} colorScheme={"bg-orange-600 text-white _heading_small"}>
                 {['Illustrator', 'Photoshop', 'XD', 'Ableton Live', 'VVVV', 'Simple Video Editing', 'Three.js', 'Blender',]}
               </Tags>
             </div>
@@ -62,7 +62,7 @@ export default function Home():JSX.Element {
               <Stack src={"/assets/images/coworking_problemsolver.webp"} title={"문제해결"} desc={"문제를 해결하고 풀어나갈 때, 과업을 온전히 책임을 지고 있다고 느낍니다. 장애물이 생겼을 때, 열정이 더 생깁니다."}/>
             </AnimateSetter>
             <div className={"mx-8 mt-10"}>
-              <Tags maxColum={2} width={"100%"} height={3} theme={"rounded-3xl"} colorScheme={"bg-purple-600 text-white _heading_small"}>
+              <Tags maxColum={2} width={"100%"} height={3} theme={"_tag-text-0 rounded-3xl"} colorScheme={"bg-purple-600 text-white _heading_small"}>
                 {['WebStorm', 'EMACS', 'Visual Studio', 'Notion', 'Slack', 'Figma', 'GitHub', 'Git', 'ZeroHeight',]}
               </Tags>
             </div>

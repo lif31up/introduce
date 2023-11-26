@@ -22,7 +22,7 @@ html {
   font-size: 10px; font-family: "Gothic A1", sans-serif;
 }
 body {
-  background: rgba(15,15,15);
+  background: rgba(0,0,0);
   color: rgb(var(--foreground-rgb));
   scroll-behavior: smooth;
 }
