@@ -2,6 +2,7 @@
 ._animation-setter {
   display: grid;
   grid-gap: 2rem;
+  overflow: hidden;
 }
 
 ._slide-rtl {
