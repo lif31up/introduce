@@ -16,9 +16,9 @@ export default function Front({}){
           <MovingTypography className={"text-white _heading_larger"} animation={"_boing-up"} id={"movtyp--0"}>
             더 나은 미래를 꿈꾸는 개발자
           </MovingTypography>
-          <p className={"text-neutral-300 _text_regular"}>나와 내 컴퓨터는 항상 발전하는 중입니다.</p>
+          <p className={"text-neutral-300 _text-regular"}>나와 내 컴퓨터는 항상 발전하는 중입니다.</p>
         </div>
-        <h1 className={"text-neutral-300 _text_regular"}>
+        <h1 className={"text-neutral-300 _text-regular"}>
           23/11/23
         </h1>
       </div>
@@ -27,9 +27,9 @@ export default function Front({}){
           <MovingTypography className={"text-white _heading_larger"} animation={"_boing-up"} id={"movtyp--1"}>
             새로운 경험을 원하는 디자이너
           </MovingTypography>
-          <p className={"text-neutral-300 _text_regular"}>컴퓨터로 할 수 있는 가장 흥미로운 것들을 가져옵니다.</p>
+          <p className={"text-neutral-300 _text-regular"}>컴퓨터로 할 수 있는 가장 흥미로운 것들을 가져옵니다.</p>
         </div>
-        <h1 className={"text-neutral-300 _text_regular"}>
+        <h1 className={"text-neutral-300 _text-regular"}>
           23/11/23
         </h1>
       </div>

@@ -11,7 +11,7 @@
   @include mobile{background: rgba(0, 0, 0, 0.45);}
 }
 ._rounded-1xl{
-  border-radius: 1rem;
+  border-radius: 0.4rem;
   @include mobile{
     border-radius: 0;
   }

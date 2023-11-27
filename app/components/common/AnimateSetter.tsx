@@ -7,12 +7,14 @@ interface AnimationContainerTableProps {
   id: string
   animation: string
   gap: string
+  className?: string
 }
 export default function AnimateSetter({
   children,
   id,
   animation,
-  gap
+  gap,
+  className
 }: AnimationContainerTableProps) {
   const childrenInContainer: Array<React.ReactNode> = []
   React.Children.forEach(children, (child, index) => {
@@ -28,7 +30,7 @@ export default function AnimateSetter({
       )
     }
   })
-  return <div id={id} className={["_animation-setter",gap].join(" ").trim()}>{childrenInContainer}</div>
+  return <div id={id} className={["_animation-setter",gap,className].join(" ").trim()}>{childrenInContainer}</div>
 }
 interface AnimationContainerProps {
   children: React.ReactNode

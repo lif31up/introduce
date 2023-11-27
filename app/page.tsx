@@ -20,12 +20,12 @@ export default function Home():JSX.Element {
       <title>{'명환의 포트폴리오'}</title>
       <Background/>
       <Firebase />
-      <TopBar height={"5rem"}/>
+      <TopBar height={"7rem"}/>
       <div className={'_grid-2xn'} id={'content--0'}>
         <div className={"_grid-n"}>
           <Front/>
           <Profile isMobile={false}/>
-          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
+          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden scroll-m-20"} id={'front-end'}>
             <Heading desc={"개발자로써의 본주제라고 생각합니다. 디자인도 중요하지만 프론트엔드 기술도 탁월합니다."}>프론트엔드</Heading>
             <AnimateSetter id={"stack-table--1"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/javascript_icon.webp"} title={"자바스크립트"} desc={"DOM 조작과 자체 API, 약속체, 상속에 대해 정확한 지식을 가지고 있습니다. ES6 문법을 주로 사용했고 이에 익숙합니다."}/>
@@ -41,7 +41,7 @@ export default function Home():JSX.Element {
               </Tags>
             </div>
           </div>
-          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden"}>
+          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden scroll-m-20"} id={"design"}>
             <Heading desc={"기술도 중요하지만 사용자 경험이 형편없으면 안 된다고 늘 생각합니다. 저는 다자인 능력도 겸비하고 있습니다."}>디자인</Heading>
             <AnimateSetter id={"stack-table--3"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/photoshop.webp"} title={"포토샵"} desc={"포토샵을 통해서 목업과 이미지에 대한 필터 효과를 적용할 수 있습니다. 전반적인 보정 작업에 대한 틀을 잡을 줄 앎니다."}/>
@@ -72,9 +72,9 @@ export default function Home():JSX.Element {
           <Profile isMobile={true}/>
           <div className={"_grid-content _desktop_disable mt-8"}>
             <h1 className={"_heading_huge text-white"}>프로젝트</h1>
-            <p className={"_text_regular text-neutral-400"}>제가 지금까지 진행해온 프로젝트입니다. 하나하나 모두 의미있는 경험이었습니다.</p>
+            <p className={"_text-regular text-neutral-400"}>제가 지금까지 진행해온 프로젝트입니다. 하나하나 모두 의미있는 경험이었습니다.</p>
           </div>
-          <AnimateSetter id={'project--0'} animation={'_swash-in'} gap={"_dynamic-gap"}>
+          <AnimateSetter id={'project'} animation={'_swash-in'} gap={"_dynamic-gap"} className={"scroll-m-32"}>
             <Project h1={'무한 스크롤링'} p={'무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다.'} src={'/assets/images/shoppingmall.webp'} href={'https://shopping-mall-rust.vercel.app/'} tags={["REACT QUERY","OBSERVER API","FETCHING"]}/>
             <Project h1={'포트폴리오'} p={'현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'} src={'/assets/images/portfolio.webp'} href={'https://github.com/lif31up/introduce'} tags={["REACT","NEXT","VERCEL","FIREBASE API","SCSS","TAILWIND CSS"]}/>
             <Project h1={'뉴럴링크'} p={'제가 좋아하는 엔터프라이즈 중 하나인 뉴럴링크의 페이지를 직접 다시 디자인해보았습니다. 이 과정에서 과감한 디자인 표현에 대해 배우고 이를 사용하려면 세삼한 주의가 필요하다는 몇 가지 교훈을 얻었습니다.'} src={'/assets/images/neuralink.webp'} href={'https://neuralink-redesign.vercel.app/'} tags={["SCSS","TAILWIND CSS","NEXT","XD"]}/>
@@ -84,7 +84,7 @@ export default function Home():JSX.Element {
           </AnimateSetter>
           <div className={"_grid-content _desktop_disable mt-8"}>
             <h1 className={"_heading_huge text-white"}>진행중</h1>
-            <p className={"_text_regular text-neutral-400"}>현재 진행 중인 프로젝트입니다. 제가 현재 어떤 방향성을 가지고 있는 지를 나타내기 위함입니다.</p>
+            <p className={"_text-regular text-neutral-400"}>현재 진행 중인 프로젝트입니다. 제가 현재 어떤 방향성을 가지고 있는 지를 나타내기 위함입니다.</p>
           </div>
           <WorkingOnTable/>
         </div>

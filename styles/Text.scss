@@ -2,11 +2,14 @@
 html{
   font-family: "Gothic A1", sans-serif;
 }
-._text_large{
+._text-large{
   font-weight: 500;
   font-size: 1.8rem;
+  @include mobile{
+    font-size: 1.4rem;
+  }
 }
-._text_regular{
+._text-regular{
   font-weight: 400;
   font-size: 1.4rem;
   @include mobile{font-size: 1.2rem;}
