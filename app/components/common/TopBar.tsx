@@ -35,14 +35,12 @@ export default function TopBar({height}:TopBarProps){
     <>
       <div className={"_top-bar"} style={TopBarStyle} id={"top-bar--0"}>
         <div className={"flex items-center"}>
-          <h1 className={"text-white _heading_regular _desktop_disable pt-2"}>명환의 포트폴리오</h1>
+          <h1 className={"text-white _heading_regular _desktop_disable pt-2"}></h1>
         </div>
         <div className={"flex gap-8 items-center"}>
-          <div className={"flex gap-8 _mobile_disable"}>
-            <Link href={"#front-end"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"} onClick={():void=>{Indicating("front-end")}}>프론트엔드</Link>
-            <Link href={"#design"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"} onClick={():void=>{Indicating("design")}}>디자인</Link>
-            <Link href={"#project"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"} onClick={():void=>{Indicating("project")}}>프로젝트</Link>
-          </div>
+          <Link href={"#front-end"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"} onClick={():void=>{Indicating("front-end")}}>프론트엔드</Link>
+          <Link href={"#design"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"} onClick={():void=>{Indicating("design")}}>디자인</Link>
+          <Link href={"#project"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"} onClick={():void=>{Indicating("project")}}>프로젝트</Link>
           <Link href={"introduce/자기소개서 4e5883ae3c6a4f129760f77a935b9c1a.html"} className={"text-white -mb-1 _heading_regular bg-red-800 pt-3 pb-2 px-6 _rounded-1xl"}>자기소개서</Link>
         </div>
       </div>
