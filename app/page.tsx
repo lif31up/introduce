@@ -26,7 +26,7 @@ export default function Home():JSX.Element {
         <div className={"_grid-n"}>
           <Front/>
           <Profile isMobile={false}/>
-          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden scroll-m-20"} id={'front-end'}>
+          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden scroll-m-32"} id={'front-end'}>
             <Heading desc={"개발자로써의 본주제라고 생각합니다. 디자인도 중요하지만 프론트엔드 기술도 탁월합니다."}>프론트엔드</Heading>
             <AnimateSetter id={"stack-table--1"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/javascript_icon.webp"} title={"자바스크립트"} desc={"DOM 조작과 자체 API, 약속체, 상속에 대해 정확한 지식을 가지고 있습니다. ES6 문법을 주로 사용했고 이에 익숙합니다."}/>
@@ -42,7 +42,7 @@ export default function Home():JSX.Element {
               </Tags>
             </div>
           </div>
-          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden scroll-m-20"} id={"design"}>
+          <div className={"_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden scroll-m-32"} id={"design"}>
             <Heading desc={"기술도 중요하지만 사용자 경험이 형편없으면 안 된다고 늘 생각합니다. 저는 다자인 능력도 겸비하고 있습니다."}>디자인</Heading>
             <AnimateSetter id={"stack-table--3"} animation={"_slide-rtl"} gap={"_gap-05"}>
               <Stack src={"/assets/images/photoshop.webp"} title={"포토샵"} desc={"포토샵을 통해서 목업과 이미지에 대한 필터 효과를 적용할 수 있습니다. 전반적인 보정 작업에 대한 틀을 잡을 줄 앎니다."}/>
