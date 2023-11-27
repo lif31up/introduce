@@ -42,7 +42,7 @@ export default function TopBar({height}:TopBarProps){
             <Link href={"#design"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"}>디자인</Link>
             <Link href={"#project"} scroll={true} replace={false} locale={false} className={"text-white -mb-1 _heading_regular"}>프로젝트</Link>
           </div>
-          <Link href={""} className={"text-white -mb-1 _heading_regular bg-red-800 pt-3 pb-2 px-6 _rounded-1xl"}>자기소개서</Link>
+          <Link href={"introduce/자기소개서 4e5883ae3c6a4f129760f77a935b9c1a.html"} className={"text-white -mb-1 _heading_regular bg-red-800 pt-3 pb-2 px-6 _rounded-1xl"}>자기소개서</Link>
         </div>
       </div>
       <div style={TopBarStyle}/>
