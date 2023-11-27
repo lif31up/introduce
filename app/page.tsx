@@ -82,7 +82,7 @@ export default function Home():JSX.Element {
             <Project h1={'자료구조'} p={'C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다.'} href={'https://github.com/lif31up/Data-Structures-and-Algorithms'} tags={["C LANGUAGE","BASIC","COMPUTER SCIENCE"]}/>
             <Project h1={'웹 디자인 블로그'} p={'웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다.'}  href={'https://renoki1s-blog.gitbook.io/undefined/'} tags={["GITBOOT","UI/UX DESIGN","DESIGN THEORY"]}/>
             <Project h1={'로고 디자인'} p={'제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다.'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["ILLUSTRATOR","PHOTOSHOP"]}/>
-            <Project h1={'멀티 블로그 (팀 프로젝트)'} p={'현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["FIGMA","SLACK"]}/>
+            <Project h1={'멀티 블로그 (팀 프로젝트)'} p={'현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.'} href={'https://www.figma.com/file/QdBfYwopNqZeLVheCN4eam/Design-System?type=whiteboard&node-id=0-1'} tags={["FIGMA","SLACK"]}/>
           </AnimateSetter>
           <div className={"_grid-content _desktop_disable mt-8"}>
             <h1 className={"_heading_huge text-white"}>진행중</h1>
