@@ -54,3 +54,11 @@
   background-position: center; background-size: cover;
   background-image: url("https://wallpapercrafter.com/desktop/159702-black-background-digital-art-minimalism-cityscape-skyscraper-pixel-art-pixelated-pixels-building-night-clouds-dark.jpg");
 }
+._dynamic-sm{
+  outline-offset: 2px;
+  scroll-margin: 6rem;
+  @include mobile{
+    scroll-margin: 6rem;
+    outline-offset: -2px;
+  }
+}

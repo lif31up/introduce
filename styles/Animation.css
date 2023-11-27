@@ -1,8 +1,19 @@
 @import "magic.css/dist/magic.css";
+/*BOX*/
+/*FLEX TOOLKIT*/
+/*FONT*/
+/*BACKGROUND*/
+/*PSEUDO*/
+/*FADE*/
 ._animation-setter {
   display: grid;
   grid-gap: 2rem;
   overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
+  ._animation-setter {
+    margin: 0 2px 0 2px;
+  }
 }
 
 ._slide-rtl {

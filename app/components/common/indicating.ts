@@ -3,7 +3,6 @@ export default function Indicating(id:string):void{
   if(target === null) return;
   target.style.transition = "outline 1s ease-in-out"
   target.style.outline = "solid white 2px";
-  target.style.outlineOffset = "-2px";
   setTimeout(():void=>{
     if(target === null) return;
     target.style.outline = "solid transparent 2px";
