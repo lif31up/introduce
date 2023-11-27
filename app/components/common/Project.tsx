@@ -6,11 +6,10 @@ import { logHandler } from "@/app/components/common/Firebase";
 interface ProjectProps {
   h1: string
   p: string
-  src: string
   href: string
   tags: Array<string>
 }
-export default function Project({ h1, p, src, href, tags }: ProjectProps) {
+export default function Project({ h1, p, href, tags }: ProjectProps) {
   return (
     <a href={href} onClick={():void=>{logHandler(href)}}>
       <div className={'_grid-content _bg-black-045 _rounded-1xl text-white hover:bg-black'}>

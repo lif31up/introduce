@@ -13,6 +13,7 @@ import Tags from "@/app/components/common/Tags";
 import Profile from './components/common/Profile'
 import Front from "@/app/components/feature/Front";
 import Background from "@/app/components/common/Background";
+import Caption from "@/app/components/common/Caption";
 const Footer:ExoticComponent<any> = lazy(() => import('@/app/components/common/Footer'))
 export default function Home():JSX.Element {
   return (
@@ -75,12 +76,13 @@ export default function Home():JSX.Element {
             <p className={"_text-regular text-neutral-400"}>제가 지금까지 진행해온 프로젝트입니다. 하나하나 모두 의미있는 경험이었습니다.</p>
           </div>
           <AnimateSetter id={'project'} animation={'_swash-in'} gap={"_dynamic-gap"} className={"scroll-m-32"}>
-            <Project h1={'무한 스크롤링'} p={'무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다.'} src={'/assets/images/shoppingmall.webp'} href={'https://shopping-mall-rust.vercel.app/'} tags={["REACT QUERY","OBSERVER API","FETCHING"]}/>
-            <Project h1={'포트폴리오'} p={'현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'} src={'/assets/images/portfolio.webp'} href={'https://github.com/lif31up/introduce'} tags={["REACT","NEXT","VERCEL","FIREBASE API","SCSS","TAILWIND CSS"]}/>
-            <Project h1={'뉴럴링크'} p={'제가 좋아하는 엔터프라이즈 중 하나인 뉴럴링크의 페이지를 직접 다시 디자인해보았습니다. 이 과정에서 과감한 디자인 표현에 대해 배우고 이를 사용하려면 세삼한 주의가 필요하다는 몇 가지 교훈을 얻었습니다.'} src={'/assets/images/neuralink.webp'} href={'https://neuralink-redesign.vercel.app/'} tags={["SCSS","TAILWIND CSS","NEXT","XD"]}/>
-            <Project h1={'자료구조'} p={'C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다.'} src={'/assets/images/data_structure.webp'} href={'https://github.com/lif31up/Data-Structures-and-Algorithms'} tags={["C LANGUAGE","BASIC","COMPUTER SCIENCE"]}/>
-            <Project h1={'웹 디자인 블로그'} p={'웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다.'} src={'/assets/images/web_design_blog.webp'} href={'https://renoki1s-blog.gitbook.io/undefined/'} tags={["GITBOOT","UI/UX DESIGN","DESIGN THEORY"]}/>
-            <Project h1={'로고 디자인'} p={'제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다.'} src={'/assets/images/logo_design.webp'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["ILLUSTRATOR","PHOTOSHOP"]}/>
+            <Project h1={'무한 스크롤링'} p={'무한 스크롤을 구현하기 위해 가상의 온라인 쇼핑몰 페이지를 만들어 보았습니다. 이 과정에서 리액트 쿼리를 통한 패칭의 통제와 인터섹션 인터페이스의 사용을 숙달했습니다.'} href={'https://shopping-mall-rust.vercel.app/'} tags={["REACT QUERY","OBSERVER API","FETCHING"]}/>
+            <Project h1={'포트폴리오'} p={'현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션과 3D 오브젝트 렌더링을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'} href={'https://github.com/lif31up/introduce'} tags={["REACT","NEXT","VERCEL","FIREBASE API","SCSS","TAILWIND CSS"]}/>
+            <Project h1={'뉴럴링크'} p={'제가 좋아하는 엔터프라이즈 중 하나인 뉴럴링크의 페이지를 직접 다시 디자인해보았습니다. 이 과정에서 과감한 디자인 표현에 대해 배우고 이를 사용하려면 세삼한 주의가 필요하다는 몇 가지 교훈을 얻었습니다.'} href={'https://neuralink-redesign.vercel.app/'} tags={["SCSS","TAILWIND CSS","NEXT","XD"]}/>
+            <Project h1={'자료구조'} p={'C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다.'} href={'https://github.com/lif31up/Data-Structures-and-Algorithms'} tags={["C LANGUAGE","BASIC","COMPUTER SCIENCE"]}/>
+            <Project h1={'웹 디자인 블로그'} p={'웹 디자인에 관해선 한글 자료가 많이 없어 사적인 데이터베이스에 저장하기엔 아깝다고 생각했습니다. 그래서 따로 웹 디자인 블로그를 운영하고 있습니다.'}  href={'https://renoki1s-blog.gitbook.io/undefined/'} tags={["GITBOOT","UI/UX DESIGN","DESIGN THEORY"]}/>
+            <Project h1={'로고 디자인'} p={'제가 직접 만든 로고 디자인입니다. 이를 통해서 여러 이론이 적용된 수준급의 로고를 만들 수 있게 되었습니다. 직접 드로윙해서 일러스트레이터로 SVG화 한 것입니다.'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["ILLUSTRATOR","PHOTOSHOP"]}/>
+            <Project h1={'멀티 블로그 (팀 프로젝트)'} p={'현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.'} href={'https://assets.adobe.com/id/urn:aaid:sc:AP:e6c99772-1317-4f1d-a966-0225181f20b1?view=difile'} tags={["FIGMA","SLACK"]}/>
           </AnimateSetter>
           <div className={"_grid-content _desktop_disable mt-8"}>
             <h1 className={"_heading_huge text-white"}>진행중</h1>
