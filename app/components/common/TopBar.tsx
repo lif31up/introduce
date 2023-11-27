@@ -13,18 +13,22 @@ export default function TopBar({height}:TopBarProps){
     window.addEventListener("scroll",():void=>{
       if (window.scrollY > 1) {
         topBar.style.height = `calc(${height} - 1rem)`
-        topBar.style.borderBottom = "solid rgb(40,40,40) 1px"
+        topBar.style.borderBottom = "solid rgb(25,25,25) 1px"
+        topBar.style.boxShadow = "solid black 1px 1px 1px 1px"
+        topBar.style.background = "black"
       }
       else {
         topBar.style.height = height
         topBar.style.borderBottom = "solid transparent 1px"
+        topBar.style.boxShadow = "none"
+        topBar.style.background = "none"
       }
     });
   },[false]);
   const TopBarStyle:object = {
     width: "100%",
     height: height,
-    transition: "height 1s ease-in-out, border 0.5s ease-in-out",
+    transition: "height 1s ease-in-out, border 0.5s ease-in-out, background 1.5s ease-in-out",
   }
   return(
     <>
