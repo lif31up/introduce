@@ -22,7 +22,7 @@ export default function TopBar({ height }: { height: string }) {
         topBar.style.background = 'none'
       }
     })
-  }, [false])
+  }, [height])
   const TopBarStyle: React.CSSProperties = {
     width: '100%',
     height: height,
@@ -47,7 +47,7 @@ export default function TopBar({ height }: { height: string }) {
             프론트엔드
           </Link>
           <Link
-            href='#design'
+            href={'#design'}
             scroll={true}
             replace={false}
             locale={false}
