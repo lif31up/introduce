@@ -62,3 +62,8 @@
     outline-offset: -2px;
   }
 }
+._unactive{
+  filter: blur(1px);
+  user-select: none;
+  pointer-events: none;
+}

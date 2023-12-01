@@ -1,6 +1,12 @@
 {
   "semi": false,
-  "singleQuote": true,
   "tabWidth": 2,
-  "useTabs": false
+  "useTabs": false,
+  "printWidth": 130,
+  "arrowParens": "always",
+  "quoteProps": "as-needed",
+  "bracketSameLine": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "bracketSpacing": true
 }

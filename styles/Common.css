@@ -93,4 +93,10 @@
   }
 }
 
+._unactive {
+  filter: blur(1px);
+  user-select: none;
+  pointer-events: none;
+}
+
 /*# sourceMappingURL=Common.css.map */
