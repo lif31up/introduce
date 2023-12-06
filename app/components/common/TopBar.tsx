@@ -70,7 +70,7 @@ export default function TopBar({ height }: { height: string }) {
           </Link>
           <Link
             href={'introduce/자기소개서 4e5883ae3c6a4f129760f77a935b9c1a.html'}
-            className='text-white -mb-1 _heading_regular bg-red-800 pt-3 pb-2 px-6 _rounded-1xl _unactive'>
+            className='text-white -mb-1 _heading_regular bg-red-800 pt-3 pb-2 px-6 _rounded-1xl'>
             자기소개서
           </Link>
         </div>
