@@ -30,7 +30,7 @@
   ._grid-2xn {
     display: grid;
     grid-template-columns: none;
-    margin: 0.5rem 0 4rem 0;
+    margin: 0.5rem 0.5rem 4rem 0.5rem;
   }
 }
 

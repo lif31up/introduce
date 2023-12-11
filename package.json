@@ -16,6 +16,7 @@
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
     "react-player": "^2.13.0",
     "react-query": "^3.39.3",
     "spotify-web-api-js": "^1.5.2",
