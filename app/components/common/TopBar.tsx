@@ -3,6 +3,11 @@ import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Indicating from '@/app/components/common/indicating'
 
+const TopBarStyle: React.CSSProperties = {
+  width: '100%',
+  height: '6rem',
+}
+
 export default function TopBar({ height }: { height: string }) {
   useEffect(() => {
     const topBar: HTMLElement | null = document.getElementById('top-bar--0')

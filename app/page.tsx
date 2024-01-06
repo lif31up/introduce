@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
       <title>{'명환의 포트폴리오'}</title>
       <Background />
       <Firebase />
-      <TopBar height={'7rem'} />
+      <TopBar height={'6rem'} />
       <div className={'_grid-2xn'} id={'content--0'}>
         <div className={'_grid-n'}>
           <Front />
@@ -29,6 +29,16 @@ export default function Home(): JSX.Element {
             <Heading desc={'개발자로써의 본주제라고 생각합니다. 디자인도 중요하지만 프론트엔드 기술도 탁월합니다.'}>
               프론트엔드
             </Heading>
+            <div className={'mx-12 mb-12 mt-8'}>
+              <Tags
+                maxColum={2}
+                width={'100%'}
+                height={3}
+                theme={'_tag-text-0 rounded-3xl'}
+                colorScheme={'bg-teal-600 text-white _heading_small'}>
+                {['Tailwind CSS', 'CSS Master', 'REACT QUERY', 'RECOIL', 'DOM', 'HTML with HTML5', 'HOOK Master', 'Firebase']}
+              </Tags>
+            </div>
             <AnimateSetter id={'stack-table--1'} animation={'_slide-rtl'} gap={'_gap-05'}>
               <Stack
                 src={'/assets/images/javascript_icon.webp'}
@@ -71,23 +81,28 @@ export default function Home(): JSX.Element {
                 desc={'이 페이지도 버셀을 통해 배포되는 중입니다. 간단한 배포는 혼자서 많이 해본 경험이 있습니다.'}
               />
             </AnimateSetter>
-            <div className={'mx-8 mt-10'}>
-              <Tags
-                maxColum={2}
-                width={'100%'}
-                height={3}
-                theme={'_tag-text-0 rounded-3xl'}
-                colorScheme={'bg-teal-600 text-white _heading_small'}>
-                {['Tailwind CSS', 'CSS Master', 'REACT QUERY', 'RECOIL', 'DOM', 'HTML with HTML5', 'HOOK Master', 'Firebase']}
-              </Tags>
-            </div>
           </div>
           <div className={'_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden _dynamic-sm'} id={'design'}>
             <Heading
               desc={'기술도 중요하지만 사용자 경험이 형편없으면 안 된다고 늘 생각합니다. 저는 다자인 능력도 겸비하고 있습니다.'}>
               디자인
             </Heading>
+            <div className={'mx-12 mb-12 mt-8'}>
+              <Tags
+                maxColum={2}
+                width={'100%'}
+                height={3}
+                theme={'_tag-text-0 rounded-3xl'}
+                colorScheme={'bg-orange-600 text-white _heading_small'}>
+                {['Illustrator', 'Photoshop', 'XD', 'Ableton Live', 'VVVV', 'Simple Video Editing', 'Three.js', 'Blender']}
+              </Tags>
+            </div>
             <AnimateSetter id={'stack-table--3'} animation={'_slide-rtl'} gap={'_gap-05'}>
+              <Stack
+                src={'/assets/images/figma_icon.webp'}
+                title={'Figma'}
+                desc={'UI/UX를 디자인하기 위해 주로 사용하는 도구입니다. 디자인 체계를 기획하는데 자주 사용하는 프로그램입니다.'}
+              />
               <Stack
                 src={'/assets/images/photoshop.webp'}
                 title={'포토샵'}
@@ -102,27 +117,22 @@ export default function Home(): JSX.Element {
                   '가장 자신있게 다루는 디자인 도구입니다. 기대 이상으로 잘 다룹니다! 로고 프로젝트에서 이를 확인할 수 있습니다.'
                 }
               />
-              <Stack
-                src={'/assets/images/figma_icon.webp'}
-                title={'Figma'}
-                desc={'UI/UX를 디자인하기 위해 주로 사용하는 도구입니다. 디자인 체계를 기획하는데 자주 사용하는 프로그램입니다.'}
-              />
             </AnimateSetter>
-            <div className={'mx-8 mt-10'}>
-              <Tags
-                maxColum={2}
-                width={'100%'}
-                height={3}
-                theme={'_tag-text-0 rounded-3xl'}
-                colorScheme={'bg-orange-600 text-white _heading_small'}>
-                {['Illustrator', 'Photoshop', 'XD', 'Ableton Live', 'VVVV', 'Simple Video Editing', 'Three.js', 'Blender']}
-              </Tags>
-            </div>
           </div>
           <div className={'_grid-content-complex _bg-black-045 _rounded-1xl overflow-hidden'}>
             <Heading desc={'협업이 없다면 의미있는 결과를 만들기 힘듭니다. 저를 이해하기 쉬운 키워드를 잠깐 소개하겠습니다.'}>
               소프트스킬
             </Heading>
+            <div className={'mx-12 mb-12 mt-8'}>
+              <Tags
+                maxColum={2}
+                width={'100%'}
+                height={3}
+                theme={'_tag-text-0 rounded-3xl'}
+                colorScheme={'bg-purple-600 text-white _heading_small'}>
+                {['WebStorm', 'EMACS', 'Visual Studio', 'Notion', 'Slack', 'Figma', 'GitHub', 'Git', 'ZeroHeight']}
+              </Tags>
+            </div>
             <AnimateSetter id={'stack-table--4'} animation={'_slide-rtl'} gap={'_gap-05'}>
               <Stack
                 src={'/assets/images/coworking_informative.webp'}
@@ -142,16 +152,6 @@ export default function Home(): JSX.Element {
                 }
               />
             </AnimateSetter>
-            <div className={'mx-8 mt-10'}>
-              <Tags
-                maxColum={2}
-                width={'100%'}
-                height={3}
-                theme={'_tag-text-0 rounded-3xl'}
-                colorScheme={'bg-purple-600 text-white _heading_small'}>
-                {['WebStorm', 'EMACS', 'Visual Studio', 'Notion', 'Slack', 'Figma', 'GitHub', 'Git', 'ZeroHeight']}
-              </Tags>
-            </div>
           </div>
         </div>
         <div className={'_grid-n'} id={'grid-n-1'}>
