@@ -1,0 +1,36 @@
+@import "Color";
+
+._bg-black-boldess{
+  background: $black-boldess;
+}
+._bg-black-bold{
+  background: $black-bold;
+}
+._bg-black-bolder{
+  background: $black-bolder;
+}
+
+._bg-white-boldess{
+  background: $white-boldess;
+}
+._bg-white-bold{
+  background: $white-bold;
+}
+._bg-white-bolder{
+  background: $white-bolder;
+}
+
+._bg-linear-gradient-0{
+  background: linear-gradient(90deg, rgba(219,65,65,1) 0%, rgba(32,146,36,1) 27%, rgba(9,9,121,1) 47%, rgba(111,7,156,1) 65%, rgba(255,255,0,1) 81%, rgba(255,0,0,1) 100%);
+}
+._bg-top-bar{
+  backdrop-filter: blur(10px);
+  background: rgba(100%, 100%, 100%, 95%);
+}
+._bg-grid{
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, $white-boldess 1px, transparent 1px), linear-gradient(to bottom, $white-boldess 1px, transparent 1px);
+}
+._bg-black-op-80{
+  background: rgba(25, 25, 25, 0.75);
+}

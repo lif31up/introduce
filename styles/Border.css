@@ -1,0 +1,96 @@
+/*bold*/
+/*white*/
+/*fist-color*/
+/*second-color*/
+/*third-color*/
+/*border-full*/
+._border-black-boldess {
+  border: solid rgb(125, 125, 125) 1px;
+}
+
+._border-black-bold {
+  border: solid rgb(75, 75, 75) 1px;
+}
+
+._border-black-bolder {
+  border: solid rgb(50, 50, 50) 1px;
+}
+
+._border-white-boldess {
+  border: solid rgb(205, 205, 205) 1px;
+}
+
+._border-white-bold {
+  border: solid rgb(180, 180, 180) 1px;
+}
+
+._border-white-bolder {
+  border: solid rgb(155, 155, 155) 1px;
+}
+
+/*border-b*/
+._border-b-white-boldess {
+  border-bottom: solid rgb(205, 205, 205) 1px;
+}
+
+._border-b-white-bold {
+  border-bottom: solid rgb(180, 180, 180) 1px;
+}
+
+._border-b-white-bolder {
+  border-bottom: solid rgb(155, 155, 155) 1px;
+}
+
+._border-b-black-boldess {
+  border-bottom: solid rgb(125, 125, 125) 1px;
+}
+
+._border-b-black-bold {
+  border-bottom: solid rgb(75, 75, 75) 1px;
+}
+
+._border-b-black-bolder {
+  border-bottom: solid rgb(50, 50, 50) 1px;
+}
+
+/*border-y-black*/
+._border-y-black-boldess {
+  border-top: solid rgb(125, 125, 125) 1px;
+  border-bottom: solid rgb(125, 125, 125) 1px;
+}
+
+._border-y-black-bold {
+  border-top: solid rgb(75, 75, 75) 1px;
+  border-bottom: solid rgb(75, 75, 75) 1px;
+}
+
+._border-y-black-bolder {
+  border-top: solid rgb(50, 50, 50) 1px;
+  border-bottom: solid rgb(50, 50, 50) 1px;
+}
+
+._border-y-white-boldess {
+  border-top: solid rgb(205, 205, 205) 1px;
+  border-bottom: solid rgb(205, 205, 205) 1px;
+}
+
+._border-y-white-bold {
+  border-top: solid rgb(180, 180, 180) 1px;
+  border-bottom: solid rgb(180, 180, 180) 1px;
+}
+
+._border-y-white-bolder {
+  border-top: solid rgb(155, 155, 155) 1px;
+  border-bottom: solid rgb(155, 155, 155) 1px;
+}
+
+._outline-white-bold {
+  outline: solid rgb(180, 180, 180) 1px;
+  outline-offset: 3px;
+}
+
+._outline-black {
+  outline: solid rgb(205, 205, 205) 2px;
+}
+
+/*# sourceMappingURL=Border.css.map */

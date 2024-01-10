@@ -1,0 +1,48 @@
+/*bold*/
+/*white*/
+/*fist-color*/
+/*second-color*/
+/*third-color*/
+._bg-black-boldess {
+  background: rgb(125, 125, 125);
+}
+
+._bg-black-bold {
+  background: rgb(75, 75, 75);
+}
+
+._bg-black-bolder {
+  background: rgb(50, 50, 50);
+}
+
+._bg-white-boldess {
+  background: rgb(205, 205, 205);
+}
+
+._bg-white-bold {
+  background: rgb(180, 180, 180);
+}
+
+._bg-white-bolder {
+  background: rgb(155, 155, 155);
+}
+
+._bg-linear-gradient-0 {
+  background: linear-gradient(90deg, rgb(219, 65, 65) 0%, rgb(32, 146, 36) 27%, rgb(9, 9, 121) 47%, rgb(111, 7, 156) 65%, rgb(255, 255, 0) 81%, rgb(255, 0, 0) 100%);
+}
+
+._bg-top-bar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+._bg-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgb(205, 205, 205) 1px, transparent 1px), linear-gradient(to bottom, rgb(205, 205, 205) 1px, transparent 1px);
+}
+
+._bg-black-op-80 {
+  background: rgba(25, 25, 25, 0.75);
+}
+
+/*# sourceMappingURL=Background.css.map */

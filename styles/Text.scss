@@ -1,71 +1,34 @@
-@import "_Library.scss";
-html{
-  font-family: "Gothic A1", sans-serif;
+@import "Color";
+
+/*color*/
+._text-black-boldess{
+  color: $black-boldess
+}
+._text-black-bold{
+  color: $black-bold
+}
+._text-black-bolder{
+  color: $black-bolder
+}
+
+/*font size*/
+._text-smaller{
+  font-size: 1rem;
+  font-weight: 500;
+}
+._text-small{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+._text-middle{
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 ._text-large{
-  font-weight: 500;
-  font-size: 1.8rem;
-  @include mobile{
-    font-size: 1.4rem;
-  }
-}
-._text-regular{
-  font-weight: 400;
-  font-size: 1.4rem;
-  @include mobile{font-size: 1.2rem;}
-}
-._text_small{
-  font-weight: 300;
-  font-size: 1.4rem;
-  @include mobile{font-size: 1.2rem;}
-}
-._heading_huge{
-  font-weight: bold;
-  font-size: 2.8rem;
-  @include mobile{
-    font-size: 2.6rem;
-  }
-}
-._heading_larger{
-  font-weight: 600;
-  font-size: 2.2rem;
-  @include mobile{
-    font-size: 2rem;
-  }
-}
-._heading_large{
-  font-weight: 500;
-  font-size: 1.8rem;
-  @include mobile{
-    font-size: 1.8rem;
-  }
-}
-._heading_regular{
-  font-weight: 600;
-  font-size: 1.4rem;
-  @include mobile{
-    font-size: 1.4rem;
-  }
-}
-._heading_small{
-  font-weight: 500;
-  font-size: 1.4rem;
-  @include mobile{
-    font-size: 1.2rem;
-  }
-}
-._heading_huger{
-  font-weight: 700;
-  font-size: 4rem;
-  @include mobile{
-    font-size: 3rem;
-  }
-}
-._important_large{
-  font-weight: 700;
   font-size: 2rem;
-}
-._tag-text-0{
   font-weight: 700;
-  font-size: 1.2rem;
+}
+._text-huger{
+  font-size: 4rem;
+  font-weight: 800;
 }

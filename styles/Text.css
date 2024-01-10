@@ -1,112 +1,45 @@
-/* media variables (rising order) */
-/*BOX*/
-/*FLEX TOOLKIT*/
-/*FONT*/
-/*BACKGROUND*/
-/*PSEUDO*/
-/*FADE*/
-html {
-  font-family: "Gothic A1", sans-serif;
+/*bold*/
+/*white*/
+/*fist-color*/
+/*second-color*/
+/*third-color*/
+/*color*/
+._text-black-boldess {
+  color: rgb(125, 125, 125);
+}
+
+._text-black-bold {
+  color: rgb(75, 75, 75);
+}
+
+._text-black-bolder {
+  color: rgb(50, 50, 50);
+}
+
+/*font size*/
+._text-smaller {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+._text-small {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+._text-middle {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 ._text-large {
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-@media only screen and (max-width: 500px) {
-  ._text-large {
-    font-size: 1.4rem;
-  }
-}
-
-._text-regular {
-  font-weight: 400;
-  font-size: 1.4rem;
-}
-@media only screen and (max-width: 500px) {
-  ._text-regular {
-    font-size: 1.2rem;
-  }
-}
-
-._text_small {
-  font-weight: 300;
-  font-size: 1.4rem;
-}
-@media only screen and (max-width: 500px) {
-  ._text_small {
-    font-size: 1.2rem;
-  }
-}
-
-._heading_huge {
-  font-weight: bold;
-  font-size: 2.8rem;
-}
-@media only screen and (max-width: 500px) {
-  ._heading_huge {
-    font-size: 2.6rem;
-  }
-}
-
-._heading_larger {
-  font-weight: 600;
-  font-size: 2.2rem;
-}
-@media only screen and (max-width: 500px) {
-  ._heading_larger {
-    font-size: 2rem;
-  }
-}
-
-._heading_large {
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-@media only screen and (max-width: 500px) {
-  ._heading_large {
-    font-size: 1.8rem;
-  }
-}
-
-._heading_regular {
-  font-weight: 600;
-  font-size: 1.4rem;
-}
-@media only screen and (max-width: 500px) {
-  ._heading_regular {
-    font-size: 1.4rem;
-  }
-}
-
-._heading_small {
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-@media only screen and (max-width: 500px) {
-  ._heading_small {
-    font-size: 1.2rem;
-  }
-}
-
-._heading_huger {
-  font-weight: 700;
-  font-size: 4rem;
-}
-@media only screen and (max-width: 500px) {
-  ._heading_huger {
-    font-size: 3rem;
-  }
-}
-
-._important_large {
-  font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
 }
 
-._tag-text-0 {
-  font-weight: 700;
-  font-size: 1.2rem;
+._text-huger {
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=Text.css.map */

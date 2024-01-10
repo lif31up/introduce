@@ -1,53 +1,32 @@
 import React from 'react'
-import '@/styles/Common.css'
-import '@/styles/Text.css'
+import defaultProps from '@/mods/props'
 
-interface TagsProps extends TagProps {
-  children: Array<string>
+interface tagsProps extends defaultProps {
   width: string
-  maxColum: number
-  height: number
+  height: string
 }
-export default function Tags(
-  {
-    children,
-    width,
-    colorScheme,
-    theme,
-    maxColum,
-    height
-  }: TagsProps) {
-  const tagsStyle: object = {
-    display: 'inline-block',
+const tag: React.CSSProperties = {
+  padding: '1rem 1.5rem 1.1rem 1.5rem',
+  background: 'gray',
+  color: 'white',
+  borderRadius: '2rem',
+}
+export default function Tags({ width, height, className, children }: tagsProps): React.JSX.Element {
+  const style: React.CSSProperties = {
     width: width,
-    height: `calc(${(height * maxColum) + (maxColum - 1)}rem)`,
+    height: height,
   }
-
-  const tags: Array<React.ReactNode> = []
-  children.forEach((tag: string, index: number): void => {
-    tags.push(
-      <Tag tagName={tag} colorScheme={colorScheme} theme={theme} key={index} />,
+  const container: Array<React.ReactNode> | null = []
+  children.forEach((element: string, index: number): void => {
+    container.push(
+      <desc style={tag} className='_text-small' key={index}>
+        {element}
+      </desc>
     )
   })
-  return <div style={tagsStyle} className={"overflow-hidden"}>{tags}</div>
-}
-
-interface TagProps {
-  tagName?: string
-  colorScheme?: string
-  theme?: string
-}
-const tagStyle: object = {
-  display: 'inline-block',
-  marginRight: '1rem',
-  padding: '0.6rem 1.5rem 0.4rem 1.5rem',
-  marginBottom: '1rem',
-  height: 'fit-content',
-}
-function Tag({ colorScheme, theme, tagName }: TagProps) {
   return (
-    <div className={[colorScheme, theme].join(' ').trim()} style={tagStyle}>
-      {tagName}
+    <div style={style} className={['flex gap-4', className].join(' ')}>
+      {container}
     </div>
   )
 }
