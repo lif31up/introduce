@@ -22,18 +22,16 @@ export default function ProjectBoard(): React.JSX.Element {
   return (
     <section style={style} className='flex justify-center items-center bg-slate-100' id='project-board'>
       <div style={left} className='grid justify-items-center items-center'>
-        <ObservedContainer id='comment--0' animation='_anime-space-in-up' threshold={0.1}>
-          <Comment>{'지금까지 제가 해온 프로젝트입니다.<br />여러가지를 시도해보았어요!'}</Comment>
-        </ObservedContainer>
+        <Comment>{'지금까지 제가 해온 프로젝트입니다.<br />여러가지를 시도해보았어요!'}</Comment>
       </div>
       <div style={right} className='grid justify-items-center gap-12'>
-        <ProjectCard
-          title='웹 포트폴리오'
-          desc='현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'
-          tags={['리액트', '넥스트', '베르셀', '파이어베이스', 'SCSS']}
-          goto=''
-        />
-        <ObservedContributor prefix='project-card' animation='_anime-ltr-slide' threshold={0.1}>
+        <ObservedContributor prefix='project-card' animation='_anime-slp-ltr-slide' threshold={0.1}>
+          <ProjectCard
+            title='웹 포트폴리오'
+            desc='현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.'
+            tags={['리액트', '넥스트', '베르셀', '파이어베이스', 'SCSS']}
+            goto=''
+          />
           <ProjectCard
             title='뉴럴링크'
             desc='제가 좋아하는 엔터프라이즈 중 하나인 뉴럴링크의 페이지를 직접 다시 디자인해보았습니다. 이 과정에서 과감한 디자인 표현에 대해 배우고 이를 사용하려면 세삼한 주의가 필요하다는 몇 가지 교훈을 얻었습니다.'
