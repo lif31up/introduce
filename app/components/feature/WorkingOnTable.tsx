@@ -1,10 +1,9 @@
 'use client'
 
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
-import AnimateSetter from '@/app/components/common/AnimateSetter'
 import WorkingOn from '@/app/components/feature/WorkingOn'
 import React, { useRef, useState } from 'react'
-import Skeleton from "@/app/components/common/Skeleton";
+import Skeleton from '@/app/components/common/Skeleton'
 
 const queryClient = new QueryClient()
 export default function WorkingOnTable({}) {
@@ -15,9 +14,7 @@ export default function WorkingOnTable({}) {
   )
 }
 async function fetcher() {
-  const res = await fetch(
-    'https://raw.githubusercontent.com/lif31up/introduce/main/public/assets/json/working_on.json'
-  ) //working on data address
+  const res = await fetch('https://raw.githubusercontent.com/lif31up/introduce/main/public/assets/json/working_on.json') //working on data address
   if (!res.ok) {
     return null
   }
@@ -33,7 +30,7 @@ function _WorkingOnTable({}) {
     },
   })
   if (loading) {
-    return <Skeleton img={false}/>
+    return <Skeleton img={false} />
   }
   const workingOns: Array<React.ReactNode> = []
   // @ts-ignore
@@ -42,9 +39,5 @@ function _WorkingOnTable({}) {
       workingOns.push(<WorkingOn subject={node.h1} desc={node.p} key={index} />)
     } //don't add none object instance
   })
-  return (
-    <AnimateSetter id={'working-on--0'} animation={'_boing-up'} gap={"_dynamic-gap"}>
-      {workingOns}
-    </AnimateSetter>
-  )
+  return <>{workingOns}</>
 }
