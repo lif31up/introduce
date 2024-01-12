@@ -45,8 +45,8 @@ export default function TopBar(): React.JSX.Element {
             <Link href='https://join.slack.com/t/slack-ueh7907/shared_invite/zt-2a45pxoo7-b7sL_dZ9BHJjpaLLrcTM3Q'>
               <Image alt='slack' width={18} height={18} src='/assets/svg/slack-logo.svg' />
             </Link>
-            <Link href='https://www.notion.so/lif31u/invite/6d02acf83024d7f08fe0b9b089e019f886994d0f'>
-              <Image alt='notion' width={17} height={17} src='/assets/svg/notion-logo.svg' />
+            <Link href='https://medium.com/@nulranlcns9991'>
+              <Image alt='notion' width={18} height={18} src='/assets/svg/medium-logo.svg' />
             </Link>
             <Link href='https://www.linkedin.com/in/myeonghwan-han-9823202a2/'>
               <Image alt='linkedin' width={18} height={18} src='/assets/svg/linkedin-logo.svg' />

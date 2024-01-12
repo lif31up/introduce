@@ -19,13 +19,13 @@ export default function Tags({ width, height, className, children }: tagsProps):
   const container: Array<React.ReactNode> | null = []
   children.forEach((element: string, index: number): void => {
     container.push(
-      <desc style={tag} className='text-xs' key={index}>
+      <desc style={tag} className='inline-block text-xs mr-2 mt-2' key={index}>
         {element}
       </desc>
     )
   })
   return (
-    <div style={style} className={['flex gap-2', className].join(' ')}>
+    <div style={style} className={['block -mt-2', className].join(' ')}>
       {container}
     </div>
   )

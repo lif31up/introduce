@@ -17,7 +17,7 @@ export default function Front({ src }: { src: string }) {
     backgroundSize: 'cover',
   }
   return (
-    <section style={{ ...style, ...backgroundImage }} className='flex items-center py-24 lg:px-12'>
+    <section style={{ ...style, ...backgroundImage }} className='flex items-center py-10 lg:py-24 lg:px-12'>
       <div title='left' style={side} className='grid justify-items-center lg:flex-wrap'>
         <div style={{ maxWidth: 'calc(100vw - 2rem)', width: '30rem' }} className='p-6 bg-white rounded-2xl shadow flex-wrap'>
           <h1 className='text-2xl font-bold'>새로운 경험을 원하는 개발자</h1>

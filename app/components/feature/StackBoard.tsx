@@ -12,7 +12,7 @@ const board: React.CSSProperties = {
   height: 'fit-content',
   minHeight: '10rem',
 }
-export default function StackBoard({}): React.JSX.Element {
+export default function StackBoard(): React.JSX.Element {
   return (
     <section title='stack-board' style={style} className='grid justify-items-center _bg-grid' id='stack-board'>
       <div title='heading' className='grid justify-items-center mb-16'>
