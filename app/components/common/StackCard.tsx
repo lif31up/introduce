@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 const style: React.CSSProperties = {
   width: '100%',
-  height: '10rem',
-  padding: '1rem 2rem 1rem 2rem',
+  height: 'fit-content',
+  padding: '1rem',
 }
 const icon: React.CSSProperties = {
-  width: '4rem',
-  height: '4rem',
-  marginRight: '2rem',
+  width: '2rem',
+  height: '2rem',
+  marginRight: '1rem',
 }
 interface stackCardProps {
   src: string
@@ -18,11 +18,11 @@ interface stackCardProps {
 }
 export default function StackCard({ src, title, desc }: stackCardProps) {
   return (
-    <div style={style} className='bg-white shadow rounded-2xl flex items-center'>
+    <div style={style} className='bg-white shadow rounded-2xl flex items-start'>
       <Image src={src} width={40} height={40} alt='stack' className='rounded-full' style={icon} />
       <div>
-        <h1 className='_text-middle _text-black-bolder'>{title}</h1>
-        <p className='_text-small _text-black-bold mt-1'>{desc}</p>
+        <h1 className='text-xs text-neutral-700 font-bold'>{title}</h1>
+        <p className='text-xs text-neutral-700 mt-1'>{desc}</p>
       </div>
     </div>
   )

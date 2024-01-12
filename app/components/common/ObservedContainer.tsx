@@ -37,22 +37,22 @@ export default function ObservedContainer({ id, children, animation, threshold }
   )
 }
 
-interface observedContributorProps {
+interface observedDistributorProps {
   prefix: string
   children: React.ReactNode
   animation: string
   threshold?: number
 }
-export function ObservedContributor({ prefix, children, animation, threshold }: observedContributorProps): React.JSX.Element {
-  const contributor: Array<React.ReactNode> = []
+export function ObservedDistributor({ prefix, children, animation, threshold }: observedDistributorProps): React.JSX.Element {
+  const distributor: Array<React.ReactNode> = []
   React.Children.forEach(children, (child: React.ReactNode, index: number): void => {
     if (React.isValidElement(child)) {
-      contributor.push(
+      distributor.push(
         <ObservedContainer id={prefix + `--${index}`} animation={animation} threshold={threshold}>
           {child}
         </ObservedContainer>
       )
     }
   })
-  return <>{contributor}</>
+  return <>{distributor}</>
 }

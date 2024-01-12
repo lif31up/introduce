@@ -4,15 +4,15 @@ import DynamicText from '@/app/components/common/DynamicText'
 const style: React.CSSProperties = {
   width: '100%',
   height: 'fit-content',
-  minHeight: 'calc(100vh - 5rem)',
-  padding: '20rem 10rem 20rem 10rem',
+  minHeight: 'calc(100vh - 3rem)',
+  padding: '4rem',
 }
 
 export default function SkillBoard({}): React.JSX.Element {
   return (
     <section style={style} className='grid justify-items-center items-center relative overflow-hidden bg-black'>
       <div className='_anime-space-zoom' />
-      <div className='text-yellow-500 _text-huger grid justify-items-center gap-4'>
+      <div className='text-yellow-500 text-4xl font-extrabold grid justify-items-center gap-4'>
         <DynamicText className='flex' animation='_anime-slp-vanish-in' id='skillboard-dt--0'>
           독서, 경험, 성찰을 통해
         </DynamicText>

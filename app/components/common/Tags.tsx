@@ -6,7 +6,7 @@ interface tagsProps extends defaultProps {
   height: string
 }
 const tag: React.CSSProperties = {
-  padding: '1rem 1.5rem 1.1rem 1.5rem',
+  padding: '0.25rem 0.75rem 0.35rem 0.75rem',
   background: 'gray',
   color: 'white',
   borderRadius: '2rem',
@@ -19,13 +19,13 @@ export default function Tags({ width, height, className, children }: tagsProps):
   const container: Array<React.ReactNode> | null = []
   children.forEach((element: string, index: number): void => {
     container.push(
-      <desc style={tag} className='_text-small' key={index}>
+      <desc style={tag} className='text-xs' key={index}>
         {element}
       </desc>
     )
   })
   return (
-    <div style={style} className={['flex gap-4', className].join(' ')}>
+    <div style={style} className={['flex gap-2', className].join(' ')}>
       {container}
     </div>
   )

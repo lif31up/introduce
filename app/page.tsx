@@ -12,8 +12,8 @@ export default function Home(): JSX.Element {
   return (
     <Layout>
       <section title='top-section' className='bg-white _border-b-white-boldess'>
-        <div className='py-2 grid justify-items-center items-center relative overflow-hidden bg-black'>
-          <h1 className='text-white _text-small'>현재 구인구직 중이에요!</h1>
+        <div className='pb-2 pt-1 grid justify-items-center items-center relative overflow-hidden bg-black'>
+          <h1 className='text-white text-xs'>현재 구인구직 중이에요!</h1>
         </div>
         <ProfileBanner />
         <TopBanner />

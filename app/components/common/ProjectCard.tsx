@@ -11,14 +11,14 @@ interface projectCardProps extends defaultProps {
 const style: React.CSSProperties = {
   width: '100%',
   height: 'fit-content',
-  padding: '2rem',
+  padding: '1rem',
 }
 export default function ProjectCard({ title, desc, tags, goto }: projectCardProps) {
   return (
-    <div style={style} className='bg-white shadow rounded-3xl'>
-      <h1 className='_text-black-bolder _text-large'>{title}</h1>
-      <p className='_text-black-bold _text-middle leading-7 mt-4'>{desc}</p>
-      <Tags width='100%' height='fit-content' className='mt-12'>
+    <div style={style} className='bg-white shadow rounded-2xl'>
+      <h1 className='text-xl text-neutral-900 font-bold'>{title}</h1>
+      <p className='text-sm text-neutral-700 font-normal mt-2'>{desc}</p>
+      <Tags width='100%' height='fit-content' className='mt-8'>
         {tags}
       </Tags>
     </div>
