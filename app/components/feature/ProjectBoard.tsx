@@ -3,18 +3,12 @@ import Comment from '@/app/components/feature/Comment'
 import ProjectCard from '@/app/components/common/ProjectCard'
 import ObservedContainer, { ObservedDistributor } from '@/app/components/common/ObservedContainer'
 
-const main: string = 'grid py-10 bg-slate-100 lg:flex lg:justify-center lg:items-center lg:py-24 lg:px-12 lg:relative'
-const left: string = 'hidden lg:flex lg:flex-wrap lg:justify-center lg:items-center lg:w-full'
-const right: string = 'flex flex-wrap flex-row gap-4 w-full px-4 lg:w-1/2 lg:absolute lg:left-1/2 lg:pr-32'
-const right_dummy: string = 'hidden lg:flex lg:flex-wrap lg:w-full'
+const main: string = 'grid py-10 lg:flex lg:justify-center lg:items-center lg:py-24 lg:px-12 lg:relative'
+const right: string = 'flex flex-wrap flex-row gap-4 w-full px-4 w-1/2'
 
 export default function ProjectBoard(): React.JSX.Element {
   return (
-    <section className={main} id='project-board'>
-      <div className={left}>
-        <Comment>{'지금까지 제가 해온 프로젝트입니다.<br />여러가지를 시도해보았어요!'}</Comment>
-      </div>
-      <div className={right_dummy} />
+    <section className={`${main}`} id='project-board'>
       <div className={right}>
         <ObservedDistributor prefix='project-card' animation='_anime-slp-ltr-slide' threshold={0.01}>
           <ProjectCard

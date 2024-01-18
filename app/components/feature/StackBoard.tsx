@@ -14,7 +14,7 @@ const board: React.CSSProperties = {
 }
 export default function StackBoard(): React.JSX.Element {
   return (
-    <section title='stack-board' style={style} className='grid justify-items-center _bg-grid' id='stack-board'>
+    <section title='stack-board' style={style} className='grid justify-items-center' id='stack-board'>
       <div title='heading' className='grid justify-items-center mb-16'>
         <h1 className='text-3xl font-extrabold'>제가 다루는 스택이에요!</h1>
         <h2 className='text-xl mt-4 _text-black-bold'>

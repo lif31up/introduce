@@ -1,12 +1,8 @@
 import React from 'react'
 
-const style: React.CSSProperties = {
-  width: '100%',
-  height: 'fit-content',
-}
 export default function TopBanner(): React.JSX.Element {
   return (
-    <div style={style} className='flex items-center gap-8 px-4 lg:px-12 border-b select-none lg:py-4 py-8'>
+    <div className='flex items-center gap-8 px-4 lg:px-12 border-b select-none lg:py-4 py-8'>
       <h1 className='text-base mb-1 hidden lg:block'>🌐 🧪 🚀</h1>
       <ul className='text-xs lg:flex lg:gap-4 grid gap-2'>
         <desc className='py-1 px-3 rounded-2xl text-neutral-500 bg-neutral-100 border-neutral-200 border'>

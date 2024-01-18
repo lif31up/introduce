@@ -10,8 +10,7 @@ const style: React.CSSProperties = {
 
 export default function SkillBoard({}): React.JSX.Element {
   return (
-    <section style={style} className='grid justify-items-center items-center relative overflow-hidden bg-black'>
-      <div className='_anime-space-zoom' />
+    <section style={style} className='grid justify-items-center items-center overflow-hidden'>
       <div className='text-yellow-500 text-4xl font-extrabold grid justify-items-center gap-4'>
         <DynamicText className='flex' animation='_anime-slp-vanish-in' id='skillboard-dt--0'>
           독서, 경험, 성찰을 통해

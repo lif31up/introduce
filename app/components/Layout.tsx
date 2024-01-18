@@ -8,6 +8,9 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
       <Firebase />
       <TopBar />
       {children}
+      <div className='pb-2 pt-1 grid justify-items-center items-center fixed bottom-0 w-full overflow-hidden bg-black z-50'>
+        <h1 className='text-white text-xs'>현재 구인구직 중이에요!</h1>
+      </div>
     </main>
   )
 }
