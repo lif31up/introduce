@@ -1,14 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import { child } from '@firebase/database'
-import defaultProps from '@/mods/props'
+import Default from '@/util/interface'
 
 const style: React.CSSProperties = {
   width: '24rem',
   height: 'fit-content',
   padding: '3rem 1rem 3rem 1rem',
 }
-export default function Comment({ children, className }: defaultProps): React.JSX.Element {
+export default function Comment({ children, className }: Default): React.JSX.Element {
   return (
     <div style={style} className={['bg-white shadow grid justify-items-center rounded-3xl z-10', className].join(' ').trim()}>
       <Image
