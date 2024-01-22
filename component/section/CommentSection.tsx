@@ -5,8 +5,8 @@ import TailwindProperties from '@/util/tailwindProperties'
 import Default from '@/util/interface'
 
 const style: TailwindProperties = {
-  sm: '',
-  base: 'w-full h-96 grid justify-items-center items-center',
+  sm: 'sm:mt-24 sm:mb-16',
+  base: 'w-full h-fit grid justify-items-center items-center mt-16 mb-4',
 }
 
 interface CommentSection extends Default {

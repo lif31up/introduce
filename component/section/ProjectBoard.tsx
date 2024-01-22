@@ -15,7 +15,7 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
   return (
     <section title={title} className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className}`} id={id}>
       <div className='w-full h-fit grid gap-1 sm:gap-8'>
-        <ObservedDistributor prefix='left--' animation='_anime-slp-vanish-in' threshold={0.75}>
+        <ObservedDistributor prefix='left--' animation={'_anime-slp-ltr-slide'} threshold={0.1}>
           <ProjectCard
             data={{
               title: '포트폴리오',
@@ -46,7 +46,7 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
         </ObservedDistributor>
       </div>
       <div className='w-full h-fit grid gap-1 sm:gap-8'>
-        <ObservedDistributor prefix='right--' animation='_anime-slp-vanish-in' threshold={0.75}>
+        <ObservedDistributor prefix='right--' animation={'_anime-slp-rtl-slide'} threshold={0.1}>
           <ProjectCard
             data={{
               title: '멀티 블로그',

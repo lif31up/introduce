@@ -26,10 +26,10 @@
   animation: spaceInUp ease-in-out 2s paused;
 }
 ._anime-slp-ltr-slide {
-  animation: slideRightReturn ease-in-out 1s paused;
+  animation: ltr-slide ease-in-out 1s paused;
 }
 ._anime-slp-rtl-slide {
-  animation: slideLeftReturn ease-in-out 1s paused;
+  animation: rtl-slide ease-in-out 1s paused;
 }
 ._anime-slp-vanish-in {
   animation: vanishIn linear 0.75s paused;
@@ -71,11 +71,29 @@
     outline-offset: 3px;
   }
 }
+
 @keyframes loading {
   0% {
     background-position: 0 0;
   }
   100% {
     background-position: 500% 0;
+  }
+}
+
+@keyframes rtl-slide {
+  0%{
+    transform: translateX(70%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes ltr-slide {
+  0%{
+    transform: translateX(-70%);
+  }
+  100%{
+    transform: translateX(0);
   }
 }

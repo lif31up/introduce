@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const style: React.CSSProperties = {
   width: '100%',
-  height: 'fit-content',
+  height: '6.8rem',
   padding: '1rem',
 }
 const icon: React.CSSProperties = {
@@ -18,11 +18,11 @@ interface stackCardProps {
 }
 export default function StackCard({ src, title, desc }: stackCardProps) {
   return (
-    <div style={style} className='bg-white shadow rounded-2xl flex items-start'>
+    <div style={style} className='_bg-grid flex items-start'>
       <Image src={src} width={40} height={40} alt='stack' className='rounded-full' style={icon} />
       <div>
-        <h1 className='text-xs text-neutral-700 font-bold'>{title}</h1>
-        <p className='text-xs text-neutral-700 mt-1'>{desc}</p>
+        <h1 className='text-xs text-neutral-300 font-bold'>{title}</h1>
+        <p className='text-xs text-neutral-500 mt-1'>{desc}</p>
       </div>
     </div>
   )

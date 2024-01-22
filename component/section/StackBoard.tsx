@@ -1,25 +1,16 @@
 import React from 'react'
 import StackCard from '@/component/common/StackCard'
 import { ObservedDistributor } from '@/component/anime/ObservedContainer'
+import TailwindProperties from '@/util/tailwindProperties'
 
-const style: React.CSSProperties = {
-  width: '100%',
-  height: 'fit-content',
-  padding: '9rem 5rem 9rem 5rem',
-}
-const board: React.CSSProperties = {
-  width: '25%',
-  height: 'fit-content',
-  minHeight: '10rem',
-}
+const style: TailwindProperties = {}
+
 export default function StackBoard(): React.JSX.Element {
   return (
-    <section title='stack-board' style={style} className='grid justify-items-center' id='stack-board'>
+    <section title='stack-board' className='grid justify-items-center px-16 my-24' id='stack-board'>
       <div title='heading' className='grid justify-items-center mb-16'>
-        <h1 className='text-3xl font-extrabold'>제가 다루는 스택이에요!</h1>
-        <h2 className='text-xl mt-4 _text-black-bold'>
-          모두 자유롭게 사용할 수 있습니다. 회사에 들어가도 바로 적용시킬 수 있어요.
-        </h2>
+        <h1 className='text-3xl font-extrabold text-white'>제가 다루는 스택이에요!</h1>
+        <h2 className='text-xl mt-4 text-gray-400'>모두 자유롭게 사용할 수 있습니다. 회사에 들어가도 바로 적용시킬 수 있어요.</h2>
       </div>
       <Distributor>
         <StackCard
@@ -84,22 +75,22 @@ function Distributor({ children }: { children: React.ReactNode }): React.JSX.Ele
   })
   return (
     <div className='flex justify-center items-start gap-4'>
-      <div style={board} className='grid gap-4'>
+      <div className='grid gap-4'>
         <ObservedDistributor prefix='stack-board--0' threshold={threshold} animation={anime}>
           {channels[0]}
         </ObservedDistributor>
       </div>
-      <div style={board} className='grid gap-4'>
+      <div className='grid gap-4'>
         <ObservedDistributor prefix='stack-board--1' threshold={threshold} animation={anime}>
           {channels[1]}
         </ObservedDistributor>
       </div>
-      <div style={board} className='grid gap-4'>
+      <div className='grid gap-4'>
         <ObservedDistributor prefix='stack-board--2' threshold={threshold} animation={anime}>
           {channels[2]}
         </ObservedDistributor>
       </div>
-      <div style={board} className='grid gap-4'>
+      <div className='grid gap-4'>
         <ObservedDistributor prefix='stack-board--3' threshold={threshold} animation={anime}>
           {channels[3]}
         </ObservedDistributor>
