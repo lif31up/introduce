@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
+import Default from '@/util/interface'
 
-interface observedContainerProps {
-  id: string
+interface observedContainerProps extends Default {
   children: React.ReactNode
   animation: string
   threshold?: number
@@ -10,6 +10,7 @@ interface observedContainerProps {
 export default function ObservedContainer({ id, children, animation, threshold }: observedContainerProps): React.JSX.Element {
   const observerRef: any = useRef(null)
   useEffect((): void => {
+    if (!id) return
     let element: HTMLElement | null = document.getElementById(id)
     const intersectionHandler = (entries: Array<any>): void => {
       entries.forEach((entry): void | (() => void) => {
@@ -29,7 +30,7 @@ export default function ObservedContainer({ id, children, animation, threshold }
     }
     observerRef.current = new IntersectionObserver(intersectionHandler, options)
     observerRef.current.observe(element)
-  }, [false])
+  }, [])
   return (
     <div id={id} className={animation}>
       {children}
@@ -48,7 +49,7 @@ export function ObservedDistributor({ prefix, children, animation, threshold }: 
   React.Children.forEach(children, (child: React.ReactNode, index: number): void => {
     if (React.isValidElement(child)) {
       distributor.push(
-        <ObservedContainer id={prefix + `--${index}`} animation={animation} threshold={threshold}>
+        <ObservedContainer id={prefix + `--${index}`} animation={animation} threshold={threshold} key={index}>
           {child}
         </ObservedContainer>
       )

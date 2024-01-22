@@ -1,9 +1,9 @@
 'use client'
 
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
-import WorkingOn from '@/app/components/feature/WorkingOn'
+import WorkingOn from '@/component/feature/WorkingOn'
 import React, { useRef, useState } from 'react'
-import Skeleton from '@/app/components/common/Skeleton'
+import Skeleton from '@/component/common/Skeleton'
 
 const queryClient = new QueryClient()
 export default function WorkingOnTable({}) {

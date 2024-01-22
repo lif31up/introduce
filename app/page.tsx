@@ -1,18 +1,18 @@
-import Layout from '@/app/components/Layout'
-import ProjectBoard from '@/app/components/feature/ProjectBoard'
-import Front from '@/app/components/feature/Front'
-import StackBoard from '@/app/components/feature/StackBoard'
-import Comment from '@/app/components/feature/Comment'
-import SkillBoard from '@/app/components/feature/SkillBoard'
-import ObservedContainer from '@/app/components/common/ObservedContainer'
+import ProjectBoard from '@/component/section/ProjectBoard'
+import ProfileSection from '@/component/section/ProfileSection'
+import StackBoard from '@/component/section/StackBoard'
+import Comment from '@/component/feature/Comment'
+import FrontSection from '@/component/section/FrontSection'
+import ObservedContainer from '@/component/anime/ObservedContainer'
+import React from 'react'
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
   return (
-    <Layout>
+    <main>
       <div className='_anime-space-zoom' />
       <section title='middle-section'>
-        <SkillBoard />
-        <Front />
+        <FrontSection />
+        <ProfileSection />
         <ProjectBoard />
         <StackBoard />
         <div className='w-full h-0 flex justify-center items-center relative'>
@@ -23,6 +23,6 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </section>
-    </Layout>
+    </main>
   )
 }

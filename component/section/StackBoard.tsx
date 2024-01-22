@@ -1,6 +1,6 @@
 import React from 'react'
-import StackCard from '@/app/components/common/StackCard'
-import { ObservedDistributor } from '@/app/components/common/ObservedContainer'
+import StackCard from '@/component/common/StackCard'
+import { ObservedDistributor } from '@/component/anime/ObservedContainer'
 
 const style: React.CSSProperties = {
   width: '100%',

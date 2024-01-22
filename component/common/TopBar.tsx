@@ -23,15 +23,17 @@ export default function TopBar(): React.JSX.Element {
     window.addEventListener('scroll', (): void => {
       if (topBar === null) return
       if (window.scrollY > 1) {
+        topBar.style.background = 'black'
         topBar.style.transform = 'translateY(calc(-1 * 100% + 4rem))'
       } else {
+        topBar.style.background = 'transparent'
         topBar.style.transform = 'translateY(0)'
       }
     })
   }, [])
   return (
     <section>
-      <div className={`w-full fixed top-0 left-0 z-50 bg-black text-white`} id={id}>
+      <div className={`w-full fixed top-0 left-0 z-50 text-white`} id={id}>
         <section title='top' className={`relative ${top.xl}`}>
           <div className='w-1/3 flex items-center gap-4'>
             <Link href='#'>

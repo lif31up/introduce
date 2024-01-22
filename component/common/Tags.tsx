@@ -1,9 +1,10 @@
 import React from 'react'
-import defaultProps from '@/mods/props'
+import Default from '@/util/interface'
 
-interface tagsProps extends defaultProps {
+interface Tags extends Default {
   width: string
   height: string
+  children: Array<string>
 }
 const tag: React.CSSProperties = {
   padding: '0.25rem 0.75rem 0.35rem 0.75rem',
@@ -11,7 +12,7 @@ const tag: React.CSSProperties = {
   color: 'white',
   borderRadius: '2rem',
 }
-export default function Tags({ width, height, className, children }: tagsProps): React.JSX.Element {
+export default function Tags({ width, height, className, children }: Tags): React.JSX.Element {
   const style: React.CSSProperties = {
     width: width,
     height: height,
