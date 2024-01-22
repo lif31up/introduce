@@ -5,6 +5,7 @@ import Comment from '@/component/feature/Comment'
 import FrontSection from '@/component/section/FrontSection'
 import ObservedContainer from '@/component/anime/ObservedContainer'
 import React from 'react'
+import CommentSection from '@/component/section/CommentSection'
 
 export default function Home(): React.JSX.Element {
   return (
@@ -13,15 +14,9 @@ export default function Home(): React.JSX.Element {
       <section title='middle-section'>
         <FrontSection />
         <ProfileSection />
+        <CommentSection>지금부터 제가 진행했던 프로젝트를 살펴보시게 될 겁니다.</CommentSection>
         <ProjectBoard />
         <StackBoard />
-        <div className='w-full h-0 flex justify-center items-center relative'>
-          <div className='absolute z-10'>
-            <ObservedContainer id='comment-0' animation='_anime-slp-space-in-up' threshold={0.1}>
-              <Comment>여기까지 스크롤해주셔서 감사합니다. 이제부터 별 거 없습니다.</Comment>
-            </ObservedContainer>
-          </div>
-        </div>
       </section>
     </main>
   )

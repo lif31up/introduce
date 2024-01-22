@@ -4,7 +4,7 @@ import TailwindProperties from '@/util/tailwindProperties'
 import Image from 'next/image'
 
 const style: TailwindProperties = {
-  xl: 'xl:px-80 xl:my-8',
+  xl: 'xl:px-40 xl:my-8',
   lg: `lg:px-60 lg:my-8`,
   md: 'md:px-28 md:my-8',
   sm: 'sm:px-8 sm:my-8',
@@ -13,12 +13,12 @@ const style: TailwindProperties = {
 export default function ProfileSection() {
   return (
     <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm}`}>
-      <div className='p-6 grid justify-items-center bg-white sm:rounded-2xl sm:p-8 sm:block'>
-        <div className='relative h-40 w-40 overflow-hidden rounded-full mb-8'>
+      <div className='p-6 grid justify-items-center sm:block sm:rounded-2xl sm:p-8 border-2 border-white'>
+        <div className='relative h-40 w-40 overflow-hidden rounded-full mb-8 _anime-vibration'>
           <Image src='/assets/images/profile.jpg' alt='profile' fill className='object-cover' />
         </div>
-        <h1 className='text-2xl font-bold'>새로운 경험을 원하는 개발자</h1>
-        <h2 className='text-sm text-neutral-700 mt-2'>
+        <h1 className='text-2xl font-bold text-white'>새로운 경험을 원하는 개발자</h1>
+        <h2 className='text-sm text-neutral-300 mt-2 sm:w-1/2'>
           컴퓨터로 할 수 있는 가장 흥미로운 것들을 연구하고 가져옵니다. 더 나은 사용자 경험을 위해 끊임없이 탐구합니다. 우리가
           성취할 수 있는 목표에 대해 끊임없이 상상합니다. 어쨌거나 반갑습니다.
         </h2>

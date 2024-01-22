@@ -1,15 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import Default from '@/util/interface'
+import TailwindProperties from '@/util/tailwindProperties'
 
-const style: React.CSSProperties = {
-  width: '24rem',
-  height: 'fit-content',
-  padding: '3rem 1rem 3rem 1rem',
+const style: TailwindProperties = {
+  sm: 'sm:w-96 sm:h-fit sm:px-12 sm:py-8',
+  base: 'w-96 h-fit grid justify-items-center px-12 py-4 bg-white rounded-2xl',
 }
 export default function Comment({ children, className }: Default): React.JSX.Element {
   return (
-    <div style={style} className={['bg-white shadow grid justify-items-center rounded-3xl z-10', className].join(' ').trim()}>
+    <div className={`${style.sm} ${style.base} ${className}`}>
       <Image
         alt='profile'
         width={100}
