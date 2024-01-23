@@ -39,29 +39,29 @@ function Top({ className }: Default) {
   return (
     <section className={`${style.xl} ${style.lg} ${style.md} ${style.sm} ${style.base} ${className}`}>
       <div className='w-1/3 items-center gap-4 hidden sm:flex'>
-        <Link href='#'>
-          <Image className='invert' width={18} height={18} src='assets/svg/linkedin-logo.svg' alt='github' />
+        <Link href='https://www.linkedin.com/in/lif31up'>
+          <Image className='invert' width={18} height={18} src='assets/svg/linkedin-logo.svg' alt='linkedin' />
+        </Link>
+        <Link href='https://medium.com/@nulranlcns9991'>
+          <Image className='invert' width={18} height={18} src='assets/svg/medium-logo.svg' alt='medium' />
         </Link>
         <Link href='#'>
-          <Image className='invert' width={18} height={18} src='assets/svg/medium-logo.svg' alt='github' />
+          <Image className='invert' width={18} height={18} src='assets/svg/slack-logo.svg' alt='slack' />
         </Link>
-        <Link href='#'>
-          <Image className='invert' width={18} height={18} src='assets/svg/notion-logo.svg' alt='github' />
-        </Link>
-        <Link href='#'>
-          <Image className='invert' width={18} height={18} src='assets/svg/slack-logo.svg' alt='github' />
+        <Link href='https://www.wanted.co.kr/community/profile/37S8yhNPdWGwoLsqCu8uu7'>
+          <Image className='invert' width={20} height={20} src='assets/svg/wanted-logo.svg' alt='wanted' />
         </Link>
         <div className='h-full mb-1'>|</div>
         <desc className='font-extrabold text-xs text-black bg-white rounded-2xl px-2'>v.02.00.01</desc>
       </div>
       <div className='w-1/3 flex justify-center relative'>
-        <Link href='#'>
-          <Image width={54} height={54} className='invert' src='/assets/svg/github-logo.svg' alt='logo' />
+        <Link href='https://github.com/lif31up'>
+          <Image width={54} height={54} className='invert' src='/assets/svg/github-logo.svg' alt='github' />
         </Link>
       </div>
       <div className='w-1/3 flex-wrap sm:flex hidden items-center justify-end'>
-        <Link href='#' className='font-bold text-xs text-white'>
-          GITHUB ACCOUNT
+        <Link href='mailto:nulranlcns9991@gmail.com' className='font-bold text-xs text-white'>
+          E-MAIL
         </Link>
       </div>
     </section>
@@ -75,10 +75,10 @@ function Bot({ className }: Default) {
   }
   return (
     <section title='bottom' className={`${style.xl} ${style.lg} ${style.md} ${style.sm} ${style.base} ${className}`}>
-      <Link href='#'>프로젝트</Link>
-      <Link href='#'>기술 및 스택</Link>
-      <Link href='#'>소프트 스킬</Link>
-      <Link href='#'>자기소개서</Link>
+      <Link href='#profile-section'>자기소개서</Link>
+      <Link href='#project-board'>프로젝트</Link>
+      <Link href='#stack-board'>스킬 및 스택</Link>
+      <Link href='#'>처음으로</Link>
     </section>
   )
 }

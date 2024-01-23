@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import TailwindProperties from '@/util/tailwindProperties'
 import Image from 'next/image'
+import Default from '@/util/interface'
 
 const style: TailwindProperties = {
   xl: 'xl:px-40 xl:my-8',
@@ -10,9 +11,9 @@ const style: TailwindProperties = {
   sm: 'sm:px-8 sm:my-8',
   base: 'flex justify-center',
 }
-export default function ProfileSection(): React.JSX.Element {
+export default function ProfileSection({ className, id }: Default): React.JSX.Element {
   return (
-    <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm}`}>
+    <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className}`} id={id}>
       <div
         className='p-6 grid justify-items-center sm:block sm:rounded-2xl sm:px-8 sm:py-16'
         style={{ borderTop: 'solid rgb(50, 50, 50) 1px', borderBottom: 'solid rgb(50,50,50) 1px' }}>

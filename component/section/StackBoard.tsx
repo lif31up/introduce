@@ -2,14 +2,15 @@ import React from 'react'
 import StackCard from '@/component/common/StackCard'
 import { ObservedDistributor } from '@/component/anime/ObservedContainer'
 import TailwindProperties from '@/util/tailwindProperties'
+import Default from '@/util/interface'
 
-export default function StackBoard(): React.JSX.Element {
+export default function StackBoard({ className, id }: Default): React.JSX.Element {
   const style: TailwindProperties = {
     sm: 'sm:grid sm:px-16 sm:my-16',
     base: 'grid pt-8',
   }
   return (
-    <section title='stack-board' className={`${style.sm} ${style.base}`} id='stack-board'>
+    <section title='stack-board' className={`${style.sm} ${style.base} ${className}`} id={id}>
       <div title='heading' className='grid justify-items-center mb-8 sm:mb-16 px-6'>
         <h1 className='text-2xl font-extrabold text-white sm:text-3xl'>제가 다루는 스택이에요!</h1>
         <h2 className='text-sm text-gray-400 sm:text-base mt-4'>
