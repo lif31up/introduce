@@ -10,7 +10,7 @@ interface CommentSection extends Default {
 function CommentSection({ children, className, id }: CommentSection): React.JSX.Element {
   const style: TailwindProperties = {
     sm: 'sm:mt-24 sm:mb-16',
-    base: 'w-full h-fit grid justify-items-center items-center pt-16',
+    base: 'w-full h-fit grid justify-items-center items-center px-4 py-8',
   }
   return (
     <section className={`${style.sm} ${style.base} ${className}`}>

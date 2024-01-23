@@ -7,10 +7,11 @@ interface ObservedText extends Default {
   id: string
   children: string
   animation: string
+  whitespace: string
 }
-export default function ObservedText({ className, children, animation, id }: ObservedText) {
+export default function ObservedText({ className, children, animation, id, whitespace }: ObservedText) {
   const observerRef: any = useRef(null)
-  useEffect(() => {
+  useEffect((): void => {
     const typography: HTMLElement | null = document.getElementById(id)
     if (typography === null) {
       return
@@ -30,14 +31,14 @@ export default function ObservedText({ className, children, animation, id }: Obs
         }
       })
     }
-    const options = { root: null, rootMargin: '0px', threshold: 0.1 }
+    const options: object = { root: null, rootMargin: '0px', threshold: 0.1 }
     observerRef.current = new IntersectionObserver(intersectionHandler, options)
     observerRef.current.observe(typography)
-  }, [false])
+  }, [])
   const typography: Array<React.ReactNode> = []
   for (let i = 0; children[i]; i++) {
     if (children[i] === ' ') {
-      typography.push(<div key={i} style={{ width: '1rem' }} />)
+      typography.push(<div key={i} className={whitespace} />)
     } else {
       typography.push(
         <div key={i} className={['_letter', animation].join(' ').trim()}>

@@ -14,7 +14,7 @@ export default function StackCard({ name, src, desc }: StackCard) {
     base: 'w-full grid p-6 pb-4',
   }
   return (
-    <div className={`${style.sm} ${style.base}`} style={{ borderTop: 'solid rgb(50,50,50) 1px' }}>
+    <div className={`${style.sm} ${style.base}`} style={{ borderTop: 'solid rgb(50,50,50) 0px' }}>
       <div className='flex items-center'>
         <div className='w-6 h-6 relative'>
           <Image src={src} sizes={'2rem'} width={0} height={0} className='rounded-full' fill alt='stack' />

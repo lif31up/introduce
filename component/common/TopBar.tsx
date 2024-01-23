@@ -36,7 +36,7 @@ export default function TopBar(): React.JSX.Element {
 function Top({ className }: Default) {
   const style: TailwindProperties = {
     sm: 'sm:w-full sm:justify-between sm:px-12 sm:py-4',
-    base: 'w-full flex items-center justify-center py-2',
+    base: 'w-full flex items-center justify-center pt-4',
   }
   return (
     <section className={`${style.xl} ${style.lg} ${style.md} ${style.sm} ${style.base} ${className}`}>

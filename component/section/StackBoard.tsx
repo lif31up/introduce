@@ -11,7 +11,7 @@ export default function StackBoard({ className, id }: Default): React.JSX.Elemen
   }
   return (
     <section title='stack-board' className={`${style.sm} ${style.base} ${className} overflow-hidden`} id={id}>
-      <div title='heading' className='grid justify-items-center mb-8 sm:mb-16 px-6'>
+      <div title='heading' className='grid justify-items-center mb-8 sm:mt-8 sm:mb-16 px-6'>
         <h1 className='text-2xl font-extrabold text-white sm:text-3xl'>제가 다루는 스택이에요!</h1>
         <h2 className='text-sm text-gray-400 sm:text-base mt-4'>
           모두 자유롭게 사용할 수 있습니다. 회사에 들어가도 바로 적용시킬 수 있어요.
@@ -80,32 +80,16 @@ function Distributor({ children }: { children: React.ReactNode }): React.JSX.Ele
   })
 
   const style: TailwindProperties = {
-    sm: 'sm:flex sm:items-start sm:gap-8',
+    sm: 'sm:flex sm:items-start sm:gap-4',
     base: 'grid gap-2',
   }
-  const grid: string = 'grid gap-2 sm:gap-8'
+  const grid: string = 'grid gap-2 sm:gap-4'
   return (
     <div className={`${style.sm} ${style.base}`}>
-      <div className={grid}>
-        <ObservedDistributor prefix='stack-board--0' threshold={threshold} animation={anime}>
-          {channels[0]}
-        </ObservedDistributor>
-      </div>
-      <div className={grid}>
-        <ObservedDistributor prefix='stack-board--1' threshold={threshold} animation={anime}>
-          {channels[1]}
-        </ObservedDistributor>
-      </div>
-      <div className={grid}>
-        <ObservedDistributor prefix='stack-board--2' threshold={threshold} animation={anime}>
-          {channels[2]}
-        </ObservedDistributor>
-      </div>
-      <div className={grid}>
-        <ObservedDistributor prefix='stack-board--3' threshold={threshold} animation={anime}>
-          {channels[3]}
-        </ObservedDistributor>
-      </div>
+      <div className={grid}>{channels[0]}</div>
+      <div className={grid}>{channels[1]}</div>
+      <div className={grid}>{channels[2]}</div>
+      <div className={grid}>{channels[3]}</div>
     </div>
   )
 }
