@@ -13,7 +13,7 @@ const style: TailwindProperties = {
 
 export default function FrontSection({ id, className }: Default): React.JSX.Element {
   return (
-    <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className}`} id={id}>
+    <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className} overflow-hidden`} id={id}>
       <div className='text-yellow-500 text-1xl sm:text-2xl font-extrabold grid justify-items-center gap-4'>
         <ObservedText className='flex' animation='_anime-slp-vanish-in' id='skillboard-dt--0'>
           독서, 경험, 성찰을 통해

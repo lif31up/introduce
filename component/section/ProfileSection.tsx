@@ -13,7 +13,7 @@ const style: TailwindProperties = {
 }
 export default function ProfileSection({ className, id }: Default): React.JSX.Element {
   return (
-    <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className}`} id={id}>
+    <section className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className} overflow-hidden`} id={id}>
       <div
         className='p-6 grid justify-items-center sm:block sm:rounded-2xl sm:px-8 sm:py-16'
         style={{ borderTop: 'solid rgb(50, 50, 50) 1px', borderBottom: 'solid rgb(50,50,50) 1px' }}>

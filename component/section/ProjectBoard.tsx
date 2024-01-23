@@ -13,7 +13,10 @@ const style: TailwindProperties = {
 }
 export default function ProjectBoard({ className, id, title }: Default): React.JSX.Element {
   return (
-    <section title={title} className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className}`} id={id}>
+    <section
+      title={title}
+      className={`${style.base} ${style.xl} ${style.lg} ${style.md} ${style.sm} ${className} overflow-hidden`}
+      id={id}>
       <div className='w-full h-fit grid gap-1 sm:gap-8'>
         <ObservedDistributor prefix='left--' animation={'_anime-slp-ltr-slide'} threshold={0.1}>
           <ProjectCard
@@ -22,7 +25,8 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               heading: '구인구직을 위해 만든 개인 페이지',
               desc: '현재 보고계시는 페이지입니다. 제가 지금 것 해왔던 프로젝트를 종합하기 위해 만들었습니다. 화려한 에니메이션을 통해 더 인상깊은 사용자 경험을 만들 수 있었습니다.',
               tags: ['리액트', '넥스트', '베르셀', '파이어베이스', 'SCSS'],
-              href: 'https://github.com/lif31up/introduce',
+              href: 'https://introduce-murex.vercel.app/',
+              repo: 'https://github.com/lif31up/introduce',
             }}
           />
           <ProjectCard
@@ -31,7 +35,8 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               heading: '프로그래밍의 기초 중에 기초',
               desc: 'C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다.',
               tags: ['C 언어', '파이썬', '자바스크립트'],
-              href: 'https://github.com/lif31up/Data-Structures-and-Algorithms',
+              href: 'https://github.com/lfi31up/Data-Structures-and-Algorithms',
+              repo: 'https://github.com/lif31up/Data-Structures-and-Algorithms',
             }}
           />
           <ProjectCard
@@ -41,6 +46,7 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
               tags: ['피그마', '슬랙', '리액트', '테일윈드 CSS'],
               href: 'https://github.com/devBlogProject/front-end',
+              repo: 'https://github.com/devBlogProject/front-end',
             }}
           />
         </ObservedDistributor>
@@ -53,7 +59,8 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               heading: '외부 API를 공부하고 사용해본 경험',
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
               tags: ['파이어베이스', '리액트', '넥스트'],
-              href: 'https://github.com/devBlogProject/front-end',
+              href: 'https://firebase-gamma-three.vercel.app/',
+              repo: 'https://github.com/lif31up/firebase',
             }}
           />
           <ProjectCard
@@ -62,7 +69,8 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               heading: '웹 에니메이션을 능숙하게 다룹니다',
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
               tags: ['Observer API', '넥스트', '리액트', 'CSS 에니메이션'],
-              href: 'https://github.com/devBlogProject/front-end',
+              href: 'https://animation-nine-weld.vercel.app/',
+              repo: 'https://github.com/lif31up/animation',
             }}
           />
           <ProjectCard
@@ -71,7 +79,8 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               heading: '쇼핑몰에 사용될 수 있는 무한 스크롤링',
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
               tags: ['리액트 쿼리', '리액트', '후크', '패칭'],
-              href: 'https://github.com/devBlogProject/front-end',
+              href: 'https://shopping-mall-rust.vercel.app/',
+              repo: 'https://github.com/lif31up/infinite-scroll',
             }}
           />
         </ObservedDistributor>

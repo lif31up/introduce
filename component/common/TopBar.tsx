@@ -17,9 +17,11 @@ export default function TopBar(): React.JSX.Element {
       if (window.scrollY > 1) {
         topBar.style.background = 'black'
         topBar.style.transform = 'translateY(calc(-100% + 4rem))'
+        topBar.style.borderBottom = 'solid rgb(45, 45, 45) 1px'
       } else {
         topBar.style.background = 'transparent'
         topBar.style.transform = 'translateY(0)'
+        topBar.style.borderBottom = 'none'
       }
     })
   }, [])
@@ -70,8 +72,8 @@ function Top({ className }: Default) {
 
 function Bot({ className }: Default) {
   const style: TailwindProperties = {
-    sm: 'sm:gap-4',
-    base: 'w-screen h-16 flex items-center justify-center gap-2 text-neutral-300 text-sm',
+    sm: 'sm:gap-4 sm:justify-center',
+    base: 'w-screen h-16 flex items-center justify-between px-6 text-neutral-300 text-sm',
   }
   return (
     <section title='bottom' className={`${style.xl} ${style.lg} ${style.md} ${style.sm} ${style.base} ${className}`}>

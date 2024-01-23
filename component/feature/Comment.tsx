@@ -9,7 +9,7 @@ export default function Comment({ children, className }: Default): React.JSX.Ele
     base: 'w-full h-fit grid justify-items-center px-12 py-4 bg-neutral-950 rounded-2xl',
   }
   return (
-    <div className={`${style.sm} ${style.base} ${className}`}>
+    <div className={`${style.sm} ${style.base} ${className}`} style={{ border: 'solid rgb(25,25,25) 1px' }}>
       <Image
         alt='profile'
         width={100}

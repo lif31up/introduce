@@ -10,7 +10,7 @@ export default function StackBoard({ className, id }: Default): React.JSX.Elemen
     base: 'grid pt-8',
   }
   return (
-    <section title='stack-board' className={`${style.sm} ${style.base} ${className}`} id={id}>
+    <section title='stack-board' className={`${style.sm} ${style.base} ${className} overflow-hidden`} id={id}>
       <div title='heading' className='grid justify-items-center mb-8 sm:mb-16 px-6'>
         <h1 className='text-2xl font-extrabold text-white sm:text-3xl'>제가 다루는 스택이에요!</h1>
         <h2 className='text-sm text-gray-400 sm:text-base mt-4'>
