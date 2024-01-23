@@ -25,7 +25,7 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               heading: '프로그래밍의 기초 중에 기초',
               desc: 'C언어를 이용해 연결 리스트, 이중 탐색 트리, 그래프, 세트, AVL트리 등을 구현해보았습니다. 프로그래밍 언어에 대한 전반적인 지식과 감각을 잡는데 큰 도움을 준 프로젝트입니다.',
               tags: ['C 언어', '파이썬', '자바스크립트'],
-              href: 'https://github.com/lfi31up/Data-Structures-and-Algorithms',
+              href: 'https://github.com/lif31up/Data-Structures-and-Algorithms',
               repo: 'https://github.com/lif31up/Data-Structures-and-Algorithms',
             }}
           />
