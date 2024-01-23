@@ -4,14 +4,14 @@ import { ObservedDistributor } from '@/component/anime/ObservedContainer'
 import Default from '@/util/interface'
 import TailwindProperties from '@/util/tailwindProperties'
 
-const style: TailwindProperties = {
-  xl: 'xl:grid-cols-2 xl:gap-8 xl:px-80 xl:my-8',
-  lg: `lg:grid-cols-2 lg:gap-8 lg:px-60 lg:my-8`,
-  md: 'md:grid-cols-2 md:gap-8 md:px-28 md:my-8',
-  sm: 'sm:grid-cols-2 sm:grid-cols-1 sm:gap-8 sm:px-8 sm:my-8',
-  base: 'grid grid-cols-1 gap-1 my-1',
-}
 export default function ProjectBoard({ className, id, title }: Default): React.JSX.Element {
+  const style: TailwindProperties = {
+    xl: 'xl:grid-cols-2 xl:gap-8 xl:px-80 xl:my-8',
+    lg: `lg:grid-cols-2 lg:gap-8 lg:px-60 lg:my-8`,
+    md: 'md:grid-cols-2 md:gap-8 md:px-28 md:my-8',
+    sm: 'sm:grid-cols-2 sm:grid-cols-1 sm:gap-8 sm:px-8 sm:my-8',
+    base: 'grid grid-cols-1 gap-1 my-1',
+  }
   return (
     <section
       title={title}
