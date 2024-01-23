@@ -1,17 +1,14 @@
 'use client'
 import '@/styles/Animation.css'
 import React, { useEffect, useRef } from 'react'
+import Default from '@/util/interface'
 
-interface MovingTypographyProps {
-  className: string
+interface ObservedText extends Default {
+  id: string
   children: string
   animation: string
-  id: string
 }
-const whitespace: React.CSSProperties = {
-  width: '1rem',
-}
-export default function DynamicText({ className, children, animation, id }: MovingTypographyProps) {
+export default function ObservedText({ className, children, animation, id }: ObservedText) {
   const observerRef: any = useRef(null)
   useEffect(() => {
     const typography: HTMLElement | null = document.getElementById(id)
@@ -40,7 +37,7 @@ export default function DynamicText({ className, children, animation, id }: Movi
   const typography: Array<React.ReactNode> = []
   for (let i = 0; children[i]; i++) {
     if (children[i] === ' ') {
-      typography.push(<div key={i} style={whitespace} />)
+      typography.push(<div key={i} style={{ width: '1rem' }} />)
     } else {
       typography.push(
         <div key={i} className={['_letter', animation].join(' ').trim()}>

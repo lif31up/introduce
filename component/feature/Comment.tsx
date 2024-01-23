@@ -3,11 +3,11 @@ import Image from 'next/image'
 import Default from '@/util/interface'
 import TailwindProperties from '@/util/tailwindProperties'
 
-const style: TailwindProperties = {
-  sm: 'sm:w-96 sm:h-fit sm:px-12 sm:py-8',
-  base: 'w-full h-fit grid justify-items-center px-12 py-4 bg-neutral-950 rounded-2xl',
-}
 export default function Comment({ children, className }: Default): React.JSX.Element {
+  const style: TailwindProperties = {
+    sm: 'sm:w-96 sm:h-fit sm:px-12 sm:py-8',
+    base: 'w-full h-fit grid justify-items-center px-12 py-4 bg-neutral-950 rounded-2xl',
+  }
   return (
     <div className={`${style.sm} ${style.base} ${className}`}>
       <Image

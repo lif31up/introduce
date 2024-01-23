@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Default from '@/util/interface'
+import TailwindProperties from '@/util/tailwindProperties'
 
 interface StackCard extends Default {
   name: string
@@ -8,13 +9,17 @@ interface StackCard extends Default {
   desc: string
 }
 export default function StackCard({ name, src, desc }: StackCard) {
+  const style: TailwindProperties = {
+    sm: 'sm:p-4',
+    base: 'w-full grid p-6 pb-8 bg-neutral-950',
+  }
   return (
-    <div className='w-full grid bg-neutral-950 p-4 pb-8 sm:p-4'>
+    <div className={`${style.sm} ${style.base}`}>
       <div className='flex items-center'>
-        <div className='w-8 h-8 relative'>
+        <div className='w-6 h-6 relative'>
           <Image src={src} sizes={'2rem'} width={0} height={0} className='rounded-full' fill alt='stack' />
         </div>
-        <h1 className='text-sm font-bold text-neutral-300 ml-4 mb-1'>{name}</h1>
+        <h1 className='text-sm font-bold text-neutral-300 ml-4'>{name}</h1>
       </div>
       <div>
         <p className='text-xs text-neutral-500 mt-3'>{desc}</p>

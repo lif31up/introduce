@@ -18,6 +18,6 @@ export default function Firebase({}) {
       page_path: window.location.pathname,
       page_title: document.title,
     })
-  }, [false])
+  }, [])
   return <></>
 }

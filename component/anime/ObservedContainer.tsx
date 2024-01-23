@@ -2,12 +2,12 @@
 import React, { useEffect, useRef } from 'react'
 import Default from '@/util/interface'
 
-interface observedContainerProps extends Default {
+interface ObservedContainer extends Default {
   children: React.ReactNode
   animation: string
   threshold?: number
 }
-export default function ObservedContainer({ id, children, animation, threshold }: observedContainerProps): React.JSX.Element {
+export default function ObservedContainer({ id, children, animation, threshold }: ObservedContainer): React.JSX.Element {
   const observerRef: any = useRef(null)
   useEffect((): void => {
     if (!id) return

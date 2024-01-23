@@ -10,9 +10,9 @@ export default function StackBoard(): React.JSX.Element {
   }
   return (
     <section title='stack-board' className={`${style.sm} ${style.base}`} id='stack-board'>
-      <div title='heading' className='grid justify-items-center mb-16'>
-        <h1 className='text-3xl font-extrabold text-white'>제가 다루는 스택이에요!</h1>
-        <h2 className='mt-4 text-gray-400 text-base'>
+      <div title='heading' className='grid justify-items-center mb-8 sm:mb-16 px-6'>
+        <h1 className='text-2xl font-extrabold text-white sm:text-3xl'>제가 다루는 스택이에요!</h1>
+        <h2 className='text-sm text-gray-400 sm:text-base mt-4'>
           모두 자유롭게 사용할 수 있습니다. 회사에 들어가도 바로 적용시킬 수 있어요.
         </h2>
       </div>
