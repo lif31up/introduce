@@ -21,9 +21,9 @@ export default function ProjectCard({ data }: ProjectCard) {
     window.location.href = href
   }
   return (
-    <div onClick={clickHandler} className='z-10'>
+    <div onClick={clickHandler} className='cursor-pointer hover:bg-neutral-950'>
       <div style={{ borderTop: 'solid rgb(50, 50, 50) 1px' }} className='w-full p-6 sm:pb-6 pb-12 shadow'>
-        <a href={repo} className='z-20 text-xs text-gray-600 font-bold'>
+        <a href={repo} className='text-xs text-gray-600 font-bold'>
           {repo.replace('https://github.com/', '')}
         </a>
         <h1 className='text-2xl text-neutral-200 font-extrabold mt-4'>{title}</h1>
