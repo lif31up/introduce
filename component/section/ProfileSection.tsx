@@ -17,13 +17,13 @@ export default function ProfileSection(): React.JSX.Element {
         className='p-6 grid justify-items-center sm:block sm:rounded-2xl sm:px-8 sm:py-16'
         style={{ borderTop: 'solid rgb(50, 50, 50) 1px', borderBottom: 'solid rgb(50,50,50) 1px' }}>
         <div className='flex items-center mb-8'>
-          <div className='relative h-40 w-40 overflow-hidden rounded-full _anime-vibration'>
-            <Image src='/assets/images/profile.jpg' alt='profile' fill className='object-cover' />
+          <div className='relative h-40 w-40'>
+            <Image src='/assets/images/profile.jpg' alt='profile' fill className='rounded-full _anime-vibration object-cover' />
           </div>
-          <div className='ml-8 h-fit'>
+          <div className='ml-8 h-fit hidden sm:block'>
             <h1 className='text-3xl font-extrabold text-neutral-100'>한명환</h1>
-            <h2 className='text-xl font-extrabold text-neutral-300 mt-2'>연세대학교 컴퓨터공학과</h2>
-            <h1 className='text-xl font-extrabold text-neutral-200'>인텔 수료생</h1>
+            <h2 className='text-base font-extrabold text-neutral-300 mt-4'>연세대학교 컴퓨터공학과</h2>
+            <h3 className='text-sm text-neutral-500'>프론트엔드 개발, 웹 퍼블리싱, UI/UX 디자인</h3>
           </div>
         </div>
         <h1 className='text-2xl font-bold text-white'>새로운 경험을 원하는 개발자</h1>

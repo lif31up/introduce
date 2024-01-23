@@ -14,9 +14,10 @@ export default function Home(): React.JSX.Element {
       <section title='middle-section'>
         <FrontSection />
         <ProfileSection />
-        <CommentSection>지금부터 제가 진행했던 프로젝트를 살펴보시게 될 겁니다.</CommentSection>
+        <CommentSection id='comment-0--'>지금부터 제가 진행했던 프로젝트를 살펴보시게 될 겁니다.</CommentSection>
         <ProjectBoard />
         <StackBoard />
+        <CommentSection id='comment-1--'>당신은 이걸 좋아합니다.</CommentSection>
       </section>
     </main>
   )

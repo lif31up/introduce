@@ -12,10 +12,10 @@ const style: TailwindProperties = {
 interface CommentSection extends Default {
   children: string
 }
-function CommentSection({ children, className }: CommentSection): React.JSX.Element {
+function CommentSection({ children, className, id }: CommentSection): React.JSX.Element {
   return (
     <section className={`${style.sm} ${style.base} ${className}`}>
-      <ObservedContainer id='comment-0' animation='_anime-slp-space-in-up' threshold={0.5}>
+      <ObservedContainer id={id} animation='_anime-slp-space-in-up' threshold={0.5}>
         <Comment>{children}</Comment>
       </ObservedContainer>
     </section>

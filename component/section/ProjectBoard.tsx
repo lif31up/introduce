@@ -49,28 +49,28 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
         <ObservedDistributor prefix='right--' animation={'_anime-slp-rtl-slide'} threshold={0.1}>
           <ProjectCard
             data={{
-              title: '멀티 블로그',
-              heading: '다사다난 했던 협업 경험...',
+              title: '파이어베이스',
+              heading: '외부 API를 공부하고 사용해본 경험',
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
-              tags: ['피그마', '슬랙', '리액트', '테일윈드 CSS'],
+              tags: ['파이어베이스', '리액트', '넥스트'],
               href: 'https://github.com/devBlogProject/front-end',
             }}
           />
           <ProjectCard
             data={{
-              title: '멀티 블로그',
-              heading: '다사다난 했던 협업 경험...',
+              title: '에니메이션 실험소',
+              heading: '웹 에니메이션을 능숙하게 다룹니다',
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
-              tags: ['피그마', '슬랙', '리액트', '테일윈드 CSS'],
+              tags: ['Observer API', '넥스트', '리액트', 'CSS 에니메이션'],
               href: 'https://github.com/devBlogProject/front-end',
             }}
           />
           <ProjectCard
             data={{
-              title: '멀티 블로그',
-              heading: '다사다난 했던 협업 경험...',
+              title: '무한 스크롤',
+              heading: '쇼핑몰에 사용될 수 있는 무한 스크롤링',
               desc: '현재 제가 수행하고 있는 팀 프로젝트입니다. 캠퍼스픽이라는 어플을 통해서 각 분야의 학생이 모여서 블로그 서비스를 제작 중입니다. 현재까지 이는 아직 진행 중입니다. 클릭해서 UI/UX와 디자인 체계 설계 과정을 볼 수 있습니다.',
-              tags: ['피그마', '슬랙', '리액트', '테일윈드 CSS'],
+              tags: ['리액트 쿼리', '리액트', '후크', '패칭'],
               href: 'https://github.com/devBlogProject/front-end',
             }}
           />

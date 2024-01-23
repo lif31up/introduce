@@ -1,28 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
+import Default from '@/util/interface'
 
-const style: React.CSSProperties = {
-  width: '100%',
-  height: '6.8rem',
-  padding: '1rem',
-}
-const icon: React.CSSProperties = {
-  width: '2rem',
-  height: '2rem',
-  marginRight: '1rem',
-}
-interface stackCardProps {
+interface StackCard extends Default {
+  name: string
   src: string
-  title: string
   desc: string
 }
-export default function StackCard({ src, title, desc }: stackCardProps) {
+export default function StackCard({ name, src, desc }: StackCard) {
   return (
-    <div style={style} className='_bg-grid flex items-start'>
-      <Image src={src} width={40} height={40} alt='stack' className='rounded-full' style={icon} />
+    <div className='w-full grid bg-neutral-950 p-4 pb-8 sm:p-4'>
+      <div className='flex items-center'>
+        <div className='w-8 h-8 relative'>
+          <Image src={src} sizes={'2rem'} width={0} height={0} className='rounded-full' fill alt='stack' />
+        </div>
+        <h1 className='text-sm font-bold text-neutral-300 ml-4 mb-1'>{name}</h1>
+      </div>
       <div>
-        <h1 className='text-xs text-neutral-300 font-bold'>{title}</h1>
-        <p className='text-xs text-neutral-500 mt-1'>{desc}</p>
+        <p className='text-xs text-neutral-500 mt-3'>{desc}</p>
       </div>
     </div>
   )

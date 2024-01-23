@@ -7,7 +7,7 @@ const style: TailwindProperties = {
   lg: ``,
   md: '',
   sm: '',
-  base: 'w-full h-screen grid items-center justify-items-center pb-16',
+  base: 'w-full h-screen grid items-center justify-items-center',
 }
 
 export default function FrontSection({}): React.JSX.Element {
