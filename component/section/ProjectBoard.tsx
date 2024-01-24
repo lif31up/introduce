@@ -49,6 +49,16 @@ export default function ProjectBoard({ className, id, title }: Default): React.J
               repo: 'https://github.com/lif31up/introduce',
             }}
           />
+          <ProjectCard
+            data={{
+              title: '리액트 요소 라이브러리',
+              heading: '프론트엔드의 가장 기본적인 요소를 전시',
+              desc: '프론트엔드 개발자라면 당연히 구현할 줄 알아야 하는 몇 가지 요소들이 있습니다. 수평 스크롤러, 로그인 입력, 상단바 등을 한 군데애 모았습니다.',
+              tags: ['Tailwind CSS', '리액트', '넥스트', '후크'],
+              href: 'https://components-lilac.vercel.app/',
+              repo: 'https://github.com/lif31up/components',
+            }}
+          />
         </ObservedDistributor>
       </div>
       <div className='w-full h-fit grid gap-1 sm:gap-8'>
