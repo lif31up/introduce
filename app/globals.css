@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
-@import "@/styles/reset.css";
-@import "@/styles/Text.css";
-@import "@/styles/Border.css";
-@import "@/styles/Background.css";
-@import "@/styles/Animation.css";
-@import "@/styles/Feature.css";
+@import "@/styles/_common.css";
 
 @tailwind base;
 @tailwind components;
@@ -24,11 +19,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-html {
-  font-family: Noto Sans Kr, sans-serif;
-  font-size: 18px;
-  background: black;
-  scroll-behavior: smooth;
-}
+
 body {
+  font-size: 18px;
+  color: black;
+  background: white;
+  font-family: "Lalezar", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

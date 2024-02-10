@@ -1,14 +1,36 @@
-# 프론트엔드 개발자 포트폴리오
-구직에 활용하기 위해, 제 개발 역량을 한 곳에 모은 웹 사이트입니다.
-## 웹사이트를 방문하기
-오른쪽의 리포지토리 설명에 기술되어있는 링크를 클릭해 해당 `next.js` 응용의 빌드를 확인합니다.
-## 요소를 확인하기
-웹사이트에 전시된 요소와 관련된 논리는 전부 `component`에 위치합니다.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
----
-# Frontend Developer Portfolio
-This repository is for developing my front-end portfolio.
-## Visiting Website
-You can visit the website of this at the right in description section.
-## Checking the Components
-Check `component` to understand how the animation worked!
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
