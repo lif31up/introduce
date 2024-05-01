@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Default from '@/util/interface'
-import TailwindProperties from '@/util/tailwindProperties'
+import Default from '@/utils/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
 
 interface StackCard extends Default {
   name: string

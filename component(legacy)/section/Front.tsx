@@ -1,7 +1,7 @@
 import React from 'react'
 import ObservedText from '@/component/anime/ObservedText'
-import TailwindProperties from '@/util/tailwindProperties'
-import Default from '@/util/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
+import Default from '@/utils/interface'
 
 export default function Front({ id, className }: Default): React.JSX.Element {
   const style: TailwindProperties = {

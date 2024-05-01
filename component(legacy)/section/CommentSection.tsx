@@ -1,8 +1,8 @@
 import React from 'react'
 import ObservedContainer from '@/component/anime/ObservedContainer'
 import Comment from '@/component/feature/Comment'
-import TailwindProperties from '@/util/tailwindProperties'
-import Default from '@/util/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
+import Default from '@/utils/interface'
 
 interface CommentSection extends Default {
   children: string

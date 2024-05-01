@@ -1,8 +1,8 @@
 import React from 'react'
 import StackCard from '@/component/common/StackCard'
 import { ObservedDistributor } from '@/component/anime/ObservedContainer'
-import TailwindProperties from '@/util/tailwindProperties'
-import Default from '@/util/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
+import Default from '@/utils/interface'
 
 export default function StackBoard({ className, id }: Default): React.JSX.Element {
   const style: TailwindProperties = {

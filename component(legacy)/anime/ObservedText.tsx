@@ -1,7 +1,7 @@
 'use client'
-import '@/styles/Animation.css'
+import '@/styles/animation.css'
 import React, { useEffect, useRef } from 'react'
-import Default from '@/util/interface'
+import Default from '@/utils/interface'
 
 interface ObservedText extends Default {
   id: string

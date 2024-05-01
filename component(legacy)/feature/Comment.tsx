@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Default from '@/util/interface'
-import TailwindProperties from '@/util/tailwindProperties'
+import Default from '@/utils/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
 
 export default function Comment({ children, className }: Default): React.JSX.Element {
   const style: TailwindProperties = {

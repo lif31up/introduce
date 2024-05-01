@@ -1,6 +1,6 @@
 import React from 'react'
-import Default from '@/util/interface'
-import TailwindProperties from '@/util/tailwindProperties'
+import Default from '@/utils/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
 
 interface Skill {
   title: string

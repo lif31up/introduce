@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-@import "@/styles/reset.css";
-@import "@/styles/Text.css";
-@import "@/styles/Border.css";
-@import "@/styles/Background.css";
-@import "@/styles/Animation.css";
-@import "@/styles/Feature.css";
+@import "styles/index.css";
 
 @tailwind base;
 @tailwind components;
@@ -23,12 +16,4 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-html {
-  font-family: Noto Sans Kr, sans-serif;
-  font-size: 18px;
-  background: black;
-  scroll-behavior: smooth;
-}
-body {
 }

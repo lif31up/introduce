@@ -1,5 +1,5 @@
 import React from 'react'
-import Default from '@/util/interface'
+import Default from '@/utils/interface'
 
 interface Tags extends Default {
   width: string

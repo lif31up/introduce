@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
-import Default from '@/util/interface'
+import Default from '@/utils/interface'
 
 interface ObservedContainer extends Default {
   children: React.ReactNode

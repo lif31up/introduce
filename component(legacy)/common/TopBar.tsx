@@ -3,8 +3,8 @@
 import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import TailwindProperties from '@/util/tailwindProperties'
-import Default from '@/util/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
+import Default from '@/utils/interface'
 
 const id: string = 'top-bar'
 export default function TopBar(): React.JSX.Element {

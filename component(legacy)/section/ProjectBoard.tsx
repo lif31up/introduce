@@ -1,8 +1,8 @@
 import React from 'react'
 import ProjectCard from '@/component/common/ProjectCard'
 import { ObservedDistributor } from '@/component/anime/ObservedContainer'
-import Default from '@/util/interface'
-import TailwindProperties from '@/util/tailwindProperties'
+import Default from '@/utils/interface'
+import TailwindProperties from '@/utils/tailwindProperties'
 
 export default function ProjectBoard({ className, id, title }: Default): React.JSX.Element {
   const style: TailwindProperties = {

@@ -1,0 +1,62 @@
+[
+	{
+		"index": 0,
+		"title": "폼나는 SAFFE",
+		"desc": "설문지를 만들어 배포하는 웹 서비스입니다. 모든 UI/UX는 제가 직접 디자인했습니다.",
+		"href": "https://github.com/lif31up/introduce",
+		"src": "/assets/images/abstract_0.jpg",
+		"badges": [
+			{
+				"name": "Figma",
+				"src": "/assets/svg/figma.svg"
+			}
+		]
+	},
+	{
+		"index": 1,
+		"title": "자료구조",
+		"desc": "C 언어를 이용해서 자료구조를 구현했습니다.",
+		"href": "https://github.com/lif31up/data-structures-and-algorithms-clang",
+		"src": "/assets/images/abstract_1.jpg",
+		"badges": [
+			{
+				"name": "Programming",
+				"src": "/assets/svg/code.svg"
+			}
+		]
+	},
+	{
+		"index": 2,
+		"title": "에니메이션",
+		"desc": "리액트에서의 에니메이션을 연구하기 위해 제가 만든 리포지토리입니다.",
+		"href": "https://github.com/lif31up/animation",
+		"src": "/assets/images/abstract_2.jpg",
+		"badges": [
+			{
+				"name": "Programming",
+				"src": "/assets/svg/code.svg"
+			},
+			{
+				"name": "React",
+				"src": "/assets/svg/react.svg"
+			}
+		]
+	},
+	{
+		"index": 3,
+		"title": "넥스트 템플레이트",
+		"desc": "넥스트를 시작하기 위한 양식입니다. 리액트에 대한 이해도를 보여줄 수 있다 생각합니다.",
+		"href": "https://github.com/lif31up/next-template",
+		"src": "/assets/images/abstract_3.jpg",
+		"badges": [
+			{
+				"name": "Programming",
+				"src": "/assets/svg/code.svg"
+			},
+			{
+				"name": "React",
+				"src": "/assets/svg/react.svg"
+			}
+		]
+	}
+]

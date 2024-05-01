@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import TailwindProperties from '@/util/tailwindProperties'
+import TailwindProperties from '@/utils/tailwindProperties'
 import Image from 'next/image'
-import Default from '@/util/interface'
+import Default from '@/utils/interface'
 
 const style: TailwindProperties = {
   xl: 'xl:px-80 xl:my-8',
