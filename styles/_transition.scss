@@ -1,0 +1,37 @@
+@import "keyframe";
+
+// the unit will be 0.5s
+._transition-wh-xs {
+  transition: height 0.25s ease-in-out, width 0.25s ease-in-out;
+}
+._transition-wh-sm {
+  transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+._transition-wh-md {
+  transition: height 0.75s ease-in-out, width 0.75s ease-in-out;
+}
+._transition-wh-base {
+  transition: height 1s ease-in-out, width 1s ease-in-out;
+}
+
+._transition-w-xs {
+  transition: width 0.25s ease-in-out;
+}
+._transition-w-sm {
+  transition: width 0.5s ease-in-out;
+}
+._transition-w-md {
+  transition: width 0.75s ease-in-out;
+}
+._transition-w-base {
+  transition: width 1s ease-in-out;
+}
+
+
+._transition-h-sm {
+  transition: height 0.5s ease-in-out;
+}
+
+._transition-position-y {
+  transition: top 0.5s ease-in-out;
+}

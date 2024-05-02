@@ -1,0 +1,67 @@
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes vibration {
+  0% {
+    outline-color: rgba(0, 250, 0, 0.3);
+    outline-offset: 3px;
+  }
+  50% {
+    outline-color: rgba(0, 250, 0, 0);
+    outline-offset: 6px;
+  }
+  100% {
+    outline-color: rgba(0, 250, 0, 0.3);
+    outline-offset: 3px;
+  }
+}
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500% 0;
+  }
+}
+@keyframes rtl-slide {
+  0% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes ltr-slide {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes ttb-slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+._transition-w-xs {
+  transition: width 0.5s ease-in-out;
+}
+
+._transition-h-xs {
+  transition: height 0.5s ease-in-out;
+}
+
+._transition-wh-md {
+  transition: height 0.25s ease-in-out, width 0.25s ease-in-out;
+}
+
+/*# sourceMappingURL=_transition.css.map */

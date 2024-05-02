@@ -1,0 +1,61 @@
+@keyframes zoom {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.5);
+  }
+}
+@keyframes vibration {
+  0%{
+    outline-color: rgba(0, 250, 0, 30%);
+    outline-offset: 3px;
+  }
+  50%{
+    outline-color: rgba(0, 250, 0, 0%);
+    outline-offset: 6px;
+  }
+  100%{
+    outline-color: rgba(0, 250, 0, 30%);
+    outline-offset: 3px;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 500% 0;
+  }
+}
+
+@keyframes rtl-slide {
+  0%{
+    transform: translateX(70%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes ltr-slide {
+  0%{
+    transform: translateX(-70%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes ttb-slide-in {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 100%;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
