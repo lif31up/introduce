@@ -11,8 +11,7 @@ function ProjectSelector({ className }: DefaultProps<never>) {
   const projectIndex = useRecoilValue(ProjectDisplayState)
   const setProjectIndex = useSetRecoilState(ProjectDisplayState)
 
-  const defaultHeight = 28
-  const activatedHeight = 76
+  const [defaultHeight, activatedHeight]: Array<number> = [28, 76]
   const projectList: Array<React.ReactNode> = []
   if (data) {
     let topPoint: number = -28
