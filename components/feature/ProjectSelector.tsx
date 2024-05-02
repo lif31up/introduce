@@ -30,7 +30,7 @@ function ProjectSelector({ className }: DefaultProps<never>) {
   return (
     <div className={`${style.md} ${style.base} ${className}`}>
       <h1 className='text-xs font-bold text-neutral-600 pt-4'>프로젝트</h1>
-      <div className='relative w-full h-fit'>{projectList}</div>
+      <div className='relative w-full h-32'>{projectList}</div>
     </div>
   )
 }

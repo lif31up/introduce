@@ -4,15 +4,27 @@
 		"name": "react"
 	},
 	{
-		"src": "https://cdn.iconscout.com/icon/free/png-512/free-react-1-282599.png?f=webp&w=512",
-		"name": "react"
+		"src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.P_X5b6-vDaz15qjmkHLy3AAAAA%26pid%3DApi&f=1&ipt=734e9c5036f74696fefc000b80180be743bd82d972de8d4db6f1b16ff234ff24&ipo=images",
+		"name": "next.js"
 	},
 	{
-		"src": "https://cdn.iconscout.com/icon/free/png-512/free-react-1-282599.png?f=webp&w=512",
-		"name": "react"
+		"src": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.maKe3jXsLd8flovNsX2_3QHaHa%26pid%3DApi&f=1&ipt=5134157e2f431806b01f2de40a4801e64647e890f857a15206cc8abe8a08c2e7&ipo=images",
+		"name": "typescript"
 	},
 	{
-		"src": "https://cdn.iconscout.com/icon/free/png-512/free-react-1-282599.png?f=webp&w=512",
-		"name": "react"
+		"src": "https://velog.velcdn.com/images/real-bird/post/db9add5d-bba1-43c2-899b-42d3ab972f6b/image.png",
+		"name": "recoil"
+	},
+	{
+		"src": "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png",
+		"name": "sassy"
+	},
+	{
+		"src": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/events/Tailwind_CSS_Logo.svg.png",
+		"name": "tailwind css"
+	},
+	{
+		"src": "https://brandlogos.net/wp-content/uploads/2022/05/figma-logo_brandlogos.net_6n1pb.png",
+		"name": "figma"
 	}
 ]

@@ -52,10 +52,12 @@ function ProfileCard({ className }: DefaultProps<never>) {
         </div>
       </div>
       <div title='Education' className='px-1 text-sm text-neutral-300  select-none'>
-        YONSEI University Computer Science <br /> SAFFE 2024
+        YONSEI University Computer Science <br /> SSAFY 2024
       </div>
-      <Stack<SkillCardData> className='w-fit h-fit pt-4' data={skills} grid='grid grid-cols-2 gap-2' item={SkillCard} />
-      <Stack<ShortcutData> className='w-fit h-fit pt-6' data={shortcuts} grid='grid grid-cols-2 gap-2' item={Shortcut} />
+      <h1 className='pt-6 pb-2 text-xs text-neutral-600 font-bold'>기술 스택</h1>
+      <Stack<SkillCardData> className='w-fit h-fit' data={skills} grid='grid grid-cols-2 gap-3 w-4/5' item={SkillCard} />
+      <h1 className='pt-6 pb-2 text-xs text-neutral-600 font-bold'>바로가기</h1>
+      <Stack<ShortcutData> className='w-fit h-fit' data={shortcuts} grid='grid grid-cols-2 gap-3 w-4/5' item={Shortcut} />
     </div>
   )
 }
