@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-@import "magic.css/dist/magic.css";
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -58,6 +57,17 @@
     transform: translateY(0);
   }
 }
+._hover-max-w-fit {
+  transition: width 1s ease-in-out;
+  max-width: 4rem;
+  width: 4rem;
+}
+
+._hover-max-w-fit:hover {
+  width: 12rem;
+  max-width: fit-content;
+}
+
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -125,7 +135,6 @@
 }
 
 ._bg-dynamic-lp {
-  background: radial-gradient(#FAFAFA, #94A3B8, #E5E5E5, #E5E5E5);
   background-size: 400%;
   animation: loading 35s linear infinite;
   transition: background-size 0.75s ease-in-out;

@@ -1,1 +1,10 @@
 @import 'keyframe';
+._hover-max-w-fit {
+  transition: width 1s ease-in-out;
+  max-width: 4rem;
+  width: 4rem;
+}
+._hover-max-w-fit:hover {
+  width: 12rem;
+  max-width: fit-content;
+}
