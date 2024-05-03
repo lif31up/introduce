@@ -18,6 +18,7 @@ export type ProjectData = {
   desc: string
   href: string
   src: string
+  colors: Array<string>
   badges: Array<BadgeData>
 }
 

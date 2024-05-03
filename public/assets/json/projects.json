@@ -5,6 +5,7 @@
 		"desc": "설문지를 만들어 배포하는 웹 서비스입니다. 모든 UI/UX는 제가 직접 디자인했습니다.",
 		"href": "https://github.com/lif31up/introduce",
 		"src": "/assets/images/abstract_0.jpg",
+		"colors": ["#140edd", "#a9798e", "#1b193b"],
 		"badges": [
 			{
 				"name": "Figma",
@@ -18,6 +19,7 @@
 		"desc": "C 언어를 이용해서 자료구조를 구현했습니다.",
 		"href": "https://github.com/lif31up/data-structures-and-algorithms-clang",
 		"src": "/assets/images/abstract_1.jpg",
+		"colors": ["#140edd", "#a9798e", "#1b193b"],
 		"badges": [
 			{
 				"name": "Programming",
@@ -31,6 +33,7 @@
 		"desc": "리액트에서의 에니메이션을 연구하기 위해 제가 만든 리포지토리입니다.",
 		"href": "https://github.com/lif31up/animation",
 		"src": "/assets/images/abstract_2.jpg",
+		"colors": ["#140edd", "", ""],
 		"badges": [
 			{
 				"name": "Programming",
@@ -48,6 +51,7 @@
 		"desc": "넥스트를 시작하기 위한 양식입니다. 리액트에 대한 이해도를 보여줄 수 있다 생각합니다.",
 		"href": "https://github.com/lif31up/next-template",
 		"src": "/assets/images/abstract_3.jpg",
+		"colors": ["#140edd", "", ""],
 		"badges": [
 			{
 				"name": "Programming",
