@@ -4,7 +4,7 @@ import React, { CSSProperties, useContext } from 'react'
 import { ProjectData, ProjectDisplayContext, ProjectDisplayState } from '@/components/feature/ProjectDisplay'
 import { useRecoilValue } from 'recoil'
 import TailwindProperties from '@/utils/tailwindProperties'
-import DefaultProps from '@/utils/interface'
+import DefaultProps from '@/utils/DefaultProps'
 
 function ProjectCircle() {
   const data = useContext(ProjectDisplayContext)

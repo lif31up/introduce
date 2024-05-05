@@ -1,6 +1,6 @@
 'use client'
 
-import DefaultProps from '@/utils/interface'
+import DefaultProps from '@/utils/DefaultProps'
 import React, { useEffect, useRef } from 'react'
 
 interface ObserverContainerProps extends DefaultProps<never> {

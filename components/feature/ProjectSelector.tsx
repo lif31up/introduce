@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useContext } from 'react'
-import DefaultProps from '@/utils/interface'
+import DefaultProps from '@/utils/DefaultProps'
 import TailwindProperties from '@/utils/tailwindProperties'
 import { useRecoilValue, useSetRecoilState } from 'recoil'
 import { ProjectData, ProjectDisplayContext, ProjectDisplayState } from '@/components/feature/ProjectDisplay'

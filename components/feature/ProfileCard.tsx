@@ -1,5 +1,5 @@
 import TailwindProperties from '@/utils/tailwindProperties'
-import DefaultProps from '@/utils/interface'
+import DefaultProps from '@/utils/DefaultProps'
 import React from 'react'
 import Stack from '@/components/common/Stack'
 import skills from '@/public/assets/json/skills.json'

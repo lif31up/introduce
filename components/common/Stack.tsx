@@ -1,6 +1,6 @@
 // 해당 요소는 사용법만 숙지한다면 모든 상황에 있어서 사용될 수 있어야 합니다.
 
-import DefaultProps from '@/utils/interface'
+import DefaultProps from '@/utils/DefaultProps'
 import React from 'react'
 import TailwindProperties from '@/utils/tailwindProperties'
 

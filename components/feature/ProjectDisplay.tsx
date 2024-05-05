@@ -6,7 +6,7 @@ import projects from '@/public/assets/json/projects.json'
 import ProjectSelector from '@/components/feature/ProjectSelector'
 import ProjectCircle from '@/components/feature/ProjectCircle'
 import TailwindProperties from '@/utils/tailwindProperties'
-import DefaultProps from '@/utils/interface'
+import DefaultProps from '@/utils/DefaultProps'
 
 export type BadgeData = {
   name: string
