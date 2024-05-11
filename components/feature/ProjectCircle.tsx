@@ -1,6 +1,6 @@
 'use client'
 
-import React, { CSSProperties, useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { ProjectData, ProjectDisplayContext, ProjectDisplayState } from '@/components/feature/ProjectDisplay'
 import { useRecoilValue } from 'recoil'
 import TailwindProperties from '@/utils/tailwindProperties'
@@ -9,18 +9,29 @@ import DefaultProps from '@/utils/DefaultProps'
 function ProjectCircle() {
   const data = useContext(ProjectDisplayContext)
   const projectIndex = useRecoilValue(ProjectDisplayState)
+  const [activated, setActivated] = useState<boolean>(false)
+
+  useEffect(() => {
+    setActivated(false)
+  }, [projectIndex])
 
   if (!data) return <></>
-  const { badges, href, src }: ProjectData = data[projectIndex]
+  const { badges, href, src, title, desc }: ProjectData = data[projectIndex]
   const badgeList: Array<React.ReactNode> = []
   if (badges) {
     badges.forEach((element: BadgeData, index: number) => badgeList.push(<Badge data={element} key={index} />))
   }
 
-  const clickHandler = () => {
-    setTimeout(() => {
-      document.location.href = href
-    }, 1000)
+  let clickHandler: () => void
+  if (!activated) {
+    clickHandler = () => {
+      setActivated(true)
+    }
+  } else {
+    clickHandler = () =>
+      setTimeout(() => {
+        window.open(href)
+      }, 1000)
   }
 
   const style: TailwindProperties = {
@@ -37,8 +48,16 @@ function ProjectCircle() {
           <div
             style={{ width: '432px', height: '432px' }}
             className='grid items-center justify-items-center rounded-full overflow-clip _bg-lp _bg-dynamic-lp shadow-inner'>
-            <button className='rounded-full overflow-hidden shadow border-white border-2' onClick={clickHandler}>
-              <img alt='img' src={src} className='w-40 h-40 hover:w-56 hover:h-56 _transition-wh-sm bg-black object-cover' />
+            <button
+              className='relative flex items-center justify-center rounded-full overflow-hidden shadow border-white border-2 bg-black'
+              onClick={clickHandler}>
+              <div className='w-56 h-56 hover:w-72 hover:h-72  grid justify-center items-center  rounded-full overflow-hidden  _transition-wh-sm'>
+                {!activated ? (
+                  <div className='w-72 h-72  flex justify-center items-center' style={{ background: `url(${src})` }} />
+                ) : (
+                  <LPDesc title={title} desc={desc} />
+                )}
+              </div>
             </button>
           </div>
         </section>
@@ -69,5 +88,18 @@ function Badge({ data, className }: DefaultProps<BadgeData>) {
         <h1 className='text-sm text-black w-fit pr-8'>{name}</h1>
       </div>
     </button>
+  )
+}
+
+interface LPDescProps {
+  title: string
+  desc: string
+}
+function LPDesc({ title, desc }: LPDescProps) {
+  return (
+    <div className='w-72 h-fit px-4'>
+      <h1 className='text-lg text-neutral-50'>{title}</h1>
+      <p className='text-xs text-neutral-400'>{desc}</p>
+    </div>
   )
 }

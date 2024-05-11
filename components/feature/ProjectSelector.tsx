@@ -56,7 +56,7 @@ function ProjectCard({ data, className, onClick, activated, top }: ProjectCardPr
         {title}
       </h1>
       <div className={`overflow-hidden w-full`}>
-        <p className={`text-sm text-neutral-300 line-clamp-2 ${activated ? 'h-12 _anime-ttb-slide' : 'h-0'}`}>{desc}</p>
+        <p className={`text-sm text-neutral-400 line-clamp-2 ${activated ? 'h-12 _anime-ttb-slide' : 'h-0'}`}>{desc}</p>
       </div>
     </button>
   )
