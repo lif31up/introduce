@@ -8,15 +8,15 @@
 }
 @keyframes vibration {
   0%{
-    outline-color: rgba(0, 250, 0, 30%);
+    outline-color: rgba(0, 0, 250, 30%);
     outline-offset: 3px;
   }
   50%{
-    outline-color: rgba(0, 250, 0, 0%);
+    outline-color: rgba(0, 0, 250, 0%);
     outline-offset: 6px;
   }
   100%{
-    outline-color: rgba(0, 250, 0, 30%);
+    outline-color: rgba(0, 0, 250, 30%);
     outline-offset: 3px;
   }
 }

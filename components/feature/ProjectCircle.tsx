@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { ProjectData, ProjectDisplayContext, ProjectDisplayState } from '@/components/feature/ProjectDisplay'
 import { useRecoilValue } from 'recoil'
 import TailwindProperties from '@/utils/tailwindProperties'
@@ -9,11 +9,8 @@ import DefaultProps from '@/utils/DefaultProps'
 function ProjectCircle() {
   const data = useContext(ProjectDisplayContext)
   const projectIndex = useRecoilValue(ProjectDisplayState)
-  const [activated, setActivated] = useState<boolean>(false)
 
-  useEffect(() => {
-    setActivated(false)
-  }, [projectIndex])
+  const circleId: string = 'circle-id-0'
 
   if (!data) return <></>
   const { badges, href, src, title, desc }: ProjectData = data[projectIndex]
@@ -22,41 +19,32 @@ function ProjectCircle() {
     badges.forEach((element: BadgeData, index: number) => badgeList.push(<Badge data={element} key={index} />))
   }
 
-  let clickHandler: () => void
-  if (!activated) {
-    clickHandler = () => {
-      setActivated(true)
-    }
-  } else {
-    clickHandler = () =>
-      setTimeout(() => {
-        window.open(href)
-      }, 1000)
-  }
+  const clickHandler = () =>
+    setTimeout(() => {
+      window.open(href)
+    }, 0)
 
   const style: TailwindProperties = {
     md: 'fixed left-0 top-0 w-screen h-screen flex justify-center items-center',
     base: '',
   }
   return (
-    <section className={`${style.md} ${style.base} -z-10`}>
+    <section className={`${style.md} ${style.base} -z-10 xl:flex hidden`}>
       <div className='relative w-fit h-fit'>
         <section title='badge' className='z-20 absolute right-0 top-0  w-fit h-fit  pt-8  grid gap-2 justify-items-end'>
           {badgeList}
         </section>
-        <section title='lp' className='z-10'>
+        <section title='lp' className='z-10 _anime-outline-vibration rounded-full' id={circleId}>
           <div
             style={{ width: '432px', height: '432px' }}
             className='grid items-center justify-items-center rounded-full overflow-clip _bg-lp _bg-dynamic-lp shadow-inner'>
             <button
               className='relative flex items-center justify-center rounded-full overflow-hidden shadow border-white border-2 bg-black'
               onClick={clickHandler}>
-              <div className='w-56 h-56 hover:w-72 hover:h-72  grid justify-center items-center  rounded-full overflow-hidden  _transition-wh-sm'>
-                {!activated ? (
-                  <div className='w-72 h-72  flex justify-center items-center' style={{ background: `url(${src})` }} />
-                ) : (
+              <div className='w-56 h-56 hover:w-72 hover:h-72  flex items-center justify-center  rounded-full overflow-hidden  _transition-wh-sm'>
+                <div className='w-72 h-72  grid justify-center items-center' style={{ background: `url(${src})` }}>
                   <LPDesc title={title} desc={desc} />
-                )}
+                </div>
               </div>
             </button>
           </div>
@@ -97,9 +85,11 @@ interface LPDescProps {
 }
 function LPDesc({ title, desc }: LPDescProps) {
   return (
-    <div className='w-72 h-fit px-4'>
-      <h1 className='text-lg text-neutral-50'>{title}</h1>
-      <p className='text-xs text-neutral-400'>{desc}</p>
+    <div className='w-72 h-72 flex items-center justify-center px-4 backdrop-blur-md'>
+      <div>
+        <h1 className='text-lg text-neutral-50'>{title}</h1>
+        <p className='text-xs text-neutral-400'>{desc}</p>
+      </div>
     </div>
   )
 }

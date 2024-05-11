@@ -9,15 +9,15 @@
 }
 @keyframes vibration {
   0% {
-    outline-color: rgba(0, 250, 0, 0.3);
+    outline-color: rgba(0, 0, 250, 0.3);
     outline-offset: 3px;
   }
   50% {
-    outline-color: rgba(0, 250, 0, 0);
+    outline-color: rgba(0, 0, 250, 0);
     outline-offset: 6px;
   }
   100% {
-    outline-color: rgba(0, 250, 0, 0.3);
+    outline-color: rgba(0, 0, 250, 0.3);
     outline-offset: 3px;
   }
 }
@@ -78,15 +78,15 @@
 }
 @keyframes vibration {
   0% {
-    outline-color: rgba(0, 250, 0, 0.3);
+    outline-color: rgba(0, 0, 250, 0.3);
     outline-offset: 3px;
   }
   50% {
-    outline-color: rgba(0, 250, 0, 0);
+    outline-color: rgba(0, 0, 250, 0);
     outline-offset: 6px;
   }
   100% {
-    outline-color: rgba(0, 250, 0, 0.3);
+    outline-color: rgba(0, 0, 250, 0.3);
     outline-offset: 3px;
   }
 }
@@ -130,6 +130,11 @@
   animation: ttb-slide-in 0.5s ease-in-out;
 }
 
+._anime-outline-vibration {
+  outline: solid red 4px;
+  animation: vibration 1s ease-in-out infinite;
+}
+
 ._bg-lp {
   background: radial-gradient(#FAFAFA, #94A3B8, #E5E5E5, #E5E5E5);
 }
@@ -159,15 +164,15 @@
 }
 @keyframes vibration {
   0% {
-    outline-color: rgba(0, 250, 0, 0.3);
+    outline-color: rgba(0, 0, 250, 0.3);
     outline-offset: 3px;
   }
   50% {
-    outline-color: rgba(0, 250, 0, 0);
+    outline-color: rgba(0, 0, 250, 0);
     outline-offset: 6px;
   }
   100% {
-    outline-color: rgba(0, 250, 0, 0.3);
+    outline-color: rgba(0, 0, 250, 0.3);
     outline-offset: 3px;
   }
 }

@@ -3,3 +3,8 @@
 ._anime-ttb-slide {
   animation: ttb-slide-in 0.5s ease-in-out;
 }
+
+._anime-outline-vibration {
+  outline: solid red 4px;
+  animation: vibration 1s ease-in-out infinite;
+}
