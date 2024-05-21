@@ -9,15 +9,15 @@
 }
 @keyframes vibration {
   0% {
-    outline-color: rgba(0, 0, 250, 0.3);
+    outline-color: rgba(250, 250, 250, 0.05);
     outline-offset: 3px;
   }
   50% {
-    outline-color: rgba(0, 0, 250, 0);
+    outline-color: rgba(250, 250, 250, 0);
     outline-offset: 6px;
   }
   100% {
-    outline-color: rgba(0, 0, 250, 0.3);
+    outline-color: rgba(250, 250, 250, 0.05);
     outline-offset: 3px;
   }
 }
@@ -78,15 +78,15 @@
 }
 @keyframes vibration {
   0% {
-    outline-color: rgba(0, 0, 250, 0.3);
+    outline-color: rgba(250, 250, 250, 0.05);
     outline-offset: 3px;
   }
   50% {
-    outline-color: rgba(0, 0, 250, 0);
+    outline-color: rgba(250, 250, 250, 0);
     outline-offset: 6px;
   }
   100% {
-    outline-color: rgba(0, 0, 250, 0.3);
+    outline-color: rgba(250, 250, 250, 0.05);
     outline-offset: 3px;
   }
 }
@@ -164,15 +164,15 @@
 }
 @keyframes vibration {
   0% {
-    outline-color: rgba(0, 0, 250, 0.3);
+    outline-color: rgba(250, 250, 250, 0.05);
     outline-offset: 3px;
   }
   50% {
-    outline-color: rgba(0, 0, 250, 0);
+    outline-color: rgba(250, 250, 250, 0);
     outline-offset: 6px;
   }
   100% {
-    outline-color: rgba(0, 0, 250, 0.3);
+    outline-color: rgba(250, 250, 250, 0.05);
     outline-offset: 3px;
   }
 }

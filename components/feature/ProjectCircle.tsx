@@ -34,20 +34,12 @@ function ProjectCircle() {
         <section title='badge' className='z-20 absolute right-0 top-0  w-fit h-fit  pt-8  grid gap-2 justify-items-end'>
           {badgeList}
         </section>
-        <section title='lp' className='z-10 _anime-outline-vibration rounded-full' id={circleId}>
-          <div
-            style={{ width: '432px', height: '432px' }}
-            className='grid items-center justify-items-center rounded-full overflow-clip _bg-lp _bg-dynamic-lp shadow-inner'>
-            <button
-              className='relative flex items-center justify-center rounded-full overflow-hidden shadow border-white border-2 bg-black'
-              onClick={clickHandler}>
-              <div className='w-56 h-56 hover:w-72 hover:h-72  flex items-center justify-center  rounded-full overflow-hidden  _transition-wh-sm'>
-                <div className='w-72 h-72  grid justify-center items-center' style={{ background: `url(${src})` }}>
-                  <LPDesc title={title} desc={desc} />
-                </div>
-              </div>
-            </button>
-          </div>
+        <section title='lp' id={circleId}>
+          <button
+            className='relative  flex items-center justify-center  rounded-full overflow-hidden  _anime-outline-vibration'
+            onClick={clickHandler}>
+            <LPDesc title={title} desc={desc} src={src} />
+          </button>
         </section>
       </div>
     </section>
@@ -80,15 +72,18 @@ function Badge({ data, className }: DefaultProps<BadgeData>) {
 }
 
 interface LPDescProps {
+  src: string
   title: string
   desc: string
 }
-function LPDesc({ title, desc }: LPDescProps) {
+function LPDesc({ title, desc, src }: LPDescProps) {
   return (
-    <div className='w-72 h-72 flex items-center justify-center px-4 backdrop-blur-md'>
-      <div>
-        <h1 className='text-lg text-neutral-50'>{title}</h1>
-        <p className='text-xs text-neutral-400'>{desc}</p>
+    <div className={`w-96 h-96`} style={{ background: `url(${src})` }}>
+      <div className='w-full h-full  px-4  grid items-center justify-center backdrop-blur-md'>
+        <div>
+          <h1 className='text-lg font-bold text-gray-100'>{title}</h1>
+          <p className='w-64  text-xs font-normal text-neutral-300'>{desc}</p>
+        </div>
       </div>
     </div>
   )
