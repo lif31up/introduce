@@ -3,7 +3,7 @@
 		"index": 0,
 		"title": "폼나는 SAFFE",
 		"desc": "설문지를 만들어 배포하는 웹 서비스입니다. 모든 UI/UX는 제가 직접 디자인했습니다.",
-		"href": "https://www.figma.com/file/XTSGcNsO6H5LXZhq8vTS9O/final-of-final-of-final?type=design&t=vo2rZYFvgrka1sse-6",
+		"href": "https://github.com/SSA-FE/formssafe-fe",
 		"src": "/assets/images/abstract_0.jpg",
 		"colors": ["#140edd", "#a9798e", "#1b193b"],
 		"badges": [

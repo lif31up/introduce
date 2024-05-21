@@ -42,9 +42,12 @@ interface ProjectCardProps extends DefaultProps<ProjectData> {
 }
 function ProjectCard({ data, className, onClick, activated, top }: ProjectCardProps) {
   if (!data) return <></>
-  const { title, desc }: ProjectData = data
+  const { title, desc, href }: ProjectData = data
   const clickHandler = () => {
     if (onClick !== undefined) onClick()
+  }
+  const pClickHandler = () => {
+    window.open(href)
   }
   const style: TailwindProperties = {
     md: '',
@@ -55,8 +58,13 @@ function ProjectCard({ data, className, onClick, activated, top }: ProjectCardPr
       <h1 className={`text-base font-bold tracking-widest line-clamp-1 ${activated ? 'text-neutral-300' : 'text-neutral-400'}`}>
         {title}
       </h1>
-      <div className={`overflow-hidden w-full`}>
-        <p className={`text-sm text-neutral-400 line-clamp-2 ${activated ? 'h-12 _anime-ttb-slide' : 'h-0'}`}>{desc}</p>
+      <div className={`overflow-hidden w-full h-12`} onClick={pClickHandler}>
+        <p
+          className={`text-sm text-neutral-400 line-clamp-2 hover:bg-neutral-900 ${
+            activated ? 'h-fit _anime-ttb-slide' : 'h-0'
+          }`}>
+          {desc}
+        </p>
       </div>
     </button>
   )
